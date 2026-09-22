@@ -4,9 +4,24 @@ export const en = {
         setupSuccess: "Setup completed",
     },
     common: {
-        darkMode: "Dark Mode",
-        lightMode: "Light Mode",
+        darkMode: "🌙 Dark Mode",
+        lightMode: "☀️ Light Mode",
         language: "Language",
+        loading: "Loading...",
+        previous: "Previous",
+        next: "Next",
+        comingSoon: "This module will be built in a future phase.",
+        pageOf: "Page {current} of {total}",
+    },
+    errorState: {
+        title: "Something went wrong",
+        description: "Please try again.",
+        retry: "Try again",
+    },
+    confirmDialog: {
+        title: "Confirm",
+        confirmLabel: "Confirm",
+        cancelLabel: "Cancel",
     },
     nav: {
         dashboard: "Dashboard",
@@ -22,5 +37,34 @@ export const en = {
         calendar: "Calendar",
         farmOperations: "Farm Operations",
         system: "System",
+    },
+    dashboard: {
+        subtitle: "Your farm's status at a glance, today",
+        units: {
+            currency: "৳",
+            liters: "L",
+        },
+        stats: {
+            totalCows: "Total Cows",
+            totalCalves: "Total Calves",
+            milkToday: "Milk Today",
+            milkThisMonth: "Milk This Month",
+            todayRevenue: "Today's Revenue",
+            todayExpense: "Today's Expense",
+            netProfitToday: "Today's Net Profit",
+            feedStock: "Feed Stock",
+            medicineStock: "Medicine Stock",
+            pregnantCows: "Pregnant Cows",
+            expectedCalving: "Expected Calving (30d)",
+            vaccinationDue: "Vaccination Due (7d)",
+            tasksToday: "Tasks Today",
+        },
+        charts: {
+            milkTrendTitle: "Milk Production Trend",
+            revenueExpenseTitle: "Revenue vs Expense",
+            emptyTitle: "No data yet",
+            emptyDescription:
+                "Once the Herd and Production modules are built, real charts will appear here.",
+        },
     },
 };

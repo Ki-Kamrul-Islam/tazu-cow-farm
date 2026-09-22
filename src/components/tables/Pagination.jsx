@@ -1,12 +1,18 @@
 import { Button } from "../common/Button.jsx";
+import { useLanguage } from "../../contexts/LanguageContext.jsx";
 
 export function Pagination({ currentPage, totalPages, onPageChange }) {
+    const { t } = useLanguage();
+
     if (totalPages <= 1) return null;
 
     return (
         <div className="flex items-center justify-between mt-3">
             <span className="text-sm text-text-muted">
-                Page {currentPage} of {totalPages}
+                {t("common.pageOf", {
+                    current: currentPage,
+                    total: totalPages,
+                })}
             </span>
 
             <div className="flex gap-2">
@@ -16,7 +22,7 @@ export function Pagination({ currentPage, totalPages, onPageChange }) {
                     disabled={currentPage === 1}
                     onClick={() => onPageChange(currentPage - 1)}
                 >
-                    আগের
+                    {t("common.previous")}
                 </Button>
                 <Button
                     variant="outline"
@@ -24,7 +30,7 @@ export function Pagination({ currentPage, totalPages, onPageChange }) {
                     disabled={currentPage === totalPages}
                     onClick={() => onPageChange(currentPage + 1)}
                 >
-                    পরের
+                    {t("common.next")}
                 </Button>
             </div>
         </div>

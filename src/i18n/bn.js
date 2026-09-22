@@ -4,9 +4,24 @@ export const bn = {
         setupSuccess: "Setup সফল হয়েছে",
     },
     common: {
-        darkMode: "Dark Mode",
-        lightMode: "Light Mode",
+        darkMode: "🌙 ডার্ক মোড",
+        lightMode: "☀️ লাইট মোড",
         language: "ভাষা",
+        loading: "লোড হচ্ছে...",
+        previous: "আগের",
+        next: "পরের",
+        comingSoon: "এই module পরের কোনো Phase-এ তৈরি হবে।",
+        pageOf: "পাতা {current} / {total}",
+    },
+    errorState: {
+        title: "কিছু একটা সমস্যা হয়েছে",
+        description: "দয়া করে আবার চেষ্টা করুন।",
+        retry: "আবার চেষ্টা করুন",
+    },
+    confirmDialog: {
+        title: "নিশ্চিত করুন",
+        confirmLabel: "নিশ্চিত করুন",
+        cancelLabel: "বাতিল",
     },
     nav: {
         dashboard: "ড্যাশবোর্ড",
@@ -22,5 +37,34 @@ export const bn = {
         calendar: "ক্যালেন্ডার",
         farmOperations: "খামার কার্যক্রম",
         system: "সিস্টেম",
+    },
+    dashboard: {
+        subtitle: "আপনার খামারের আজকের অবস্থা এক নজরে",
+        units: {
+            currency: "৳",
+            liters: "লিটার",
+        },
+        stats: {
+            totalCows: "মোট গরু",
+            totalCalves: "মোট বাছুর",
+            milkToday: "আজকের দুধ",
+            milkThisMonth: "এই মাসের দুধ",
+            todayRevenue: "আজকের আয়",
+            todayExpense: "আজকের খরচ",
+            netProfitToday: "আজকের নিট মুনাফা",
+            feedStock: "খাদ্য মজুদ",
+            medicineStock: "ওষুধ মজুদ",
+            pregnantCows: "গর্ভবতী গরু",
+            expectedCalving: "শীঘ্রই বাচ্চা প্রসব (৩০ দিনে)",
+            vaccinationDue: "টিকা বাকি (৭ দিনে)",
+            tasksToday: "আজকের কাজ",
+        },
+        charts: {
+            milkTrendTitle: "দুধ উৎপাদন ট্রেন্ড",
+            revenueExpenseTitle: "আয় বনাম খরচ",
+            emptyTitle: "এখনো কোনো ডেটা নেই",
+            emptyDescription:
+                "Herd ও Production module তৈরি হলে এখানে real chart দেখা যাবে।",
+        },
     },
 };

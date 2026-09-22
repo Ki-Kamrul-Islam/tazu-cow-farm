@@ -1,16 +1,19 @@
 import { Modal } from "./Modal.jsx";
 import { Button } from "./Button.jsx";
+import { useLanguage } from "../../contexts/LanguageContext.jsx";
 
 export function ConfirmDialog({
     isOpen,
     onClose,
     onConfirm,
-    title = "নিশ্চিত করুন",
+    title,
     message,
-    confirmLabel = "নিশ্চিত করুন",
-    cancelLabel = "বাতিল",
+    confirmLabel,
+    cancelLabel,
     variant = "danger",
 }) {
+    const { t } = useLanguage();
+
     const handleConfirm = () => {
         onConfirm();
         onClose();
@@ -20,14 +23,14 @@ export function ConfirmDialog({
         <Modal
             isOpen={isOpen}
             onClose={onClose}
-            title={title}
+            title={title ?? t("confirmDialog.title")}
             footer={
                 <>
                     <Button variant="ghost" onClick={onClose}>
-                        {cancelLabel}
+                        {cancelLabel ?? t("confirmDialog.cancelLabel")}
                     </Button>
                     <Button variant={variant} onClick={handleConfirm}>
-                        {confirmLabel}
+                        {confirmLabel ?? t("confirmDialog.confirmLabel")}
                     </Button>
                 </>
             }

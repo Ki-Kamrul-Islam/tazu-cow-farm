@@ -26,9 +26,17 @@ export function LanguageProvider({ children }) {
         changeLanguage(language === "bn" ? "en" : "bn");
     };
 
-    const t = (key) => {
+    const t = (key, params) => {
         const value = getNestedValue(dictionaries[language], key);
-        return value ?? key;
+        const text = value ?? key;
+
+        if (!params) return text;
+
+        return Object.keys(params).reduce(
+            (result, paramKey) =>
+                result.replaceAll(`{${paramKey}}`, params[paramKey]),
+            text,
+        );
     };
 
     return (

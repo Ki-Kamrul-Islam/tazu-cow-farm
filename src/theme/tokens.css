@@ -17,8 +17,10 @@
     --color-danger: #ef4444;
     --color-info: #3b82f6;
 
-    --color-sidebar-bg: #0f172a;
-    --color-sidebar-text: #e2e8f0;
+    --color-sidebar-bg: #ffffff;
+    --color-sidebar-text: #0f172a;
+    --color-sidebar-border: #e2e8f0;
+    --color-sidebar-hover: rgba(15, 23, 42, 0.06);
     --color-navbar-bg: #ffffff;
 }
 
@@ -32,8 +34,10 @@
     --color-text-primary: #f1f5f9;
     --color-text-muted: #94a3b8;
 
-    --color-sidebar-bg: #020617;
-    --color-sidebar-text: #cbd5e1;
+    --color-sidebar-bg: #0f172a;
+    --color-sidebar-text: #e2e8f0;
+    --color-sidebar-border: rgba(255, 255, 255, 0.1);
+    --color-sidebar-hover: rgba(255, 255, 255, 0.1);
     --color-navbar-bg: #1e293b;
 }
 
@@ -59,5 +63,7 @@
 
     --color-sidebar-bg: var(--color-sidebar-bg);
     --color-sidebar-text: var(--color-sidebar-text);
+    --color-sidebar-border: var(--color-sidebar-border);
+    --color-sidebar-hover: var(--color-sidebar-hover);
     --color-navbar-bg: var(--color-navbar-bg);
 }

@@ -1,3 +1,12 @@
+const ICON_BG_CLASSES = {
+    neutral: "bg-primary/10",
+    primary: "bg-primary/10",
+    success: "bg-success/10",
+    warning: "bg-warning/10",
+    danger: "bg-danger/10",
+    info: "bg-info/10",
+};
+
 export function StatCard({ label, value, icon, trend, variant = "neutral" }) {
     const trendColor =
         trend > 0 ? "text-success"
@@ -26,7 +35,7 @@ export function StatCard({ label, value, icon, trend, variant = "neutral" }) {
             {icon && (
                 <div
                     className={`w-10 h-10 rounded-lg flex items-center justify-center text-lg
-                        ${variant === "neutral" ? "bg-primary/10" : `bg-${variant}/10`}`}
+                        ${ICON_BG_CLASSES[variant] ?? ICON_BG_CLASSES.neutral}`}
                 >
                     {icon}
                 </div>

@@ -8,7 +8,7 @@ export function ComingSoonPage({ titleKey }) {
             <p className="text-xl font-semibold text-text-primary">
                 {t(titleKey)}
             </p>
-            <p className="mt-2">এই module পরের কোনো Phase-এ তৈরি হবে।</p>
+            <p className="mt-2">{t("common.comingSoon")}</p>
         </div>
     );
 }
