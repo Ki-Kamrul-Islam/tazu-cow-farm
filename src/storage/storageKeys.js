@@ -22,5 +22,6 @@ export const STORAGE_KEYS = {
 
     // Team
     EMPLOYEES: "employees",
+    SCORE_RECORDS: "score_records",
     TASKS: "tasks",
 };

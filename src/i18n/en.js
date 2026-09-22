@@ -118,6 +118,51 @@ export const en = {
                         weight: "Weight",
                         notes: "Notes",
                     },
+
+                    scoring: {
+                        fields: {
+                            animal: "Animal",
+                            date: "Date",
+                            bodyConditionScore: "Body Condition Score",
+                            udderScore: "Udder Score",
+                            mobilityScore: "Mobility Score",
+                            overallScore: "Overall Score",
+                            notes: "Notes",
+                        },
+                        actions: {
+                            addScore: "Add Score",
+                        },
+                        list: {
+                            description: "All scoring records",
+                            filterByAnimal: "Select an animal",
+                            emptyTitle: "No scores added yet",
+                            emptyDescription:
+                                "Add your first score to get started.",
+                        },
+                        form: {
+                            addTitle: "Add Score",
+                            editTitle: "Edit Score",
+                            description:
+                                "Select an animal and give at least one score",
+                            selectAnimal: "Select an animal",
+                        },
+                        toast: {
+                            created: "Score added successfully",
+                            updated: "Score updated successfully",
+                        },
+                        deleteDialog: {
+                            title: "Delete this record?",
+                            message:
+                                "This action cannot be undone. Are you sure?",
+                        },
+                        validation: {
+                            animalRequired: "Please select an animal",
+                            dateRequired: "Date is required",
+                            dateFuture: "Date cannot be in the future",
+                            atLeastOneScore: "Please give at least one score",
+                        },
+                    },
+
                     stats: {
                         adg: "Average Daily Gain (ADG)",
                     },
@@ -242,6 +287,7 @@ export const en = {
             breeding: "Breeding",
             health: "Health",
             weight: "Weight",
+            scoring: "Scoring",
         },
 
         units: {

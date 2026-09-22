@@ -118,6 +118,51 @@ export const bn = {
                         weight: "ওজন",
                         notes: "নোট",
                     },
+
+                    scoring: {
+                        fields: {
+                            animal: "গরু",
+                            date: "তারিখ",
+                            bodyConditionScore: "Body Condition Score",
+                            udderScore: "Udder Score",
+                            mobilityScore: "Mobility Score",
+                            overallScore: "সার্বিক স্কোর",
+                            notes: "নোট",
+                        },
+                        actions: {
+                            addScore: "স্কোর যোগ করুন",
+                        },
+                        list: {
+                            description: "সব স্কোরিং রেকর্ড",
+                            filterByAnimal: "গরু নির্বাচন করুন",
+                            emptyTitle: "এখনো কোনো স্কোর যোগ করা হয়নি",
+                            emptyDescription:
+                                "প্রথম স্কোরটি যোগ করে শুরু করুন।",
+                        },
+                        form: {
+                            addTitle: "স্কোর যোগ করুন",
+                            editTitle: "স্কোর সম্পাদনা",
+                            description:
+                                "গরু নির্বাচন করে কমপক্ষে একটা স্কোর দিন",
+                            selectAnimal: "গরু নির্বাচন করুন",
+                        },
+                        toast: {
+                            created: "স্কোর সফলভাবে যোগ হয়েছে",
+                            updated: "স্কোর সফলভাবে আপডেট হয়েছে",
+                        },
+                        deleteDialog: {
+                            title: "রেকর্ড মুছে ফেলবেন?",
+                            message:
+                                "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+                        },
+                        validation: {
+                            animalRequired: "গরু নির্বাচন করুন",
+                            dateRequired: "তারিখ আবশ্যক",
+                            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+                            atLeastOneScore: "কমপক্ষে একটা স্কোর দিন",
+                        },
+                    },
+
                     stats: {
                         adg: "গড় দৈনিক ওজন বৃদ্ধি (ADG)",
                     },
@@ -241,6 +286,7 @@ export const bn = {
             breeding: "প্রজনন",
             health: "স্বাস্থ্য",
             weight: "ওজন",
+            scoring: "স্কোরিং",
         },
 
         units: {

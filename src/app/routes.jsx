@@ -12,6 +12,8 @@ import { HealthListPage } from "../modules/herd/pages/HealthListPage.jsx";
 import { HealthFormPage } from "../modules/herd/pages/HealthFormPage.jsx";
 import { WeightListPage } from "../modules/herd/pages/WeightListPage.jsx";
 import { WeightFormPage } from "../modules/herd/pages/WeightFormPage.jsx";
+import { ScoreListPage } from "../modules/herd/pages/ScoreListPage.jsx";
+import { ScoreFormPage } from "../modules/herd/pages/ScoreFormPage.jsx";
 //
 //
 const otherRoutes = navigationConfig
@@ -45,6 +47,9 @@ export const router = createBrowserRouter([
                     { path: "weight", element: <WeightListPage /> },
                     { path: "weight/add", element: <WeightFormPage /> },
                     { path: "weight/:id/edit", element: <WeightFormPage /> },
+                    { path: "scoring", element: <ScoreListPage /> },
+                    { path: "scoring/add", element: <ScoreFormPage /> },
+                    { path: "scoring/:id/edit", element: <ScoreFormPage /> },
                 ],
             },
             ...otherRoutes,
