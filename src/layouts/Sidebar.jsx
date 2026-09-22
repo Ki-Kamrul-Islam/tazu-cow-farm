@@ -1,14 +1,12 @@
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { navigationConfig } from "../config/navigation.js";
 import { useLanguage } from "../contexts/LanguageContext.jsx";
 
 export function Sidebar({ isOpen, onClose }) {
     const { t } = useLanguage();
-    const [activeKey, setActiveKey] = useState("dashboard");
 
     return (
         <>
-            {/* Mobile backdrop — sidebar খোলা থাকলে ক্লিক করে বন্ধ করা যাবে */}
             {isOpen && (
                 <div
                     className="fixed inset-0 bg-black/50 z-30 md:hidden"
@@ -27,18 +25,21 @@ export function Sidebar({ isOpen, onClose }) {
 
                 <nav className="p-2 overflow-y-auto">
                     {navigationConfig.map((item) => (
-                        <button
+                        <NavLink
                             key={item.key}
-                            onClick={() => {
-                                setActiveKey(item.key);
-                                onClose?.();
-                            }}
-                            className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left mb-1 transition-colors
-                ${activeKey === item.key ? "bg-primary text-white" : "hover:bg-white/10"}`}
+                            to={item.path}
+                            onClick={onClose}
+                            className={({ isActive }) =>
+                                `w-full flex items-center gap-3 px-3 py-2 rounded-lg mb-1 transition-colors ${
+                                    isActive ?
+                                        "bg-primary text-white"
+                                    :   "hover:bg-white/10"
+                                }`
+                            }
                         >
                             <span>{item.icon}</span>
                             <span className="text-sm">{t(item.labelKey)}</span>
-                        </button>
+                        </NavLink>
                     ))}
                 </nav>
             </aside>
