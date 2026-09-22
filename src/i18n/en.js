@@ -12,6 +12,7 @@ export const en = {
         next: "Next",
         comingSoon: "This module will be built in a future phase.",
         pageOf: "Page {current} of {total}",
+        all: "All",
     },
     errorState: {
         title: "Something went wrong",
@@ -65,6 +66,78 @@ export const en = {
             emptyTitle: "No data yet",
             emptyDescription:
                 "Once the Herd and Production modules are built, real charts will appear here.",
+        },
+    },
+    herd: {
+        fields: {
+            animalId: "Animal ID",
+            name: "Name",
+            type: "Type",
+            age: "Age",
+            breed: "Breed",
+            gender: "Gender",
+            dateOfBirth: "Date of Birth",
+            weight: "Weight (kg)",
+            group: "Group",
+            status: "Status",
+            notes: "Notes",
+            actions: "Actions",
+        },
+        units: {
+            years: "yr",
+            months: "mo",
+        },
+        animalType: {
+            cow: "Cow",
+            bull: "Bull",
+            heifer: "Heifer",
+            calf: "Calf",
+        },
+        gender: {
+            male: "Male",
+            female: "Female",
+        },
+        status: {
+            active: "Active",
+            sold: "Sold",
+            deceased: "Deceased",
+        },
+        actions: {
+            addAnimal: "Add Animal",
+            edit: "Edit",
+            delete: "Delete",
+            save: "Save",
+            cancel: "Cancel",
+        },
+        list: {
+            description: "All cows and calves in your farm",
+            searchPlaceholder: "Search by Animal ID, name, or breed",
+            emptyTitle: "No animals added yet",
+            emptyDescription: "Add your first animal to get started.",
+            noResults: "No results found. Try changing your search or filter.",
+        },
+        form: {
+            addTitle: "Add New Animal",
+            editTitle: "Edit Animal",
+            description: "Fill in all required fields",
+        },
+        toast: {
+            created: "Animal added successfully",
+            updated: "Animal updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this animal?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            animalIdRequired: "Animal ID is required",
+            animalIdDuplicate: "This Animal ID already exists",
+            nameRequired: "Name is required",
+            typeRequired: "Please select a type",
+            genderRequired: "Please select a gender",
+            dateInvalid: "Please enter a valid date",
+            dateFuture: "Date cannot be in the future",
+            weightPositive: "Weight must be greater than 0",
         },
     },
 };

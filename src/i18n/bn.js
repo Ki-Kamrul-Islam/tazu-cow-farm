@@ -12,6 +12,7 @@ export const bn = {
         next: "পরের",
         comingSoon: "এই module পরের কোনো Phase-এ তৈরি হবে।",
         pageOf: "পাতা {current} / {total}",
+        all: "সব",
     },
     errorState: {
         title: "কিছু একটা সমস্যা হয়েছে",
@@ -65,6 +66,79 @@ export const bn = {
             emptyTitle: "এখনো কোনো ডেটা নেই",
             emptyDescription:
                 "Herd ও Production module তৈরি হলে এখানে real chart দেখা যাবে।",
+        },
+    },
+    herd: {
+        fields: {
+            animalId: "Animal ID",
+            name: "নাম",
+            type: "ধরন",
+            age: "বয়স",
+            breed: "জাত",
+            gender: "লিঙ্গ",
+            dateOfBirth: "জন্ম তারিখ",
+            weight: "ওজন (কেজি)",
+            group: "গ্রুপ",
+            status: "অবস্থা",
+            notes: "নোট",
+            actions: "কার্যক্রম",
+        },
+        units: {
+            years: "বছর",
+            months: "মাস",
+        },
+        animalType: {
+            cow: "গাভী",
+            bull: "ষাঁড়",
+            heifer: "বকনা",
+            calf: "বাছুর",
+        },
+        gender: {
+            male: "পুরুষ",
+            female: "মহিলা",
+        },
+        status: {
+            active: "সক্রিয়",
+            sold: "বিক্রিত",
+            deceased: "মৃত",
+        },
+        actions: {
+            addAnimal: "গরু যোগ করুন",
+            edit: "সম্পাদনা",
+            delete: "মুছুন",
+            save: "সংরক্ষণ করুন",
+            cancel: "বাতিল",
+        },
+        list: {
+            description: "আপনার খামারের সব গরু/বাছুরের তালিকা",
+            searchPlaceholder: "Animal ID, নাম বা জাত দিয়ে খুঁজুন",
+            emptyTitle: "এখনো কোনো গরু যোগ করা হয়নি",
+            emptyDescription: "প্রথম গরুটি যোগ করে শুরু করুন।",
+            noResults:
+                "কোনো ফলাফল পাওয়া যায়নি। Search বা Filter পরিবর্তন করে দেখুন।",
+        },
+        form: {
+            addTitle: "নতুন গরু যোগ করুন",
+            editTitle: "গরুর তথ্য সম্পাদনা",
+            description: "সব বাধ্যতামূলক তথ্য পূরণ করুন",
+        },
+        toast: {
+            created: "গরু সফলভাবে যোগ হয়েছে",
+            updated: "তথ্য সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "গরু মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            animalIdRequired: "Animal ID আবশ্যক",
+            animalIdDuplicate: "এই Animal ID ইতিমধ্যে ব্যবহৃত হয়েছে",
+            nameRequired: "নাম আবশ্যক",
+            typeRequired: "ধরন নির্বাচন করুন",
+            genderRequired: "লিঙ্গ নির্বাচন করুন",
+            dateInvalid: "সঠিক তারিখ দিন",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            weightPositive: "ওজন ০-এর বেশি হতে হবে",
         },
     },
 };

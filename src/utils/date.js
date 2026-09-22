@@ -32,3 +32,20 @@ export function isWithinNextDays(dateString, days) {
         (target.getTime() - today.getTime()) / (1000 * 60 * 60 * 24);
     return diffDays >= 0 && diffDays <= days;
 }
+
+export function getAgeInMonths(dateOfBirth) {
+    if (!dateOfBirth) return null;
+
+    const birth = new Date(dateOfBirth);
+    const today = new Date();
+
+    let months =
+        (today.getFullYear() - birth.getFullYear()) * 12 +
+        (today.getMonth() - birth.getMonth());
+
+    if (today.getDate() < birth.getDate()) {
+        months -= 1;
+    }
+
+    return Math.max(months, 0);
+}
