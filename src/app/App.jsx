@@ -1,13 +1,18 @@
+import { ThemeToggleButton } from "../components/ui/ThemeToggleButton.jsx";
+
 function App() {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-slate-100">
+        <div className="min-h-screen flex items-center justify-center bg-background">
             <div className="text-center">
-                <h1 className="text-3xl font-bold text-green-700">
+                <h1 className="text-3xl font-bold text-primary">
                     🐄 Tazu Cow Farm
                 </h1>
-                <p className="mt-2 text-slate-600">
-                    Setup সফল হয়েছে — Phase 03 সম্পন্ন
+                <p className="mt-2 text-text-muted">
+                    Setup সফল হয়েছে — Phase 04 (Dark Mode) সম্পন্ন
                 </p>
+                <div className="mt-4">
+                    <ThemeToggleButton />
+                </div>
             </div>
         </div>
     );
