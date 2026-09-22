@@ -346,6 +346,7 @@ export const en = {
             tabs: {
                 milk: "Milk",
                 customers: "Customers",
+                sales: "Sales",
             },
         },
         customers: {
@@ -355,6 +356,62 @@ export const en = {
                 address: "Address",
                 status: "Status",
                 notes: "Notes",
+            },
+            sales: {
+                fields: {
+                    customer: "Customer",
+                    date: "Date",
+                    quantity: "Quantity",
+                    pricePerLiter: "Price / Liter",
+                    totalAmount: "Total Amount",
+                    paidAmount: "Paid Amount",
+                    dueAmount: "Due Amount",
+                    status: "Status",
+                    notes: "Notes",
+                },
+                status: {
+                    paid: "Paid",
+                    partial: "Partial",
+                    due: "Due",
+                },
+                stats: {
+                    todayRevenue: "Today's Revenue",
+                    totalDue: "Total Outstanding Due",
+                },
+                actions: {
+                    addSale: "Add Sale",
+                },
+                list: {
+                    description: "All milk sales and invoices",
+                    filterByCustomer: "Select a customer",
+                    emptyTitle: "No sales recorded yet",
+                    emptyDescription: "Add your first sale to get started.",
+                },
+                form: {
+                    addTitle: "Add Sale",
+                    editTitle: "Edit Sale",
+                    description: "Select a customer and enter the sale details",
+                    selectCustomer: "Select a customer",
+                    estimatedTotal: "Estimated Total",
+                },
+                toast: {
+                    created: "Sale added successfully",
+                    updated: "Sale updated successfully",
+                },
+                deleteDialog: {
+                    title: "Delete this sale?",
+                    message: "This action cannot be undone. Are you sure?",
+                },
+                validation: {
+                    customerRequired: "Please select a customer",
+                    dateRequired: "Date is required",
+                    dateFuture: "Date cannot be in the future",
+                    quantityPositive: "Quantity must be greater than 0",
+                    pricePositive: "Price must be greater than 0",
+                    paidNegative: "Paid amount cannot be negative",
+                    paidExceedsTotal:
+                        "Paid amount cannot exceed the total amount",
+                },
             },
             status: {
                 active: "Active",

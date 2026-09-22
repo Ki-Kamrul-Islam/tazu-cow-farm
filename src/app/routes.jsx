@@ -18,6 +18,8 @@ import { MilkListPage } from "../modules/production/pages/MilkListPage.jsx";
 import { MilkFormPage } from "../modules/production/pages/MilkFormPage.jsx";
 import { CustomerListPage } from "../modules/production/pages/CustomerListPage.jsx";
 import { CustomerFormPage } from "../modules/production/pages/CustomerFormPage.jsx";
+import { SaleListPage } from "../modules/production/pages/SaleListPage.jsx";
+import { SaleFormPage } from "../modules/production/pages/SaleFormPage.jsx";
 //
 //
 const otherRoutes = navigationConfig
@@ -73,6 +75,9 @@ export const router = createBrowserRouter([
                         path: "customers/:id/edit",
                         element: <CustomerFormPage />,
                     },
+                    { path: "sales", element: <SaleListPage /> },
+                    { path: "sales/add", element: <SaleFormPage /> },
+                    { path: "sales/:id/edit", element: <SaleFormPage /> },
                 ],
             },
             ...otherRoutes,

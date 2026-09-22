@@ -347,8 +347,10 @@ export const bn = {
             tabs: {
                 milk: "দুধ",
                 customers: "কাস্টমার",
+                sales: "বিক্রয়",
             },
         },
+
         customers: {
             fields: {
                 name: "নাম",
@@ -357,6 +359,64 @@ export const bn = {
                 status: "অবস্থা",
                 notes: "নোট",
             },
+            sales: {
+                fields: {
+                    customer: "কাস্টমার",
+                    date: "তারিখ",
+                    quantity: "পরিমাণ",
+                    pricePerLiter: "মূল্য / লিটার",
+                    totalAmount: "মোট টাকা",
+                    paidAmount: "পরিশোধিত টাকা",
+                    dueAmount: "বাকি টাকা",
+                    status: "অবস্থা",
+                    notes: "নোট",
+                },
+                status: {
+                    paid: "পরিশোধিত",
+                    partial: "আংশিক",
+                    due: "বাকি",
+                },
+                stats: {
+                    todayRevenue: "আজকের আয়",
+                    totalDue: "মোট বকেয়া",
+                },
+                actions: {
+                    addSale: "বিক্রয় যোগ করুন",
+                },
+                list: {
+                    description: "সব দুধ বিক্রয়/চালানের তালিকা",
+                    filterByCustomer: "কাস্টমার নির্বাচন করুন",
+                    emptyTitle: "এখনো কোনো বিক্রয় নেই",
+                    emptyDescription: "প্রথম বিক্রয়টি যোগ করে শুরু করুন।",
+                },
+                form: {
+                    addTitle: "বিক্রয় যোগ করুন",
+                    editTitle: "বিক্রয় সম্পাদনা",
+                    description: "কাস্টমার নির্বাচন করে বিক্রয়ের তথ্য দিন",
+                    selectCustomer: "কাস্টমার নির্বাচন করুন",
+                    estimatedTotal: "আনুমানিক মোট",
+                },
+                toast: {
+                    created: "বিক্রয় সফলভাবে যোগ হয়েছে",
+                    updated: "বিক্রয় সফলভাবে আপডেট হয়েছে",
+                },
+                deleteDialog: {
+                    title: "বিক্রয় মুছে ফেলবেন?",
+                    message:
+                        "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+                },
+                validation: {
+                    customerRequired: "কাস্টমার নির্বাচন করুন",
+                    dateRequired: "তারিখ আবশ্যক",
+                    dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+                    quantityPositive: "পরিমাণ ০-এর বেশি হতে হবে",
+                    pricePositive: "মূল্য ০-এর বেশি হতে হবে",
+                    paidNegative: "পরিশোধিত টাকা ঋণাত্মক হতে পারবে না",
+                    paidExceedsTotal:
+                        "পরিশোধিত টাকা মোট টাকার চেয়ে বেশি হতে পারবে না",
+                },
+            },
+
             status: {
                 active: "সক্রিয়",
                 inactive: "নিষ্ক্রিয়",

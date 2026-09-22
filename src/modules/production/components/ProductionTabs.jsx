@@ -5,6 +5,7 @@ import { useLanguage } from "../../../contexts/LanguageContext.jsx";
 const PRODUCTION_TABS = [
     { key: "milk", path: "/production" },
     { key: "customers", path: "/production/customers" },
+    { key: "sales", path: "/production/sales" },
 ];
 
 export function ProductionTabs() {
