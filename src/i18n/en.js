@@ -83,205 +83,6 @@ export const en = {
             notes: "Notes",
             actions: "Actions",
         },
-
-        breeding: {
-            fields: {
-                animal: "Animal",
-                breedingDate: "Breeding Date",
-                method: "Method",
-                sireInfo: "Sire / Semen Info",
-                status: "Status",
-                pregnancyDiagnosisDate: "Pregnancy Diagnosis Date",
-                expectedCalvingDate: "Expected Calving Date",
-                actualCalvingDate: "Actual Calving Date",
-                notes: "Notes",
-            },
-
-            health: {
-                fields: {
-                    animal: "Animal",
-                    type: "Type",
-                    date: "Date",
-                    diseaseOrReason: "Disease / Reason",
-                    medicine: "Medicine",
-                    dosage: "Dosage",
-                    vetName: "Vet Name",
-                    cost: "Cost",
-                    nextDueDate: "Next Due Date",
-                    notes: "Notes",
-                },
-
-                weight: {
-                    fields: {
-                        animal: "Animal",
-                        date: "Date",
-                        weight: "Weight",
-                        notes: "Notes",
-                    },
-
-                    scoring: {
-                        fields: {
-                            animal: "Animal",
-                            date: "Date",
-                            bodyConditionScore: "Body Condition Score",
-                            udderScore: "Udder Score",
-                            mobilityScore: "Mobility Score",
-                            overallScore: "Overall Score",
-                            notes: "Notes",
-                        },
-                        actions: {
-                            addScore: "Add Score",
-                        },
-                        list: {
-                            description: "All scoring records",
-                            filterByAnimal: "Select an animal",
-                            emptyTitle: "No scores added yet",
-                            emptyDescription:
-                                "Add your first score to get started.",
-                        },
-                        form: {
-                            addTitle: "Add Score",
-                            editTitle: "Edit Score",
-                            description:
-                                "Select an animal and give at least one score",
-                            selectAnimal: "Select an animal",
-                        },
-                        toast: {
-                            created: "Score added successfully",
-                            updated: "Score updated successfully",
-                        },
-                        deleteDialog: {
-                            title: "Delete this record?",
-                            message:
-                                "This action cannot be undone. Are you sure?",
-                        },
-                        validation: {
-                            animalRequired: "Please select an animal",
-                            dateRequired: "Date is required",
-                            dateFuture: "Date cannot be in the future",
-                            atLeastOneScore: "Please give at least one score",
-                        },
-                    },
-
-                    stats: {
-                        adg: "Average Daily Gain (ADG)",
-                    },
-                    units: {
-                        kgPerDay: "kg/day",
-                    },
-                    actions: {
-                        addWeight: "Add Weight",
-                    },
-                    list: {
-                        description: "All weight records",
-                        filterByAnimal: "Select an animal",
-                        emptyTitle: "No weight records yet",
-                        emptyDescription:
-                            "Add your first weight record to get started.",
-                    },
-                    form: {
-                        addTitle: "Add Weight",
-                        editTitle: "Edit Weight",
-                        description:
-                            "Select an animal and enter the weight and date",
-                        selectAnimal: "Select an animal",
-                    },
-                    toast: {
-                        created: "Weight added successfully",
-                        updated: "Weight updated successfully",
-                    },
-                    deleteDialog: {
-                        title: "Delete this record?",
-                        message: "This action cannot be undone. Are you sure?",
-                    },
-                    validation: {
-                        animalRequired: "Please select an animal",
-                        dateRequired: "Date is required",
-                        dateFuture: "Date cannot be in the future",
-                        weightPositive: "Weight must be greater than 0",
-                    },
-                },
-
-                type: {
-                    vaccination: "Vaccination",
-                    deworming: "Deworming",
-                    treatment: "Treatment",
-                    checkup: "Checkup",
-                },
-                actions: {
-                    addRecord: "Add Record",
-                },
-                list: {
-                    description: "All health records",
-                    emptyTitle: "No health records yet",
-                    emptyDescription: "Add your first record to get started.",
-                },
-                form: {
-                    addTitle: "New Health Record",
-                    editTitle: "Edit Health Record",
-                    description:
-                        "Select an animal and fill in the required fields",
-                    selectAnimal: "Select an animal",
-                },
-                toast: {
-                    created: "Record added successfully",
-                    updated: "Record updated successfully",
-                },
-                deleteDialog: {
-                    title: "Delete this record?",
-                    message: "This action cannot be undone. Are you sure?",
-                },
-                validation: {
-                    animalRequired: "Please select an animal",
-                    typeRequired: "Please select a type",
-                    dateRequired: "Date is required",
-                    dateFuture: "Date cannot be in the future",
-                    costPositive: "Cost cannot be negative",
-                },
-            },
-
-            method: {
-                ai: "Artificial Insemination (AI)",
-                natural: "Natural",
-            },
-            status: {
-                open: "Open",
-                bred: "Bred",
-                pregnant: "Pregnant",
-                calved: "Calved",
-                aborted: "Aborted",
-            },
-            actions: {
-                addRecord: "Add Record",
-            },
-            list: {
-                description: "All breeding records",
-                emptyTitle: "No breeding records yet",
-                emptyDescription: "Add your first record to get started.",
-            },
-            form: {
-                addTitle: "New Breeding Record",
-                editTitle: "Edit Breeding Record",
-                description: "Select an animal and fill in the required fields",
-                selectAnimal: "Select an animal",
-            },
-            toast: {
-                created: "Record added successfully",
-                updated: "Record updated successfully",
-            },
-            deleteDialog: {
-                title: "Delete this record?",
-                message: "This action cannot be undone. Are you sure?",
-            },
-            validation: {
-                animalRequired: "Please select an animal",
-                breedingDateRequired: "Breeding date is required",
-                dateFuture: "Date cannot be in the future",
-                methodRequired: "Please select a method",
-                calvingDateRequired: "Please enter the actual calving date",
-            },
-        },
-
         tabs: {
             animals: "Animals",
             breeding: "Breeding",
@@ -289,7 +90,6 @@ export const en = {
             weight: "Weight",
             scoring: "Scoring",
         },
-
         units: {
             years: "yr",
             months: "mo",
@@ -346,6 +146,241 @@ export const en = {
             dateInvalid: "Please enter a valid date",
             dateFuture: "Date cannot be in the future",
             weightPositive: "Weight must be greater than 0",
+        },
+    },
+    breeding: {
+        fields: {
+            animal: "Animal",
+            breedingDate: "Breeding Date",
+            method: "Method",
+            sireInfo: "Sire / Semen Info",
+            status: "Status",
+            pregnancyDiagnosisDate: "Pregnancy Diagnosis Date",
+            expectedCalvingDate: "Expected Calving Date",
+            actualCalvingDate: "Actual Calving Date",
+            notes: "Notes",
+        },
+        method: {
+            ai: "Artificial Insemination (AI)",
+            natural: "Natural",
+        },
+        status: {
+            open: "Open",
+            bred: "Bred",
+            pregnant: "Pregnant",
+            calved: "Calved",
+            aborted: "Aborted",
+        },
+        actions: {
+            addRecord: "Add Record",
+        },
+        list: {
+            description: "All breeding records",
+            emptyTitle: "No breeding records yet",
+            emptyDescription: "Add your first record to get started.",
+        },
+        form: {
+            addTitle: "New Breeding Record",
+            editTitle: "Edit Breeding Record",
+            description: "Select an animal and fill in the required fields",
+            selectAnimal: "Select an animal",
+        },
+        toast: {
+            created: "Record added successfully",
+            updated: "Record updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            animalRequired: "Please select an animal",
+            breedingDateRequired: "Breeding date is required",
+            dateFuture: "Date cannot be in the future",
+            methodRequired: "Please select a method",
+            calvingDateRequired: "Please enter the actual calving date",
+        },
+    },
+    health: {
+        fields: {
+            animal: "Animal",
+            type: "Type",
+            date: "Date",
+            diseaseOrReason: "Disease / Reason",
+            medicine: "Medicine",
+            dosage: "Dosage",
+            vetName: "Vet Name",
+            cost: "Cost",
+            nextDueDate: "Next Due Date",
+            notes: "Notes",
+        },
+        type: {
+            vaccination: "Vaccination",
+            deworming: "Deworming",
+            treatment: "Treatment",
+            checkup: "Checkup",
+        },
+        actions: {
+            addRecord: "Add Record",
+        },
+        list: {
+            description: "All health records",
+            emptyTitle: "No health records yet",
+            emptyDescription: "Add your first record to get started.",
+        },
+        form: {
+            addTitle: "New Health Record",
+            editTitle: "Edit Health Record",
+            description: "Select an animal and fill in the required fields",
+            selectAnimal: "Select an animal",
+        },
+        toast: {
+            created: "Record added successfully",
+            updated: "Record updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            animalRequired: "Please select an animal",
+            typeRequired: "Please select a type",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            costPositive: "Cost cannot be negative",
+        },
+    },
+    weight: {
+        fields: {
+            animal: "Animal",
+            date: "Date",
+            weight: "Weight",
+            notes: "Notes",
+        },
+        stats: {
+            adg: "Average Daily Gain (ADG)",
+        },
+        units: {
+            kgPerDay: "kg/day",
+        },
+        actions: {
+            addWeight: "Add Weight",
+        },
+        list: {
+            description: "All weight records",
+            filterByAnimal: "Select an animal",
+            emptyTitle: "No weight records yet",
+            emptyDescription: "Add your first weight record to get started.",
+        },
+        form: {
+            addTitle: "Add Weight",
+            editTitle: "Edit Weight",
+            description: "Select an animal and enter the weight and date",
+            selectAnimal: "Select an animal",
+        },
+        toast: {
+            created: "Weight added successfully",
+            updated: "Weight updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            animalRequired: "Please select an animal",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            weightPositive: "Weight must be greater than 0",
+        },
+    },
+    scoring: {
+        fields: {
+            animal: "Animal",
+            date: "Date",
+            bodyConditionScore: "Body Condition Score",
+            udderScore: "Udder Score",
+            mobilityScore: "Mobility Score",
+            overallScore: "Overall Score",
+            notes: "Notes",
+        },
+        actions: {
+            addScore: "Add Score",
+        },
+        list: {
+            description: "All scoring records",
+            filterByAnimal: "Select an animal",
+            emptyTitle: "No scores added yet",
+            emptyDescription: "Add your first score to get started.",
+        },
+        form: {
+            addTitle: "Add Score",
+            editTitle: "Edit Score",
+            description: "Select an animal and give at least one score",
+            selectAnimal: "Select an animal",
+        },
+        toast: {
+            created: "Score added successfully",
+            updated: "Score updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            animalRequired: "Please select an animal",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            atLeastOneScore: "Please give at least one score",
+        },
+    },
+    milk: {
+        fields: {
+            animal: "Animal",
+            date: "Date",
+            session: "Session",
+            quantity: "Milk Quantity (L)",
+            notes: "Notes",
+        },
+        session: {
+            morning: "Morning",
+            evening: "Evening",
+        },
+        units: {
+            liters: "L",
+        },
+        stats: {
+            today: "Today's Total Milk",
+            filtered: "Filtered Total",
+        },
+        actions: {
+            addMilk: "Add Milk Record",
+        },
+        list: {
+            description: "All daily milk production records",
+            filterByAnimal: "Select an animal",
+            emptyTitle: "No milk records yet",
+            emptyDescription: "Add your first record to get started.",
+        },
+        form: {
+            addTitle: "Add Milk Record",
+            editTitle: "Edit Milk Record",
+            description: "Select an animal and enter the milk details",
+            selectAnimal: "Select an animal",
+        },
+        toast: {
+            created: "Milk record added successfully",
+            updated: "Milk record updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            animalRequired: "Please select an animal",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            sessionRequired: "Please select a session",
+            quantityPositive: "Quantity must be greater than 0",
         },
     },
 };

@@ -1,10 +1,10 @@
 const VARIANT_CLASSES = {
-    primary: "bg-primary text-white hover:bg-primary-dark",
-    secondary: "bg-secondary text-white hover:opacity-90",
+    primary: "bg-primary text-white hover:bg-primary-dark shadow-card",
+    secondary: "bg-secondary text-white hover:opacity-90 shadow-card",
     outline:
-        "bg-transparent border border-border text-text-primary hover:bg-surface",
-    danger: "bg-danger text-white hover:opacity-90",
-    ghost: "bg-transparent text-text-primary hover:bg-surface",
+        "bg-transparent border border-border text-text-primary hover:border-primary hover:text-primary",
+    danger: "bg-danger text-white hover:opacity-90 shadow-card",
+    ghost: "bg-transparent text-text-primary hover:bg-primary/10 hover:text-primary",
 };
 
 const SIZE_CLASSES = {
@@ -27,8 +27,8 @@ export function Button({
         <button
             type={type}
             disabled={disabled || isLoading}
-            className={`inline-flex items-center justify-center gap-2 rounded-lg font-medium
-                transition-colors disabled:opacity-50 disabled:cursor-not-allowed
+            className={`inline-flex items-center justify-center gap-2 rounded-xl font-medium
+                transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed
                 ${VARIANT_CLASSES[variant]} ${SIZE_CLASSES[size]} ${className}`}
             {...rest}
         >

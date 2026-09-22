@@ -1,4 +1,5 @@
 import { useLanguage } from "../../contexts/LanguageContext.jsx";
+import { GlobeIcon } from "./icons.jsx";
 
 export function LanguageToggleButton() {
     const { language, toggleLanguage } = useLanguage();
@@ -6,10 +7,14 @@ export function LanguageToggleButton() {
     return (
         <button
             onClick={toggleLanguage}
-            className="px-4 py-2 rounded-lg bg-surface border border-border text-text-primary hover:bg-secondary hover:text-white transition-colors"
+            title={language === "bn" ? "Switch to English" : "বাংলায় দেখুন"}
             aria-label="Toggle language"
+            className="h-8 pl-2 pr-2.5 rounded-full flex items-center gap-1
+                text-text-primary hover:bg-primary/10 hover:text-primary
+                transition-colors text-xs font-semibold"
         >
-            {language === "bn" ? "English" : "বাংলা"}
+            <GlobeIcon />
+            {language === "bn" ? "EN" : "বা"}
         </button>
     );
 }

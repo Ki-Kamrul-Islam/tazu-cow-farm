@@ -1,52 +1,74 @@
 /* Light mode (default) */
 :root {
-    --color-primary: #16a34a;
-    --color-primary-dark: #15803d;
-    --color-secondary: #0ea5e9;
+    --color-primary: #2f6844;
+    --color-primary-dark: #23502f;
+    --color-primary-light: #e7f0e9;
+    --color-secondary: #2c7a9c;
+    --color-accent: #c98a2c;
+    --color-accent-light: #f6ebd8;
 
-    --color-background: #f8fafc;
+    --color-background: #f3f5ef;
     --color-surface: #ffffff;
     --color-card: #ffffff;
-    --color-border: #e2e8f0;
+    --color-border: #e3e7dc;
 
-    --color-text-primary: #0f172a;
-    --color-text-muted: #64748b;
+    --color-text-primary: #1c2620;
+    --color-text-muted: #5b6b5f;
 
-    --color-success: #22c55e;
-    --color-warning: #f59e0b;
-    --color-danger: #ef4444;
-    --color-info: #3b82f6;
+    --color-success: #3f9142;
+    --color-warning: #d99a2b;
+    --color-danger: #d64545;
+    --color-info: #2c7a9c;
 
     --color-sidebar-bg: #ffffff;
-    --color-sidebar-text: #0f172a;
-    --color-sidebar-border: #e2e8f0;
-    --color-sidebar-hover: rgba(15, 23, 42, 0.06);
+    --color-sidebar-text: #1c2620;
+    --color-sidebar-border: #e3e7dc;
+    --color-sidebar-hover: rgba(47, 104, 68, 0.08);
     --color-navbar-bg: #ffffff;
+
+    --shadow-card:
+        0 1px 2px rgba(28, 38, 32, 0.04),
+        0 8px 24px -12px rgba(28, 38, 32, 0.12);
+    --shadow-pop: 0 16px 40px -10px rgba(28, 38, 32, 0.18);
+
+    --font-sans: "Inter", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Dark mode overrides */
 [data-theme="dark"] {
-    --color-background: #0f172a;
-    --color-surface: #1e293b;
-    --color-card: #1e293b;
-    --color-border: #334155;
+    --color-primary: #4c9463;
+    --color-primary-dark: #3b7b4e;
+    --color-primary-light: rgba(76, 148, 99, 0.16);
+    --color-accent: #e0a94a;
+    --color-accent-light: rgba(224, 169, 74, 0.16);
 
-    --color-text-primary: #f1f5f9;
-    --color-text-muted: #94a3b8;
+    --color-background: #121813;
+    --color-surface: #1b231c;
+    --color-card: #1b231c;
+    --color-border: #2c3830;
 
-    --color-sidebar-bg: #0f172a;
-    --color-sidebar-text: #e2e8f0;
-    --color-sidebar-border: rgba(255, 255, 255, 0.1);
-    --color-sidebar-hover: rgba(255, 255, 255, 0.1);
-    --color-navbar-bg: #1e293b;
+    --color-text-primary: #edf1ea;
+    --color-text-muted: #93a092;
+
+    --color-sidebar-bg: #121813;
+    --color-sidebar-text: #edf1ea;
+    --color-sidebar-border: #26302a;
+    --color-sidebar-hover: rgba(237, 241, 234, 0.06);
+    --color-navbar-bg: #1b231c;
+
+    --shadow-card:
+        0 1px 2px rgba(0, 0, 0, 0.24), 0 8px 24px -12px rgba(0, 0, 0, 0.5);
+    --shadow-pop: 0 20px 48px -12px rgba(0, 0, 0, 0.6);
 }
 
-/* Tailwind v4: এই token গুলোকে utility class হিসেবে expose করা
-   (bg-primary, text-text-muted, border-border ইত্যাদি তৈরি হবে) */
+/* Tailwind v4: token গুলোকে utility class হিসেবে expose করা */
 @theme inline {
     --color-primary: var(--color-primary);
     --color-primary-dark: var(--color-primary-dark);
+    --color-primary-light: var(--color-primary-light);
     --color-secondary: var(--color-secondary);
+    --color-accent: var(--color-accent);
+    --color-accent-light: var(--color-accent-light);
 
     --color-background: var(--color-background);
     --color-surface: var(--color-surface);
@@ -66,4 +88,9 @@
     --color-sidebar-border: var(--color-sidebar-border);
     --color-sidebar-hover: var(--color-sidebar-hover);
     --color-navbar-bg: var(--color-navbar-bg);
+
+    --shadow-card: var(--shadow-card);
+    --shadow-pop: var(--shadow-pop);
+
+    --font-sans: var(--font-sans);
 }

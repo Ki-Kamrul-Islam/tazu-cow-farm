@@ -14,10 +14,17 @@ import { WeightListPage } from "../modules/herd/pages/WeightListPage.jsx";
 import { WeightFormPage } from "../modules/herd/pages/WeightFormPage.jsx";
 import { ScoreListPage } from "../modules/herd/pages/ScoreListPage.jsx";
 import { ScoreFormPage } from "../modules/herd/pages/ScoreFormPage.jsx";
+import { MilkListPage } from "../modules/production/pages/MilkListPage.jsx";
+import { MilkFormPage } from "../modules/production/pages/MilkFormPage.jsx";
 //
 //
 const otherRoutes = navigationConfig
-    .filter((item) => item.key !== "dashboard" && item.key !== "herd")
+    .filter(
+        (item) =>
+            item.key !== "dashboard" &&
+            item.key !== "herd" &&
+            item.key !== "production",
+    )
     .map((item) => ({
         path: item.path.replace("/", ""),
         element: <ComingSoonPage titleKey={item.labelKey} />,
@@ -50,6 +57,14 @@ export const router = createBrowserRouter([
                     { path: "scoring", element: <ScoreListPage /> },
                     { path: "scoring/add", element: <ScoreFormPage /> },
                     { path: "scoring/:id/edit", element: <ScoreFormPage /> },
+                ],
+            },
+            {
+                path: "production",
+                children: [
+                    { index: true, element: <MilkListPage /> },
+                    { path: "add", element: <MilkFormPage /> },
+                    { path: ":id/edit", element: <MilkFormPage /> },
                 ],
             },
             ...otherRoutes,

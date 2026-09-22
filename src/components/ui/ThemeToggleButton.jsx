@@ -1,17 +1,24 @@
 import { useTheme } from "../../contexts/ThemeContext.jsx";
 import { useLanguage } from "../../contexts/LanguageContext.jsx";
+import { SunIcon, MoonIcon } from "./icons.jsx";
 
 export function ThemeToggleButton() {
     const { theme, toggleTheme } = useTheme();
     const { t } = useLanguage();
+    const isDark = theme === "dark";
 
     return (
         <button
             onClick={toggleTheme}
-            className="px-4 py-2 rounded-lg bg-surface border border-border text-text-primary hover:bg-primary hover:text-white transition-colors"
-            aria-label="Toggle dark mode"
+            title={isDark ? t("common.lightMode") : t("common.darkMode")}
+            aria-label={isDark ? t("common.lightMode") : t("common.darkMode")}
+            className="w-8 h-8 rounded-full flex items-center justify-center
+                text-text-primary hover:bg-primary/10 hover:text-primary
+                transition-colors"
         >
-            {theme === "light" ? t("common.darkMode") : t("common.lightMode")}
+            {isDark ?
+                <SunIcon />
+            :   <MoonIcon />}
         </button>
     );
 }

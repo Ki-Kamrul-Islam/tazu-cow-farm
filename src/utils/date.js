@@ -56,3 +56,7 @@ export function addDays(dateString, days) {
     date.setDate(date.getDate() + days);
     return date.toISOString().slice(0, 10);
 }
+
+export function getTodayDateString() {
+    return new Date().toISOString().slice(0, 10);
+}

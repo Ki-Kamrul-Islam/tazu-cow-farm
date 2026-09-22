@@ -12,9 +12,9 @@ export function Input({ label, error, id, className = "", ...rest }) {
 
             <input
                 id={id}
-                className={`w-full rounded-lg border px-3 py-2 text-sm bg-surface text-text-primary
+                className={`w-full rounded-xl border px-3 py-2 text-sm bg-surface text-text-primary
                     placeholder:text-text-muted outline-none transition-colors
-                    focus:ring-2 focus:ring-primary/40
+                    focus:ring-2 focus:ring-primary/30 focus:border-primary
                     ${error ? "border-danger" : "border-border"} ${className}`}
                 {...rest}
             />

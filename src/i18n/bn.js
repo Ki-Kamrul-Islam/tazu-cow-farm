@@ -83,204 +83,6 @@ export const bn = {
             notes: "নোট",
             actions: "কার্যক্রম",
         },
-
-        breeding: {
-            fields: {
-                animal: "গরু",
-                breedingDate: "প্রজনন তারিখ",
-                method: "পদ্ধতি",
-                sireInfo: "ষাঁড়/সিমেন তথ্য",
-                status: "অবস্থা",
-                pregnancyDiagnosisDate: "গর্ভ পরীক্ষার তারিখ",
-                expectedCalvingDate: "সম্ভাব্য বাচ্চা প্রসবের তারিখ",
-                actualCalvingDate: "প্রকৃত বাচ্চা প্রসবের তারিখ",
-                notes: "নোট",
-            },
-
-            health: {
-                fields: {
-                    animal: "গরু",
-                    type: "ধরন",
-                    date: "তারিখ",
-                    diseaseOrReason: "রোগ / কারণ",
-                    medicine: "ওষুধ",
-                    dosage: "মাত্রা",
-                    vetName: "ডাক্তারের নাম",
-                    cost: "খরচ",
-                    nextDueDate: "পরবর্তী তারিখ",
-                    notes: "নোট",
-                },
-
-                weight: {
-                    fields: {
-                        animal: "গরু",
-                        date: "তারিখ",
-                        weight: "ওজন",
-                        notes: "নোট",
-                    },
-
-                    scoring: {
-                        fields: {
-                            animal: "গরু",
-                            date: "তারিখ",
-                            bodyConditionScore: "Body Condition Score",
-                            udderScore: "Udder Score",
-                            mobilityScore: "Mobility Score",
-                            overallScore: "সার্বিক স্কোর",
-                            notes: "নোট",
-                        },
-                        actions: {
-                            addScore: "স্কোর যোগ করুন",
-                        },
-                        list: {
-                            description: "সব স্কোরিং রেকর্ড",
-                            filterByAnimal: "গরু নির্বাচন করুন",
-                            emptyTitle: "এখনো কোনো স্কোর যোগ করা হয়নি",
-                            emptyDescription:
-                                "প্রথম স্কোরটি যোগ করে শুরু করুন।",
-                        },
-                        form: {
-                            addTitle: "স্কোর যোগ করুন",
-                            editTitle: "স্কোর সম্পাদনা",
-                            description:
-                                "গরু নির্বাচন করে কমপক্ষে একটা স্কোর দিন",
-                            selectAnimal: "গরু নির্বাচন করুন",
-                        },
-                        toast: {
-                            created: "স্কোর সফলভাবে যোগ হয়েছে",
-                            updated: "স্কোর সফলভাবে আপডেট হয়েছে",
-                        },
-                        deleteDialog: {
-                            title: "রেকর্ড মুছে ফেলবেন?",
-                            message:
-                                "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
-                        },
-                        validation: {
-                            animalRequired: "গরু নির্বাচন করুন",
-                            dateRequired: "তারিখ আবশ্যক",
-                            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
-                            atLeastOneScore: "কমপক্ষে একটা স্কোর দিন",
-                        },
-                    },
-
-                    stats: {
-                        adg: "গড় দৈনিক ওজন বৃদ্ধি (ADG)",
-                    },
-                    units: {
-                        kgPerDay: "কেজি/দিন",
-                    },
-                    actions: {
-                        addWeight: "ওজন যোগ করুন",
-                    },
-                    list: {
-                        description: "সব ওজন রেকর্ড",
-                        filterByAnimal: "গরু নির্বাচন করুন",
-                        emptyTitle: "এখনো কোনো ওজন রেকর্ড নেই",
-                        emptyDescription: "প্রথম ওজন যোগ করে শুরু করুন।",
-                    },
-                    form: {
-                        addTitle: "ওজন যোগ করুন",
-                        editTitle: "ওজন সম্পাদনা",
-                        description: "গরু নির্বাচন করে ওজন ও তারিখ দিন",
-                        selectAnimal: "গরু নির্বাচন করুন",
-                    },
-                    toast: {
-                        created: "ওজন সফলভাবে যোগ হয়েছে",
-                        updated: "ওজন সফলভাবে আপডেট হয়েছে",
-                    },
-                    deleteDialog: {
-                        title: "রেকর্ড মুছে ফেলবেন?",
-                        message:
-                            "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
-                    },
-                    validation: {
-                        animalRequired: "গরু নির্বাচন করুন",
-                        dateRequired: "তারিখ আবশ্যক",
-                        dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
-                        weightPositive: "ওজন ০-এর বেশি হতে হবে",
-                    },
-                },
-
-                type: {
-                    vaccination: "টিকা",
-                    deworming: "কৃমিনাশক",
-                    treatment: "চিকিৎসা",
-                    checkup: "চেকআপ",
-                },
-                actions: {
-                    addRecord: "রেকর্ড যোগ করুন",
-                },
-                list: {
-                    description: "সব স্বাস্থ্য রেকর্ডের তালিকা",
-                    emptyTitle: "এখনো কোনো স্বাস্থ্য রেকর্ড নেই",
-                    emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
-                },
-                form: {
-                    addTitle: "নতুন স্বাস্থ্য রেকর্ড",
-                    editTitle: "স্বাস্থ্য রেকর্ড সম্পাদনা",
-                    description: "গরু নির্বাচন করে প্রয়োজনীয় তথ্য দিন",
-                    selectAnimal: "গরু নির্বাচন করুন",
-                },
-                toast: {
-                    created: "রেকর্ড সফলভাবে যোগ হয়েছে",
-                    updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
-                },
-                deleteDialog: {
-                    title: "রেকর্ড মুছে ফেলবেন?",
-                    message:
-                        "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
-                },
-                validation: {
-                    animalRequired: "গরু নির্বাচন করুন",
-                    typeRequired: "ধরন নির্বাচন করুন",
-                    dateRequired: "তারিখ আবশ্যক",
-                    dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
-                    costPositive: "খরচ ঋণাত্মক হতে পারবে না",
-                },
-            },
-
-            method: {
-                ai: "কৃত্রিম প্রজনন (AI)",
-                natural: "স্বাভাবিক",
-            },
-            status: {
-                open: "খোলা",
-                bred: "প্রজনন করানো হয়েছে",
-                pregnant: "গর্ভবতী",
-                calved: "বাচ্চা প্রসব হয়েছে",
-                aborted: "গর্ভপাত",
-            },
-            actions: {
-                addRecord: "রেকর্ড যোগ করুন",
-            },
-            list: {
-                description: "সব প্রজনন রেকর্ডের তালিকা",
-                emptyTitle: "এখনো কোনো প্রজনন রেকর্ড নেই",
-                emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
-            },
-            form: {
-                addTitle: "নতুন প্রজনন রেকর্ড",
-                editTitle: "প্রজনন রেকর্ড সম্পাদনা",
-                description: "গরু নির্বাচন করে প্রয়োজনীয় তথ্য দিন",
-                selectAnimal: "গরু নির্বাচন করুন",
-            },
-            toast: {
-                created: "রেকর্ড সফলভাবে যোগ হয়েছে",
-                updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
-            },
-            deleteDialog: {
-                title: "রেকর্ড মুছে ফেলবেন?",
-                message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
-            },
-            validation: {
-                animalRequired: "গরু নির্বাচন করুন",
-                breedingDateRequired: "প্রজনন তারিখ আবশ্যক",
-                dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
-                methodRequired: "পদ্ধতি নির্বাচন করুন",
-                calvingDateRequired: "বাচ্চা প্রসবের প্রকৃত তারিখ দিন",
-            },
-        },
-
         tabs: {
             animals: "গরু-বাছুর",
             breeding: "প্রজনন",
@@ -288,7 +90,6 @@ export const bn = {
             weight: "ওজন",
             scoring: "স্কোরিং",
         },
-
         units: {
             years: "বছর",
             months: "মাস",
@@ -346,6 +147,241 @@ export const bn = {
             dateInvalid: "সঠিক তারিখ দিন",
             dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
             weightPositive: "ওজন ০-এর বেশি হতে হবে",
+        },
+    },
+    breeding: {
+        fields: {
+            animal: "গরু",
+            breedingDate: "প্রজনন তারিখ",
+            method: "পদ্ধতি",
+            sireInfo: "ষাঁড়/সিমেন তথ্য",
+            status: "অবস্থা",
+            pregnancyDiagnosisDate: "গর্ভ পরীক্ষার তারিখ",
+            expectedCalvingDate: "সম্ভাব্য বাচ্চা প্রসবের তারিখ",
+            actualCalvingDate: "প্রকৃত বাচ্চা প্রসবের তারিখ",
+            notes: "নোট",
+        },
+        method: {
+            ai: "কৃত্রিম প্রজনন (AI)",
+            natural: "স্বাভাবিক",
+        },
+        status: {
+            open: "খোলা",
+            bred: "প্রজনন করানো হয়েছে",
+            pregnant: "গর্ভবতী",
+            calved: "বাচ্চা প্রসব হয়েছে",
+            aborted: "গর্ভপাত",
+        },
+        actions: {
+            addRecord: "রেকর্ড যোগ করুন",
+        },
+        list: {
+            description: "সব প্রজনন রেকর্ডের তালিকা",
+            emptyTitle: "এখনো কোনো প্রজনন রেকর্ড নেই",
+            emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "নতুন প্রজনন রেকর্ড",
+            editTitle: "প্রজনন রেকর্ড সম্পাদনা",
+            description: "গরু নির্বাচন করে প্রয়োজনীয় তথ্য দিন",
+            selectAnimal: "গরু নির্বাচন করুন",
+        },
+        toast: {
+            created: "রেকর্ড সফলভাবে যোগ হয়েছে",
+            updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            animalRequired: "গরু নির্বাচন করুন",
+            breedingDateRequired: "প্রজনন তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            methodRequired: "পদ্ধতি নির্বাচন করুন",
+            calvingDateRequired: "বাচ্চা প্রসবের প্রকৃত তারিখ দিন",
+        },
+    },
+    health: {
+        fields: {
+            animal: "গরু",
+            type: "ধরন",
+            date: "তারিখ",
+            diseaseOrReason: "রোগ / কারণ",
+            medicine: "ওষুধ",
+            dosage: "মাত্রা",
+            vetName: "ডাক্তারের নাম",
+            cost: "খরচ",
+            nextDueDate: "পরবর্তী তারিখ",
+            notes: "নোট",
+        },
+        type: {
+            vaccination: "টিকা",
+            deworming: "কৃমিনাশক",
+            treatment: "চিকিৎসা",
+            checkup: "চেকআপ",
+        },
+        actions: {
+            addRecord: "রেকর্ড যোগ করুন",
+        },
+        list: {
+            description: "সব স্বাস্থ্য রেকর্ডের তালিকা",
+            emptyTitle: "এখনো কোনো স্বাস্থ্য রেকর্ড নেই",
+            emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "নতুন স্বাস্থ্য রেকর্ড",
+            editTitle: "স্বাস্থ্য রেকর্ড সম্পাদনা",
+            description: "গরু নির্বাচন করে প্রয়োজনীয় তথ্য দিন",
+            selectAnimal: "গরু নির্বাচন করুন",
+        },
+        toast: {
+            created: "রেকর্ড সফলভাবে যোগ হয়েছে",
+            updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            animalRequired: "গরু নির্বাচন করুন",
+            typeRequired: "ধরন নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            costPositive: "খরচ ঋণাত্মক হতে পারবে না",
+        },
+    },
+    weight: {
+        fields: {
+            animal: "গরু",
+            date: "তারিখ",
+            weight: "ওজন",
+            notes: "নোট",
+        },
+        stats: {
+            adg: "গড় দৈনিক ওজন বৃদ্ধি (ADG)",
+        },
+        units: {
+            kgPerDay: "কেজি/দিন",
+        },
+        actions: {
+            addWeight: "ওজন যোগ করুন",
+        },
+        list: {
+            description: "সব ওজন রেকর্ড",
+            filterByAnimal: "গরু নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো ওজন রেকর্ড নেই",
+            emptyDescription: "প্রথম ওজন যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "ওজন যোগ করুন",
+            editTitle: "ওজন সম্পাদনা",
+            description: "গরু নির্বাচন করে ওজন ও তারিখ দিন",
+            selectAnimal: "গরু নির্বাচন করুন",
+        },
+        toast: {
+            created: "ওজন সফলভাবে যোগ হয়েছে",
+            updated: "ওজন সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            animalRequired: "গরু নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            weightPositive: "ওজন ০-এর বেশি হতে হবে",
+        },
+    },
+    scoring: {
+        fields: {
+            animal: "গরু",
+            date: "তারিখ",
+            bodyConditionScore: "Body Condition Score",
+            udderScore: "Udder Score",
+            mobilityScore: "Mobility Score",
+            overallScore: "সার্বিক স্কোর",
+            notes: "নোট",
+        },
+        actions: {
+            addScore: "স্কোর যোগ করুন",
+        },
+        list: {
+            description: "সব স্কোরিং রেকর্ড",
+            filterByAnimal: "গরু নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো স্কোর যোগ করা হয়নি",
+            emptyDescription: "প্রথম স্কোরটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "স্কোর যোগ করুন",
+            editTitle: "স্কোর সম্পাদনা",
+            description: "গরু নির্বাচন করে কমপক্ষে একটা স্কোর দিন",
+            selectAnimal: "গরু নির্বাচন করুন",
+        },
+        toast: {
+            created: "স্কোর সফলভাবে যোগ হয়েছে",
+            updated: "স্কোর সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            animalRequired: "গরু নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            atLeastOneScore: "কমপক্ষে একটা স্কোর দিন",
+        },
+    },
+    milk: {
+        fields: {
+            animal: "গরু",
+            date: "তারিখ",
+            session: "সেশন",
+            quantity: "দুধের পরিমাণ (লিটার)",
+            notes: "নোট",
+        },
+        session: {
+            morning: "সকাল",
+            evening: "বিকাল",
+        },
+        units: {
+            liters: "লিটার",
+        },
+        stats: {
+            today: "আজকের মোট দুধ",
+            filtered: "নির্বাচিত ফলাফলের মোট",
+        },
+        actions: {
+            addMilk: "দুধ উৎপাদন যোগ করুন",
+        },
+        list: {
+            description: "প্রতিদিনের দুধ উৎপাদনের সব রেকর্ড",
+            filterByAnimal: "গরু নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো দুধ রেকর্ড নেই",
+            emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "দুধ উৎপাদন যোগ করুন",
+            editTitle: "দুধ রেকর্ড সম্পাদনা",
+            description: "গরু নির্বাচন করে দুধের তথ্য দিন",
+            selectAnimal: "গরু নির্বাচন করুন",
+        },
+        toast: {
+            created: "দুধ রেকর্ড সফলভাবে যোগ হয়েছে",
+            updated: "দুধ রেকর্ড সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            animalRequired: "গরু নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            sessionRequired: "সেশন নির্বাচন করুন",
+            quantityPositive: "দুধের পরিমাণ ০-এর বেশি হতে হবে",
         },
     },
 };
