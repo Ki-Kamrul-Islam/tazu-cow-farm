@@ -6,7 +6,7 @@ function App() {
                     🐄 Tazu Cow Farm
                 </h1>
                 <p className="mt-2 text-slate-600">
-                    Setup সফল হয়েছে — Phase 02 সম্পন্ন
+                    Setup সফল হয়েছে — Phase 03 সম্পন্ন
                 </p>
             </div>
         </div>
