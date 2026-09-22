@@ -1,12 +1,17 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { Tabs } from "../../../components/common/Tabs.jsx";
 import { useLanguage } from "../../../contexts/LanguageContext.jsx";
-
+//
+//
 const HERD_TABS = [
     { key: "animals", path: "/herd" },
     { key: "breeding", path: "/herd/breeding" },
     { key: "health", path: "/herd/health" },
+    { key: "weight", path: "/herd/weight" },
 ];
+
+//
+//
 
 export function HerdTabs() {
     const { t } = useLanguage();

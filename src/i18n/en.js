@@ -38,6 +38,8 @@ export const en = {
         calendar: "Calendar",
         farmOperations: "Farm Operations",
         system: "System",
+        health: "Health",
+        weight: "Weight",
     },
     dashboard: {
         subtitle: "Your farm's status at a glance, today",
@@ -82,7 +84,6 @@ export const en = {
             status: "Status",
             notes: "Notes",
             actions: "Actions",
-            health: "Health",
         },
 
         breeding: {
@@ -111,6 +112,53 @@ export const en = {
                     nextDueDate: "Next Due Date",
                     notes: "Notes",
                 },
+
+                weight: {
+                    fields: {
+                        animal: "Animal",
+                        date: "Date",
+                        weight: "Weight",
+                        notes: "Notes",
+                    },
+                    stats: {
+                        adg: "Average Daily Gain (ADG)",
+                    },
+                    units: {
+                        kgPerDay: "kg/day",
+                    },
+                    actions: {
+                        addWeight: "Add Weight",
+                    },
+                    list: {
+                        description: "All weight records",
+                        filterByAnimal: "Select an animal",
+                        emptyTitle: "No weight records yet",
+                        emptyDescription:
+                            "Add your first weight record to get started.",
+                    },
+                    form: {
+                        addTitle: "Add Weight",
+                        editTitle: "Edit Weight",
+                        description:
+                            "Select an animal and enter the weight and date",
+                        selectAnimal: "Select an animal",
+                    },
+                    toast: {
+                        created: "Weight added successfully",
+                        updated: "Weight updated successfully",
+                    },
+                    deleteDialog: {
+                        title: "Delete this record?",
+                        message: "This action cannot be undone. Are you sure?",
+                    },
+                    validation: {
+                        animalRequired: "Please select an animal",
+                        dateRequired: "Date is required",
+                        dateFuture: "Date cannot be in the future",
+                        weightPositive: "Weight must be greater than 0",
+                    },
+                },
+
                 type: {
                     vaccination: "Vaccination",
                     deworming: "Deworming",
@@ -199,6 +247,7 @@ export const en = {
         units: {
             years: "yr",
             months: "mo",
+            kg: "kg",
         },
         animalType: {
             cow: "Cow",

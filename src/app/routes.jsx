@@ -10,6 +10,8 @@ import { BreedingListPage } from "../modules/herd/pages/BreedingListPage.jsx";
 import { BreedingFormPage } from "../modules/herd/pages/BreedingFormPage.jsx";
 import { HealthListPage } from "../modules/herd/pages/HealthListPage.jsx";
 import { HealthFormPage } from "../modules/herd/pages/HealthFormPage.jsx";
+import { WeightListPage } from "../modules/herd/pages/WeightListPage.jsx";
+import { WeightFormPage } from "../modules/herd/pages/WeightFormPage.jsx";
 //
 //
 const otherRoutes = navigationConfig
@@ -40,6 +42,9 @@ export const router = createBrowserRouter([
                     { path: "health", element: <HealthListPage /> },
                     { path: "health/add", element: <HealthFormPage /> },
                     { path: "health/:id/edit", element: <HealthFormPage /> },
+                    { path: "weight", element: <WeightListPage /> },
+                    { path: "weight/add", element: <WeightFormPage /> },
+                    { path: "weight/:id/edit", element: <WeightFormPage /> },
                 ],
             },
             ...otherRoutes,
