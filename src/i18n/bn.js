@@ -492,4 +492,55 @@ export const bn = {
             quantityPositive: "দুধের পরিমাণ ০-এর বেশি হতে হবে",
         },
     },
+    feed: {
+        tabs: {
+            feeding: "দৈনিক খাদ্য",
+            types: "খাদ্যের ধরন",
+        },
+    },
+    feedType: {
+        fields: {
+            name: "খাদ্যের নাম",
+            category: "ক্যাটাগরি",
+            unit: "একক",
+            pricePerUnit: "মূল্য / একক",
+            status: "অবস্থা",
+            notes: "নোট",
+        },
+        category: {
+            roughage: "রাফেজ (খড়/ঘাস)",
+            concentrate: "কনসেন্ট্রেট",
+            supplement: "সাপ্লিমেন্ট",
+            mineral: "মিনারেল",
+        },
+        unit: { kg: "কেজি", liter: "লিটার", bag: "বস্তা" },
+        status: { active: "সক্রিয়", inactive: "নিষ্ক্রিয়" },
+        actions: { addFeedType: "খাদ্যের ধরন যোগ করুন" },
+        list: {
+            description: "আপনার খামারে ব্যবহৃত সব খাদ্যের তালিকা",
+            searchPlaceholder: "নাম দিয়ে খুঁজুন",
+            emptyTitle: "এখনো কোনো খাদ্যের ধরন যোগ করা হয়নি",
+            emptyDescription: "প্রথম খাদ্যের ধরনটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "নতুন খাদ্যের ধরন যোগ করুন",
+            editTitle: "খাদ্যের ধরন সম্পাদনা",
+            description: "সব বাধ্যতামূলক তথ্য পূরণ করুন",
+        },
+        toast: {
+            created: "খাদ্যের ধরন সফলভাবে যোগ হয়েছে",
+            updated: "তথ্য সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "খাদ্যের ধরন মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            nameRequired: "খাদ্যের নাম আবশ্যক",
+            nameDuplicate: "এই নামে ইতিমধ্যে একটি খাদ্যের ধরন আছে",
+            categoryRequired: "ক্যাটাগরি নির্বাচন করুন",
+            unitRequired: "একক নির্বাচন করুন",
+            pricePositive: "মূল্য ০-এর বেশি হতে হবে",
+        },
+    },
 };

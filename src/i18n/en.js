@@ -488,4 +488,52 @@ export const en = {
             quantityPositive: "Quantity must be greater than 0",
         },
     },
+    feed: {
+        tabs: { feeding: "Daily Feeding", types: "Feed Types" },
+    },
+    feedType: {
+        fields: {
+            name: "Feed Name",
+            category: "Category",
+            unit: "Unit",
+            pricePerUnit: "Price / Unit",
+            status: "Status",
+            notes: "Notes",
+        },
+        category: {
+            roughage: "Roughage",
+            concentrate: "Concentrate",
+            supplement: "Supplement",
+            mineral: "Mineral",
+        },
+        unit: { kg: "kg", liter: "liter", bag: "bag" },
+        status: { active: "Active", inactive: "Inactive" },
+        actions: { addFeedType: "Add Feed Type" },
+        list: {
+            description: "All feed types used on your farm",
+            searchPlaceholder: "Search by name",
+            emptyTitle: "No feed types added yet",
+            emptyDescription: "Add your first feed type to get started.",
+        },
+        form: {
+            addTitle: "Add New Feed Type",
+            editTitle: "Edit Feed Type",
+            description: "Fill in all required information",
+        },
+        toast: {
+            created: "Feed type added successfully",
+            updated: "Updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this feed type?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            nameRequired: "Feed name is required",
+            nameDuplicate: "A feed type with this name already exists",
+            categoryRequired: "Select a category",
+            unitRequired: "Select a unit",
+            pricePositive: "Price must be greater than 0",
+        },
+    },
 };

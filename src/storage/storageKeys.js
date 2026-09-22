@@ -14,6 +14,7 @@ export const STORAGE_KEYS = {
 
     // Feed & Inventory
     FEED_RECORDS: "feed_records",
+    FEED_TYPES: "feed_types",
     INVENTORY_ITEMS: "inventory_items",
 
     // Sales / Finance

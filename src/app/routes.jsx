@@ -20,6 +20,8 @@ import { CustomerListPage } from "../modules/production/pages/CustomerListPage.j
 import { CustomerFormPage } from "../modules/production/pages/CustomerFormPage.jsx";
 import { SaleListPage } from "../modules/production/pages/SaleListPage.jsx";
 import { SaleFormPage } from "../modules/production/pages/SaleFormPage.jsx";
+import { FeedTypeListPage } from "../modules/feed/pages/FeedTypeListPage.jsx";
+import { FeedTypeFormPage } from "../modules/feed/pages/FeedTypeFormPage.jsx";
 //
 //
 const otherRoutes = navigationConfig
@@ -27,7 +29,8 @@ const otherRoutes = navigationConfig
         (item) =>
             item.key !== "dashboard" &&
             item.key !== "herd" &&
-            item.key !== "production",
+            item.key !== "production" &&
+            item.key !== "feed",
     )
     .map((item) => ({
         path: item.path.replace("/", ""),
@@ -78,6 +81,20 @@ export const router = createBrowserRouter([
                     { path: "sales", element: <SaleListPage /> },
                     { path: "sales/add", element: <SaleFormPage /> },
                     { path: "sales/:id/edit", element: <SaleFormPage /> },
+                ],
+            },
+            {
+                path: "feed",
+                children: [
+                    {
+                        index: true,
+                        element: (
+                            <ComingSoonPage titleKey="feed.tabs.feeding" />
+                        ),
+                    },
+                    { path: "types", element: <FeedTypeListPage /> },
+                    { path: "types/add", element: <FeedTypeFormPage /> },
+                    { path: "types/:id/edit", element: <FeedTypeFormPage /> },
                 ],
             },
             ...otherRoutes,
