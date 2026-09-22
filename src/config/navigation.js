@@ -1,0 +1,40 @@
+export const navigationConfig = [
+    { key: "dashboard", labelKey: "nav.dashboard", icon: "🏠", path: "/" },
+    { key: "herd", labelKey: "nav.herd", icon: "🐄", path: "/herd" },
+    {
+        key: "production",
+        labelKey: "nav.production",
+        icon: "🥛",
+        path: "/production",
+    },
+    { key: "feed", labelKey: "nav.feed", icon: "🌾", path: "/feed" },
+    { key: "land", labelKey: "nav.land", icon: "🌱", path: "/land" },
+    {
+        key: "inventory",
+        labelKey: "nav.inventory",
+        icon: "📦",
+        path: "/inventory",
+    },
+    {
+        key: "equipment",
+        labelKey: "nav.equipment",
+        icon: "🚜",
+        path: "/equipment",
+    },
+    { key: "finance", labelKey: "nav.finance", icon: "💰", path: "/finance" },
+    { key: "team", labelKey: "nav.team", icon: "👷", path: "/team" },
+    { key: "reports", labelKey: "nav.reports", icon: "📊", path: "/reports" },
+    {
+        key: "calendar",
+        labelKey: "nav.calendar",
+        icon: "📅",
+        path: "/calendar",
+    },
+    {
+        key: "farmOperations",
+        labelKey: "nav.farmOperations",
+        icon: "♻️",
+        path: "/farm-operations",
+    },
+    { key: "system", labelKey: "nav.system", icon: "⚙️", path: "/system" },
+];

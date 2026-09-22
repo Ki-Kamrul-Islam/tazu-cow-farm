@@ -1,20 +1,30 @@
+import { useState } from "react";
+import { Sidebar } from "./Sidebar.jsx";
+
 export function DashboardLayout({ children }) {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
     return (
         <div className="min-h-screen flex bg-background">
-            {/* Sidebar placeholder — আসল কাজ Phase 07-এ */}
-            <aside className="w-64 bg-sidebar-bg text-sidebar-text hidden md:block">
-                <div className="p-4 font-bold">🐄 Tazu Cow Farm</div>
-            </aside>
+            <Sidebar
+                isOpen={isSidebarOpen}
+                onClose={() => setIsSidebarOpen(false)}
+            />
 
             <div className="flex-1 flex flex-col min-w-0">
-                {/* Navbar placeholder — আসল কাজ Phase 08-এ */}
-                <header className="h-16 bg-navbar-bg border-b border-border flex items-center px-4">
+                <header className="h-16 bg-navbar-bg border-b border-border flex items-center px-4 gap-3">
+                    <button
+                        className="md:hidden text-text-primary text-xl"
+                        onClick={() => setIsSidebarOpen(true)}
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
                     <span className="text-text-primary font-medium">
                         Navbar
                     </span>
                 </header>
 
-                {/* মূল content — প্রতিটি page এখানে বসবে */}
                 <main className="flex-1 p-6">{children}</main>
             </div>
         </div>
