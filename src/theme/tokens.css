@@ -1,0 +1,63 @@
+/* Light mode (default) */
+:root {
+    --color-primary: #16a34a;
+    --color-primary-dark: #15803d;
+    --color-secondary: #0ea5e9;
+
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+    --color-card: #ffffff;
+    --color-border: #e2e8f0;
+
+    --color-text-primary: #0f172a;
+    --color-text-muted: #64748b;
+
+    --color-success: #22c55e;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #3b82f6;
+
+    --color-sidebar-bg: #0f172a;
+    --color-sidebar-text: #e2e8f0;
+    --color-navbar-bg: #ffffff;
+}
+
+/* Dark mode overrides */
+[data-theme="dark"] {
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-card: #1e293b;
+    --color-border: #334155;
+
+    --color-text-primary: #f1f5f9;
+    --color-text-muted: #94a3b8;
+
+    --color-sidebar-bg: #020617;
+    --color-sidebar-text: #cbd5e1;
+    --color-navbar-bg: #1e293b;
+}
+
+/* Tailwind v4: এই token গুলোকে utility class হিসেবে expose করা
+   (bg-primary, text-text-muted, border-border ইত্যাদি তৈরি হবে) */
+@theme inline {
+    --color-primary: var(--color-primary);
+    --color-primary-dark: var(--color-primary-dark);
+    --color-secondary: var(--color-secondary);
+
+    --color-background: var(--color-background);
+    --color-surface: var(--color-surface);
+    --color-card: var(--color-card);
+    --color-border: var(--color-border);
+
+    --color-text-primary: var(--color-text-primary);
+    --color-text-muted: var(--color-text-muted);
+
+    --color-success: var(--color-success);
+    --color-warning: var(--color-warning);
+    --color-danger: var(--color-danger);
+    --color-info: var(--color-info);
+
+    --color-sidebar-bg: var(--color-sidebar-bg);
+    --color-sidebar-text: var(--color-sidebar-text);
+    --color-navbar-bg: var(--color-navbar-bg);
+}
