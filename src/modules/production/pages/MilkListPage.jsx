@@ -12,6 +12,11 @@ import { Table } from "../../../components/tables/Table.jsx";
 import { EmptyState } from "../../../components/common/EmptyState.jsx";
 import { LoadingState } from "../../../components/common/LoadingState.jsx";
 import { ConfirmDialog } from "../../../components/common/ConfirmDialog.jsx";
+//
+//
+import { ProductionTabs } from "../components/ProductionTabs.jsx";
+//
+//
 
 export function MilkListPage() {
     const { t } = useLanguage();
@@ -86,6 +91,7 @@ export function MilkListPage() {
                     </Button>
                 }
             />
+            <ProductionTabs />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 max-w-xl">
                 <StatCard

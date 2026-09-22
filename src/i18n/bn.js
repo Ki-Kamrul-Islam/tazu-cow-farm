@@ -342,6 +342,54 @@ export const bn = {
             quantity: "দুধের পরিমাণ (লিটার)",
             notes: "নোট",
         },
+
+        production: {
+            tabs: {
+                milk: "দুধ",
+                customers: "কাস্টমার",
+            },
+        },
+        customers: {
+            fields: {
+                name: "নাম",
+                phone: "ফোন নম্বর",
+                address: "ঠিকানা",
+                status: "অবস্থা",
+                notes: "নোট",
+            },
+            status: {
+                active: "সক্রিয়",
+                inactive: "নিষ্ক্রিয়",
+            },
+            actions: {
+                addCustomer: "কাস্টমার যোগ করুন",
+            },
+            list: {
+                description: "আপনার খামারের সব কাস্টমারের তালিকা",
+                searchPlaceholder: "নাম বা ফোন নম্বর দিয়ে খুঁজুন",
+                emptyTitle: "এখনো কোনো কাস্টমার যোগ করা হয়নি",
+                emptyDescription: "প্রথম কাস্টমারটি যোগ করে শুরু করুন।",
+            },
+            form: {
+                addTitle: "নতুন কাস্টমার যোগ করুন",
+                editTitle: "কাস্টমারের তথ্য সম্পাদনা",
+                description: "সব বাধ্যতামূলক তথ্য পূরণ করুন",
+            },
+            toast: {
+                created: "কাস্টমার সফলভাবে যোগ হয়েছে",
+                updated: "তথ্য সফলভাবে আপডেট হয়েছে",
+            },
+            deleteDialog: {
+                title: "কাস্টমার মুছে ফেলবেন?",
+                message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+            },
+            validation: {
+                nameRequired: "নাম আবশ্যক",
+                phoneRequired: "ফোন নম্বর আবশ্যক",
+                phoneDuplicate: "এই ফোন নম্বর ইতিমধ্যে ব্যবহৃত হয়েছে",
+            },
+        },
+
         session: {
             morning: "সকাল",
             evening: "বিকাল",

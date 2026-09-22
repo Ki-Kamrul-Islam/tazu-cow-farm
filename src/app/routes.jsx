@@ -16,6 +16,8 @@ import { ScoreListPage } from "../modules/herd/pages/ScoreListPage.jsx";
 import { ScoreFormPage } from "../modules/herd/pages/ScoreFormPage.jsx";
 import { MilkListPage } from "../modules/production/pages/MilkListPage.jsx";
 import { MilkFormPage } from "../modules/production/pages/MilkFormPage.jsx";
+import { CustomerListPage } from "../modules/production/pages/CustomerListPage.jsx";
+import { CustomerFormPage } from "../modules/production/pages/CustomerFormPage.jsx";
 //
 //
 const otherRoutes = navigationConfig
@@ -65,6 +67,12 @@ export const router = createBrowserRouter([
                     { index: true, element: <MilkListPage /> },
                     { path: "add", element: <MilkFormPage /> },
                     { path: ":id/edit", element: <MilkFormPage /> },
+                    { path: "customers", element: <CustomerListPage /> },
+                    { path: "customers/add", element: <CustomerFormPage /> },
+                    {
+                        path: "customers/:id/edit",
+                        element: <CustomerFormPage />,
+                    },
                 ],
             },
             ...otherRoutes,

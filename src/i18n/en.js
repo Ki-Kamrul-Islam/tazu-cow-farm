@@ -341,6 +341,54 @@ export const en = {
             quantity: "Milk Quantity (L)",
             notes: "Notes",
         },
+
+        production: {
+            tabs: {
+                milk: "Milk",
+                customers: "Customers",
+            },
+        },
+        customers: {
+            fields: {
+                name: "Name",
+                phone: "Phone",
+                address: "Address",
+                status: "Status",
+                notes: "Notes",
+            },
+            status: {
+                active: "Active",
+                inactive: "Inactive",
+            },
+            actions: {
+                addCustomer: "Add Customer",
+            },
+            list: {
+                description: "All customers of your farm",
+                searchPlaceholder: "Search by name or phone",
+                emptyTitle: "No customers added yet",
+                emptyDescription: "Add your first customer to get started.",
+            },
+            form: {
+                addTitle: "Add New Customer",
+                editTitle: "Edit Customer",
+                description: "Fill in all required fields",
+            },
+            toast: {
+                created: "Customer added successfully",
+                updated: "Customer updated successfully",
+            },
+            deleteDialog: {
+                title: "Delete this customer?",
+                message: "This action cannot be undone. Are you sure?",
+            },
+            validation: {
+                nameRequired: "Name is required",
+                phoneRequired: "Phone number is required",
+                phoneDuplicate: "This phone number is already registered",
+            },
+        },
+
         session: {
             morning: "Morning",
             evening: "Evening",
