@@ -82,6 +82,7 @@ export const en = {
             status: "Status",
             notes: "Notes",
             actions: "Actions",
+            health: "Health",
         },
 
         breeding: {
@@ -96,6 +97,58 @@ export const en = {
                 actualCalvingDate: "Actual Calving Date",
                 notes: "Notes",
             },
+
+            health: {
+                fields: {
+                    animal: "Animal",
+                    type: "Type",
+                    date: "Date",
+                    diseaseOrReason: "Disease / Reason",
+                    medicine: "Medicine",
+                    dosage: "Dosage",
+                    vetName: "Vet Name",
+                    cost: "Cost",
+                    nextDueDate: "Next Due Date",
+                    notes: "Notes",
+                },
+                type: {
+                    vaccination: "Vaccination",
+                    deworming: "Deworming",
+                    treatment: "Treatment",
+                    checkup: "Checkup",
+                },
+                actions: {
+                    addRecord: "Add Record",
+                },
+                list: {
+                    description: "All health records",
+                    emptyTitle: "No health records yet",
+                    emptyDescription: "Add your first record to get started.",
+                },
+                form: {
+                    addTitle: "New Health Record",
+                    editTitle: "Edit Health Record",
+                    description:
+                        "Select an animal and fill in the required fields",
+                    selectAnimal: "Select an animal",
+                },
+                toast: {
+                    created: "Record added successfully",
+                    updated: "Record updated successfully",
+                },
+                deleteDialog: {
+                    title: "Delete this record?",
+                    message: "This action cannot be undone. Are you sure?",
+                },
+                validation: {
+                    animalRequired: "Please select an animal",
+                    typeRequired: "Please select a type",
+                    dateRequired: "Date is required",
+                    dateFuture: "Date cannot be in the future",
+                    costPositive: "Cost cannot be negative",
+                },
+            },
+
             method: {
                 ai: "Artificial Insemination (AI)",
                 natural: "Natural",

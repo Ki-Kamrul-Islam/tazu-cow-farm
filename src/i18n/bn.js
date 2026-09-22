@@ -82,6 +82,7 @@ export const bn = {
             status: "অবস্থা",
             notes: "নোট",
             actions: "কার্যক্রম",
+            health: "স্বাস্থ্য",
         },
 
         breeding: {
@@ -96,6 +97,58 @@ export const bn = {
                 actualCalvingDate: "প্রকৃত বাচ্চা প্রসবের তারিখ",
                 notes: "নোট",
             },
+
+            health: {
+                fields: {
+                    animal: "গরু",
+                    type: "ধরন",
+                    date: "তারিখ",
+                    diseaseOrReason: "রোগ / কারণ",
+                    medicine: "ওষুধ",
+                    dosage: "মাত্রা",
+                    vetName: "ডাক্তারের নাম",
+                    cost: "খরচ",
+                    nextDueDate: "পরবর্তী তারিখ",
+                    notes: "নোট",
+                },
+                type: {
+                    vaccination: "টিকা",
+                    deworming: "কৃমিনাশক",
+                    treatment: "চিকিৎসা",
+                    checkup: "চেকআপ",
+                },
+                actions: {
+                    addRecord: "রেকর্ড যোগ করুন",
+                },
+                list: {
+                    description: "সব স্বাস্থ্য রেকর্ডের তালিকা",
+                    emptyTitle: "এখনো কোনো স্বাস্থ্য রেকর্ড নেই",
+                    emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+                },
+                form: {
+                    addTitle: "নতুন স্বাস্থ্য রেকর্ড",
+                    editTitle: "স্বাস্থ্য রেকর্ড সম্পাদনা",
+                    description: "গরু নির্বাচন করে প্রয়োজনীয় তথ্য দিন",
+                    selectAnimal: "গরু নির্বাচন করুন",
+                },
+                toast: {
+                    created: "রেকর্ড সফলভাবে যোগ হয়েছে",
+                    updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+                },
+                deleteDialog: {
+                    title: "রেকর্ড মুছে ফেলবেন?",
+                    message:
+                        "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+                },
+                validation: {
+                    animalRequired: "গরু নির্বাচন করুন",
+                    typeRequired: "ধরন নির্বাচন করুন",
+                    dateRequired: "তারিখ আবশ্যক",
+                    dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+                    costPositive: "খরচ ঋণাত্মক হতে পারবে না",
+                },
+            },
+
             method: {
                 ai: "কৃত্রিম প্রজনন (AI)",
                 natural: "স্বাভাবিক",

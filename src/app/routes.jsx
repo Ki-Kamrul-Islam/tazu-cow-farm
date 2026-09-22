@@ -8,6 +8,9 @@ import { AnimalFormPage } from "../modules/herd/pages/AnimalFormPage.jsx";
 //
 import { BreedingListPage } from "../modules/herd/pages/BreedingListPage.jsx";
 import { BreedingFormPage } from "../modules/herd/pages/BreedingFormPage.jsx";
+import { HealthListPage } from "../modules/herd/pages/HealthListPage.jsx";
+import { HealthFormPage } from "../modules/herd/pages/HealthFormPage.jsx";
+//
 //
 const otherRoutes = navigationConfig
     .filter((item) => item.key !== "dashboard" && item.key !== "herd")
@@ -34,6 +37,9 @@ export const router = createBrowserRouter([
                         path: "breeding/:id/edit",
                         element: <BreedingFormPage />,
                     },
+                    { path: "health", element: <HealthListPage /> },
+                    { path: "health/add", element: <HealthFormPage /> },
+                    { path: "health/:id/edit", element: <HealthFormPage /> },
                 ],
             },
             ...otherRoutes,

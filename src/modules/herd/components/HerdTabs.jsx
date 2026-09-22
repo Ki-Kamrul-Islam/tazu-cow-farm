@@ -5,6 +5,7 @@ import { useLanguage } from "../../../contexts/LanguageContext.jsx";
 const HERD_TABS = [
     { key: "animals", path: "/herd" },
     { key: "breeding", path: "/herd/breeding" },
+    { key: "health", path: "/herd/health" },
 ];
 
 export function HerdTabs() {
