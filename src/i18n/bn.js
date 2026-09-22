@@ -38,8 +38,6 @@ export const bn = {
         calendar: "ক্যালেন্ডার",
         farmOperations: "খামার কার্যক্রম",
         system: "সিস্টেম",
-        health: "স্বাস্থ্য",
-        weight: "ওজন",
     },
     dashboard: {
         subtitle: "আপনার খামারের আজকের অবস্থা এক নজরে",
@@ -241,6 +239,8 @@ export const bn = {
         tabs: {
             animals: "গরু-বাছুর",
             breeding: "প্রজনন",
+            health: "স্বাস্থ্য",
+            weight: "ওজন",
         },
 
         units: {

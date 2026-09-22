@@ -38,8 +38,6 @@ export const en = {
         calendar: "Calendar",
         farmOperations: "Farm Operations",
         system: "System",
-        health: "Health",
-        weight: "Weight",
     },
     dashboard: {
         subtitle: "Your farm's status at a glance, today",
@@ -242,6 +240,8 @@ export const en = {
         tabs: {
             animals: "Animals",
             breeding: "Breeding",
+            health: "Health",
+            weight: "Weight",
         },
 
         units: {
