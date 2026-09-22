@@ -5,7 +5,10 @@ import { ComingSoonPage } from "../components/common/ComingSoonPage.jsx";
 import { navigationConfig } from "../config/navigation.js";
 import { AnimalListPage } from "../modules/herd/pages/AnimalListPage.jsx";
 import { AnimalFormPage } from "../modules/herd/pages/AnimalFormPage.jsx";
-
+//
+import { BreedingListPage } from "../modules/herd/pages/BreedingListPage.jsx";
+import { BreedingFormPage } from "../modules/herd/pages/BreedingFormPage.jsx";
+//
 const otherRoutes = navigationConfig
     .filter((item) => item.key !== "dashboard" && item.key !== "herd")
     .map((item) => ({
@@ -25,6 +28,12 @@ export const router = createBrowserRouter([
                     { index: true, element: <AnimalListPage /> },
                     { path: "add", element: <AnimalFormPage /> },
                     { path: ":id/edit", element: <AnimalFormPage /> },
+                    { path: "breeding", element: <BreedingListPage /> },
+                    { path: "breeding/add", element: <BreedingFormPage /> },
+                    {
+                        path: "breeding/:id/edit",
+                        element: <BreedingFormPage />,
+                    },
                 ],
             },
             ...otherRoutes,

@@ -49,3 +49,10 @@ export function getAgeInMonths(dateOfBirth) {
 
     return Math.max(months, 0);
 }
+
+export function addDays(dateString, days) {
+    if (!dateString) return "";
+    const date = new Date(dateString);
+    date.setDate(date.getDate() + days);
+    return date.toISOString().slice(0, 10);
+}

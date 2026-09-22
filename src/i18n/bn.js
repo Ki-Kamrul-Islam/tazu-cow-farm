@@ -83,6 +83,66 @@ export const bn = {
             notes: "নোট",
             actions: "কার্যক্রম",
         },
+
+        breeding: {
+            fields: {
+                animal: "গরু",
+                breedingDate: "প্রজনন তারিখ",
+                method: "পদ্ধতি",
+                sireInfo: "ষাঁড়/সিমেন তথ্য",
+                status: "অবস্থা",
+                pregnancyDiagnosisDate: "গর্ভ পরীক্ষার তারিখ",
+                expectedCalvingDate: "সম্ভাব্য বাচ্চা প্রসবের তারিখ",
+                actualCalvingDate: "প্রকৃত বাচ্চা প্রসবের তারিখ",
+                notes: "নোট",
+            },
+            method: {
+                ai: "কৃত্রিম প্রজনন (AI)",
+                natural: "স্বাভাবিক",
+            },
+            status: {
+                open: "খোলা",
+                bred: "প্রজনন করানো হয়েছে",
+                pregnant: "গর্ভবতী",
+                calved: "বাচ্চা প্রসব হয়েছে",
+                aborted: "গর্ভপাত",
+            },
+            actions: {
+                addRecord: "রেকর্ড যোগ করুন",
+            },
+            list: {
+                description: "সব প্রজনন রেকর্ডের তালিকা",
+                emptyTitle: "এখনো কোনো প্রজনন রেকর্ড নেই",
+                emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+            },
+            form: {
+                addTitle: "নতুন প্রজনন রেকর্ড",
+                editTitle: "প্রজনন রেকর্ড সম্পাদনা",
+                description: "গরু নির্বাচন করে প্রয়োজনীয় তথ্য দিন",
+                selectAnimal: "গরু নির্বাচন করুন",
+            },
+            toast: {
+                created: "রেকর্ড সফলভাবে যোগ হয়েছে",
+                updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+            },
+            deleteDialog: {
+                title: "রেকর্ড মুছে ফেলবেন?",
+                message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+            },
+            validation: {
+                animalRequired: "গরু নির্বাচন করুন",
+                breedingDateRequired: "প্রজনন তারিখ আবশ্যক",
+                dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+                methodRequired: "পদ্ধতি নির্বাচন করুন",
+                calvingDateRequired: "বাচ্চা প্রসবের প্রকৃত তারিখ দিন",
+            },
+        },
+
+        tabs: {
+            animals: "গরু-বাছুর",
+            breeding: "প্রজনন",
+        },
+
         units: {
             years: "বছর",
             months: "মাস",

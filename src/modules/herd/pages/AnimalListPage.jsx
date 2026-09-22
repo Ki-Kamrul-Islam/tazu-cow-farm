@@ -14,7 +14,10 @@ import { LoadingState } from "../../../components/common/LoadingState.jsx";
 import { ConfirmDialog } from "../../../components/common/ConfirmDialog.jsx";
 import { ANIMAL_TYPES, ANIMAL_STATUSES } from "../../../constants/animal.js";
 import { getAgeInMonths } from "../../../utils/date.js";
+//
+import { HerdTabs } from "../components/HerdTabs.jsx";
 
+//
 const STATUS_BADGE_VARIANT = {
     active: "success",
     sold: "info",
@@ -108,6 +111,7 @@ export function AnimalListPage() {
                     </Button>
                 }
             />
+            <HerdTabs />
 
             {hasAnyAnimals && (
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
