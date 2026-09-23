@@ -66,7 +66,9 @@ import { EmployeeFormPage } from "../modules/team/pages/EmployeeFormPage.jsx";
 import { TaskListPage } from "../modules/team/pages/TaskListPage.jsx";
 import { TaskFormPage } from "../modules/team/pages/TaskFormPage.jsx";
 //
+import { FinancialReportPage } from "../modules/reports/pages/FinancialReportPage.jsx";
 //
+import { FarmReportPage } from "../modules/reports/pages/FarmReportPage.jsx";
 //
 //
 //
@@ -301,6 +303,14 @@ export const router = createBrowserRouter([
                     { path: "tasks", element: <TaskListPage /> },
                     { path: "tasks/add", element: <TaskFormPage /> },
                     { path: "tasks/:id/edit", element: <TaskFormPage /> },
+                ],
+            },
+
+            {
+                path: "reports",
+                children: [
+                    { index: true, element: <FinancialReportPage /> },
+                    { path: "farm", element: <FarmReportPage /> },
                 ],
             },
 

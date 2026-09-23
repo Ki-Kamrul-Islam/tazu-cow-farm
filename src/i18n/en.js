@@ -1314,4 +1314,31 @@ export const en = {
             priorityRequired: "Please select a priority",
         },
     },
+    reports: {
+        tabs: { financial: "Financial", farm: "Farm" },
+    },
+    financeReport: {
+        description: "Income and expense trends and analysis",
+        stats: {
+            totalIncome: "Total Income",
+            totalExpense: "Total Expense",
+            netProfit: "Net Profit",
+        },
+        charts: {
+            trendTitle: "Last 30 Days Income vs Expense",
+            categoryTitle: "Expense by Category",
+            income: "Income",
+            expense: "Expense",
+            noData: "No expense data yet",
+        },
+    },
+    farmReport: {
+        description: "Herd and milk production analysis",
+        charts: {
+            herdTitle: "Herd Distribution by Type",
+            milkTitle: "Last 30 Days Milk Production",
+            milkQuantity: "Milk (L)",
+            noData: "No active animals yet",
+        },
+    },
 };

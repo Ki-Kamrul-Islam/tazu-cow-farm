@@ -1333,4 +1333,31 @@ export const bn = {
             priorityRequired: "অগ্রাধিকার নির্বাচন করুন",
         },
     },
+    reports: {
+        tabs: { financial: "আর্থিক", farm: "খামার" },
+    },
+    financeReport: {
+        description: "আয়-ব্যয়ের প্রবণতা ও বিশ্লেষণ",
+        stats: {
+            totalIncome: "মোট আয়",
+            totalExpense: "মোট খরচ",
+            netProfit: "নীট মুনাফা",
+        },
+        charts: {
+            trendTitle: "গত ৩০ দিনের আয়-ব্যয়",
+            categoryTitle: "ক্যাটাগরি অনুযায়ী খরচ",
+            income: "আয়",
+            expense: "খরচ",
+            noData: "এখনো কোনো খরচের ডেটা নেই",
+        },
+    },
+    farmReport: {
+        description: "গরুর পাল ও দুধ উৎপাদনের বিশ্লেষণ",
+        charts: {
+            herdTitle: "গরুর ধরন অনুযায়ী বিতরণ",
+            milkTitle: "গত ৩০ দিনের দুধ উৎপাদন",
+            milkQuantity: "দুধ (লিটার)",
+            noData: "এখনো কোনো সক্রিয় গরু নেই",
+        },
+    },
 };
