@@ -60,6 +60,14 @@ import { ExpenseFormPage } from "../modules/finance/pages/ExpenseFormPage.jsx";
 import { IncomeListPage } from "../modules/finance/pages/IncomeListPage.jsx";
 import { IncomeFormPage } from "../modules/finance/pages/IncomeFormPage.jsx";
 //
+import { EmployeeListPage } from "../modules/team/pages/EmployeeListPage.jsx";
+import { EmployeeFormPage } from "../modules/team/pages/EmployeeFormPage.jsx";
+//
+import { TaskListPage } from "../modules/team/pages/TaskListPage.jsx";
+import { TaskFormPage } from "../modules/team/pages/TaskFormPage.jsx";
+//
+//
+//
 //
 //
 const implementedRouteKeys = new Set([
@@ -281,6 +289,18 @@ export const router = createBrowserRouter([
                             },
                         ],
                     },
+                ],
+            },
+
+            {
+                path: "team",
+                children: [
+                    { index: true, element: <EmployeeListPage /> },
+                    { path: "add", element: <EmployeeFormPage /> },
+                    { path: ":id/edit", element: <EmployeeFormPage /> },
+                    { path: "tasks", element: <TaskListPage /> },
+                    { path: "tasks/add", element: <TaskFormPage /> },
+                    { path: "tasks/:id/edit", element: <TaskFormPage /> },
                 ],
             },
 
