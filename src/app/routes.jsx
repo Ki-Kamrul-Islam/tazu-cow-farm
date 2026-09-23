@@ -22,6 +22,11 @@ import { SaleListPage } from "../modules/production/pages/SaleListPage.jsx";
 import { SaleFormPage } from "../modules/production/pages/SaleFormPage.jsx";
 import { FeedTypeListPage } from "../modules/feed/pages/FeedTypeListPage.jsx";
 import { FeedTypeFormPage } from "../modules/feed/pages/FeedTypeFormPage.jsx";
+
+import { FeedListPage } from "../modules/feed/pages/FeedListPage.jsx";
+import { FeedFormPage } from "../modules/feed/pages/FeedFormPage.jsx";
+import { FieldListPage } from "../modules/land/pages/FieldListPage.jsx";
+import { FieldFormPage } from "../modules/land/pages/FieldFormPage.jsx";
 //
 //
 const otherRoutes = navigationConfig
@@ -86,15 +91,25 @@ export const router = createBrowserRouter([
             {
                 path: "feed",
                 children: [
-                    {
-                        index: true,
-                        element: (
-                            <ComingSoonPage titleKey="feed.tabs.feeding" />
-                        ),
-                    },
+                    { index: true, element: <FeedListPage /> },
+                    { path: "add", element: <FeedFormPage /> },
+                    { path: ":id/edit", element: <FeedFormPage /> },
                     { path: "types", element: <FeedTypeListPage /> },
                     { path: "types/add", element: <FeedTypeFormPage /> },
                     { path: "types/:id/edit", element: <FeedTypeFormPage /> },
+                ],
+            },
+
+            {
+                path: "land",
+                children: [
+                    { index: true, element: <FieldListPage /> },
+                    { path: "add", element: <FieldFormPage /> },
+                    { path: ":id/edit", element: <FieldFormPage /> },
+                    {
+                        path: "crops",
+                        element: <ComingSoonPage titleKey="land.tabs.crops" />,
+                    },
                 ],
             },
             ...otherRoutes,

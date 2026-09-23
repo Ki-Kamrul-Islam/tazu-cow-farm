@@ -334,6 +334,13 @@ export const bn = {
             atLeastOneScore: "কমপক্ষে একটা স্কোর দিন",
         },
     },
+    production: {
+        tabs: {
+            milk: "দুধ",
+            customers: "কাস্টমার",
+            sales: "বিক্রয়",
+        },
+    },
     milk: {
         fields: {
             animal: "গরু",
@@ -342,128 +349,13 @@ export const bn = {
             quantity: "দুধের পরিমাণ (লিটার)",
             notes: "নোট",
         },
-
-        production: {
-            tabs: {
-                milk: "দুধ",
-                customers: "কাস্টমার",
-                sales: "বিক্রয়",
-            },
-        },
-
-        customers: {
-            fields: {
-                name: "নাম",
-                phone: "ফোন নম্বর",
-                address: "ঠিকানা",
-                status: "অবস্থা",
-                notes: "নোট",
-            },
-            sales: {
-                fields: {
-                    customer: "কাস্টমার",
-                    date: "তারিখ",
-                    quantity: "পরিমাণ",
-                    pricePerLiter: "মূল্য / লিটার",
-                    totalAmount: "মোট টাকা",
-                    paidAmount: "পরিশোধিত টাকা",
-                    dueAmount: "বাকি টাকা",
-                    status: "অবস্থা",
-                    notes: "নোট",
-                },
-                status: {
-                    paid: "পরিশোধিত",
-                    partial: "আংশিক",
-                    due: "বাকি",
-                },
-                stats: {
-                    todayRevenue: "আজকের আয়",
-                    totalDue: "মোট বকেয়া",
-                },
-                actions: {
-                    addSale: "বিক্রয় যোগ করুন",
-                },
-                list: {
-                    description: "সব দুধ বিক্রয়/চালানের তালিকা",
-                    filterByCustomer: "কাস্টমার নির্বাচন করুন",
-                    emptyTitle: "এখনো কোনো বিক্রয় নেই",
-                    emptyDescription: "প্রথম বিক্রয়টি যোগ করে শুরু করুন।",
-                },
-                form: {
-                    addTitle: "বিক্রয় যোগ করুন",
-                    editTitle: "বিক্রয় সম্পাদনা",
-                    description: "কাস্টমার নির্বাচন করে বিক্রয়ের তথ্য দিন",
-                    selectCustomer: "কাস্টমার নির্বাচন করুন",
-                    estimatedTotal: "আনুমানিক মোট",
-                },
-                toast: {
-                    created: "বিক্রয় সফলভাবে যোগ হয়েছে",
-                    updated: "বিক্রয় সফলভাবে আপডেট হয়েছে",
-                },
-                deleteDialog: {
-                    title: "বিক্রয় মুছে ফেলবেন?",
-                    message:
-                        "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
-                },
-                validation: {
-                    customerRequired: "কাস্টমার নির্বাচন করুন",
-                    dateRequired: "তারিখ আবশ্যক",
-                    dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
-                    quantityPositive: "পরিমাণ ০-এর বেশি হতে হবে",
-                    pricePositive: "মূল্য ০-এর বেশি হতে হবে",
-                    paidNegative: "পরিশোধিত টাকা ঋণাত্মক হতে পারবে না",
-                    paidExceedsTotal:
-                        "পরিশোধিত টাকা মোট টাকার চেয়ে বেশি হতে পারবে না",
-                },
-            },
-
-            status: {
-                active: "সক্রিয়",
-                inactive: "নিষ্ক্রিয়",
-            },
-            actions: {
-                addCustomer: "কাস্টমার যোগ করুন",
-            },
-            list: {
-                description: "আপনার খামারের সব কাস্টমারের তালিকা",
-                searchPlaceholder: "নাম বা ফোন নম্বর দিয়ে খুঁজুন",
-                emptyTitle: "এখনো কোনো কাস্টমার যোগ করা হয়নি",
-                emptyDescription: "প্রথম কাস্টমারটি যোগ করে শুরু করুন।",
-            },
-            form: {
-                addTitle: "নতুন কাস্টমার যোগ করুন",
-                editTitle: "কাস্টমারের তথ্য সম্পাদনা",
-                description: "সব বাধ্যতামূলক তথ্য পূরণ করুন",
-            },
-            toast: {
-                created: "কাস্টমার সফলভাবে যোগ হয়েছে",
-                updated: "তথ্য সফলভাবে আপডেট হয়েছে",
-            },
-            deleteDialog: {
-                title: "কাস্টমার মুছে ফেলবেন?",
-                message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
-            },
-            validation: {
-                nameRequired: "নাম আবশ্যক",
-                phoneRequired: "ফোন নম্বর আবশ্যক",
-                phoneDuplicate: "এই ফোন নম্বর ইতিমধ্যে ব্যবহৃত হয়েছে",
-            },
-        },
-
-        session: {
-            morning: "সকাল",
-            evening: "বিকাল",
-        },
-        units: {
-            liters: "লিটার",
-        },
+        session: { morning: "সকাল", evening: "বিকাল" },
+        units: { liters: "লিটার" },
         stats: {
             today: "আজকের মোট দুধ",
             filtered: "নির্বাচিত ফলাফলের মোট",
         },
-        actions: {
-            addMilk: "দুধ উৎপাদন যোগ করুন",
-        },
+        actions: { addMilk: "দুধ উৎপাদন যোগ করুন" },
         list: {
             description: "প্রতিদিনের দুধ উৎপাদনের সব রেকর্ড",
             filterByAnimal: "গরু নির্বাচন করুন",
@@ -490,6 +382,90 @@ export const bn = {
             dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
             sessionRequired: "সেশন নির্বাচন করুন",
             quantityPositive: "দুধের পরিমাণ ০-এর বেশি হতে হবে",
+        },
+    },
+    customers: {
+        fields: {
+            name: "নাম",
+            phone: "ফোন নম্বর",
+            address: "ঠিকানা",
+            status: "অবস্থা",
+            notes: "নোট",
+        },
+        status: { active: "সক্রিয়", inactive: "নিষ্ক্রিয়" },
+        actions: { addCustomer: "কাস্টমার যোগ করুন" },
+        list: {
+            description: "আপনার খামারের সব কাস্টমারের তালিকা",
+            searchPlaceholder: "নাম বা ফোন নম্বর দিয়ে খুঁজুন",
+            emptyTitle: "এখনো কোনো কাস্টমার যোগ করা হয়নি",
+            emptyDescription: "প্রথম কাস্টমারটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "নতুন কাস্টমার যোগ করুন",
+            editTitle: "কাস্টমারের তথ্য সম্পাদনা",
+            description: "সব বাধ্যতামূলক তথ্য পূরণ করুন",
+        },
+        toast: {
+            created: "কাস্টমার সফলভাবে যোগ হয়েছে",
+            updated: "তথ্য সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "কাস্টমার মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            nameRequired: "নাম আবশ্যক",
+            phoneRequired: "ফোন নম্বর আবশ্যক",
+            phoneDuplicate: "এই ফোন নম্বর ইতিমধ্যে ব্যবহৃত হয়েছে",
+        },
+    },
+    sales: {
+        fields: {
+            customer: "কাস্টমার",
+            date: "তারিখ",
+            quantity: "পরিমাণ",
+            pricePerLiter: "মূল্য / লিটার",
+            totalAmount: "মোট টাকা",
+            paidAmount: "পরিশোধিত টাকা",
+            dueAmount: "বাকি টাকা",
+            status: "অবস্থা",
+            notes: "নোট",
+        },
+        status: { paid: "পরিশোধিত", partial: "আংশিক", due: "বাকি" },
+        stats: {
+            todayRevenue: "আজকের আয়",
+            totalDue: "মোট বকেয়া",
+        },
+        actions: { addSale: "বিক্রয় যোগ করুন" },
+        list: {
+            description: "সব দুধ বিক্রয়/চালানের তালিকা",
+            filterByCustomer: "কাস্টমার নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো বিক্রয় নেই",
+            emptyDescription: "প্রথম বিক্রয়টি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "বিক্রয় যোগ করুন",
+            editTitle: "বিক্রয় সম্পাদনা",
+            description: "কাস্টমার নির্বাচন করে বিক্রয়ের তথ্য দিন",
+            selectCustomer: "কাস্টমার নির্বাচন করুন",
+            estimatedTotal: "আনুমানিক মোট",
+        },
+        toast: {
+            created: "বিক্রয় সফলভাবে যোগ হয়েছে",
+            updated: "বিক্রয় সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "বিক্রয় মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            customerRequired: "কাস্টমার নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            quantityPositive: "পরিমাণ ০-এর বেশি হতে হবে",
+            pricePositive: "মূল্য ০-এর বেশি হতে হবে",
+            paidNegative: "পরিশোধিত টাকা ঋণাত্মক হতে পারবে না",
+            paidExceedsTotal: "পরিশোধিত টাকা মোট টাকার চেয়ে বেশি হতে পারবে না",
         },
     },
     feed: {
@@ -541,6 +517,101 @@ export const bn = {
             categoryRequired: "ক্যাটাগরি নির্বাচন করুন",
             unitRequired: "একক নির্বাচন করুন",
             pricePositive: "মূল্য ০-এর বেশি হতে হবে",
+        },
+    },
+    feeding: {
+        fields: {
+            date: "তারিখ",
+            group: "গ্রুপ (ঐচ্ছিক)",
+            quantity: "পরিমাণ",
+            cost: "খরচ",
+            notes: "নোট",
+        },
+        actions: { addFeeding: "খাদ্য প্রদানের রেকর্ড যোগ করুন" },
+        stats: {
+            todayCost: "আজকের খাদ্য খরচ",
+            filteredCost: "নির্বাচিত ফলাফলের খরচ",
+        },
+        list: {
+            description: "প্রতিদিনের খাদ্য প্রদানের সব রেকর্ড",
+            filterByFeedType: "খাদ্যের ধরন নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো খাদ্য প্রদানের রেকর্ড নেই",
+            emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "খাদ্য প্রদানের রেকর্ড যোগ করুন",
+            editTitle: "রেকর্ড সম্পাদনা",
+            description: "খাদ্যের ধরন নির্বাচন করে পরিমাণ লিখুন",
+            selectFeedType: "খাদ্যের ধরন নির্বাচন করুন",
+        },
+        toast: {
+            created: "রেকর্ড সফলভাবে যোগ হয়েছে",
+            updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            feedTypeRequired: "খাদ্যের ধরন নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            quantityPositive: "পরিমাণ ০-এর বেশি হতে হবে",
+        },
+    },
+    land: {
+        tabs: { fields: "জমি", crops: "ফসল" },
+    },
+    field: {
+        fields: {
+            name: "জমির নাম",
+            area: "জমির পরিমাণ",
+            areaUnit: "একক",
+            soilType: "মাটির ধরন",
+            waterSource: "পানির উৎস",
+            status: "অবস্থা",
+            notes: "নোট",
+        },
+        unit: { decimal: "শতক", bigha: "বিঘা", acre: "একর" },
+        soilType: {
+            loamy: "দোআঁশ",
+            clay: "এঁটেল",
+            sandy: "বেলে",
+            silty: "পলি",
+        },
+        waterSource: {
+            river: "নদী",
+            pond: "পুকুর",
+            tubewell: "নলকূপ",
+            rain: "বৃষ্টির পানি",
+        },
+        status: { active: "সক্রিয়", inactive: "নিষ্ক্রিয়" },
+        actions: { addField: "জমি যোগ করুন" },
+        list: {
+            description: "আপনার খামারের সব জমির তালিকা",
+            searchPlaceholder: "নাম দিয়ে খুঁজুন",
+            emptyTitle: "এখনো কোনো জমি যোগ করা হয়নি",
+            emptyDescription: "প্রথম জমিটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "নতুন জমি যোগ করুন",
+            editTitle: "জমির তথ্য সম্পাদনা",
+            description: "সব বাধ্যতামূলক তথ্য পূরণ করুন",
+        },
+        toast: {
+            created: "জমি সফলভাবে যোগ হয়েছে",
+            updated: "তথ্য সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "জমি মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            nameRequired: "জমির নাম আবশ্যক",
+            nameDuplicate: "এই নামে ইতিমধ্যে একটি জমি আছে",
+            areaPositive: "জমির পরিমাণ ০-এর বেশি হতে হবে",
+            areaUnitRequired: "একক নির্বাচন করুন",
+            soilTypeRequired: "মাটির ধরন নির্বাচন করুন",
         },
     },
 };

@@ -17,6 +17,10 @@ export const STORAGE_KEYS = {
     FEED_TYPES: "feed_types",
     INVENTORY_ITEMS: "inventory_items",
 
+    // Land & Crops
+    FIELDS: "fields",
+    CROP_RECORDS: "crop_records",
+
     // Sales / Finance
     CUSTOMERS: "customers",
     EXPENSES: "expenses",

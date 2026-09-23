@@ -333,6 +333,10 @@ export const en = {
             atLeastOneScore: "Please give at least one score",
         },
     },
+
+    production: {
+        tabs: { milk: "Milk", customers: "Customers", sales: "Sales" },
+    },
     milk: {
         fields: {
             animal: "Animal",
@@ -341,125 +345,10 @@ export const en = {
             quantity: "Milk Quantity (L)",
             notes: "Notes",
         },
-
-        production: {
-            tabs: {
-                milk: "Milk",
-                customers: "Customers",
-                sales: "Sales",
-            },
-        },
-        customers: {
-            fields: {
-                name: "Name",
-                phone: "Phone",
-                address: "Address",
-                status: "Status",
-                notes: "Notes",
-            },
-            sales: {
-                fields: {
-                    customer: "Customer",
-                    date: "Date",
-                    quantity: "Quantity",
-                    pricePerLiter: "Price / Liter",
-                    totalAmount: "Total Amount",
-                    paidAmount: "Paid Amount",
-                    dueAmount: "Due Amount",
-                    status: "Status",
-                    notes: "Notes",
-                },
-                status: {
-                    paid: "Paid",
-                    partial: "Partial",
-                    due: "Due",
-                },
-                stats: {
-                    todayRevenue: "Today's Revenue",
-                    totalDue: "Total Outstanding Due",
-                },
-                actions: {
-                    addSale: "Add Sale",
-                },
-                list: {
-                    description: "All milk sales and invoices",
-                    filterByCustomer: "Select a customer",
-                    emptyTitle: "No sales recorded yet",
-                    emptyDescription: "Add your first sale to get started.",
-                },
-                form: {
-                    addTitle: "Add Sale",
-                    editTitle: "Edit Sale",
-                    description: "Select a customer and enter the sale details",
-                    selectCustomer: "Select a customer",
-                    estimatedTotal: "Estimated Total",
-                },
-                toast: {
-                    created: "Sale added successfully",
-                    updated: "Sale updated successfully",
-                },
-                deleteDialog: {
-                    title: "Delete this sale?",
-                    message: "This action cannot be undone. Are you sure?",
-                },
-                validation: {
-                    customerRequired: "Please select a customer",
-                    dateRequired: "Date is required",
-                    dateFuture: "Date cannot be in the future",
-                    quantityPositive: "Quantity must be greater than 0",
-                    pricePositive: "Price must be greater than 0",
-                    paidNegative: "Paid amount cannot be negative",
-                    paidExceedsTotal:
-                        "Paid amount cannot exceed the total amount",
-                },
-            },
-            status: {
-                active: "Active",
-                inactive: "Inactive",
-            },
-            actions: {
-                addCustomer: "Add Customer",
-            },
-            list: {
-                description: "All customers of your farm",
-                searchPlaceholder: "Search by name or phone",
-                emptyTitle: "No customers added yet",
-                emptyDescription: "Add your first customer to get started.",
-            },
-            form: {
-                addTitle: "Add New Customer",
-                editTitle: "Edit Customer",
-                description: "Fill in all required fields",
-            },
-            toast: {
-                created: "Customer added successfully",
-                updated: "Customer updated successfully",
-            },
-            deleteDialog: {
-                title: "Delete this customer?",
-                message: "This action cannot be undone. Are you sure?",
-            },
-            validation: {
-                nameRequired: "Name is required",
-                phoneRequired: "Phone number is required",
-                phoneDuplicate: "This phone number is already registered",
-            },
-        },
-
-        session: {
-            morning: "Morning",
-            evening: "Evening",
-        },
-        units: {
-            liters: "L",
-        },
-        stats: {
-            today: "Today's Total Milk",
-            filtered: "Filtered Total",
-        },
-        actions: {
-            addMilk: "Add Milk Record",
-        },
+        session: { morning: "Morning", evening: "Evening" },
+        units: { liters: "L" },
+        stats: { today: "Today's Total Milk", filtered: "Filtered Total" },
+        actions: { addMilk: "Add Milk Record" },
         list: {
             description: "All daily milk production records",
             filterByAnimal: "Select an animal",
@@ -488,6 +377,91 @@ export const en = {
             quantityPositive: "Quantity must be greater than 0",
         },
     },
+    customers: {
+        fields: {
+            name: "Name",
+            phone: "Phone",
+            address: "Address",
+            status: "Status",
+            notes: "Notes",
+        },
+        status: { active: "Active", inactive: "Inactive" },
+        actions: { addCustomer: "Add Customer" },
+        list: {
+            description: "All customers of your farm",
+            searchPlaceholder: "Search by name or phone",
+            emptyTitle: "No customers added yet",
+            emptyDescription: "Add your first customer to get started.",
+        },
+        form: {
+            addTitle: "Add New Customer",
+            editTitle: "Edit Customer",
+            description: "Fill in all required fields",
+        },
+        toast: {
+            created: "Customer added successfully",
+            updated: "Customer updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this customer?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            nameRequired: "Name is required",
+            phoneRequired: "Phone number is required",
+            phoneDuplicate: "This phone number is already registered",
+        },
+    },
+    sales: {
+        fields: {
+            customer: "Customer",
+            date: "Date",
+            quantity: "Quantity",
+            pricePerLiter: "Price / Liter",
+            totalAmount: "Total Amount",
+            paidAmount: "Paid Amount",
+            dueAmount: "Due Amount",
+            status: "Status",
+            notes: "Notes",
+        },
+        status: { paid: "Paid", partial: "Partial", due: "Due" },
+        stats: {
+            todayRevenue: "Today's Revenue",
+            totalDue: "Total Outstanding Due",
+        },
+        actions: { addSale: "Add Sale" },
+        list: {
+            description: "All milk sales and invoices",
+            filterByCustomer: "Select a customer",
+            emptyTitle: "No sales recorded yet",
+            emptyDescription: "Add your first sale to get started.",
+        },
+        form: {
+            addTitle: "Add Sale",
+            editTitle: "Edit Sale",
+            description: "Select a customer and enter the sale details",
+            selectCustomer: "Select a customer",
+            estimatedTotal: "Estimated Total",
+        },
+        toast: {
+            created: "Sale added successfully",
+            updated: "Sale updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this sale?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            customerRequired: "Please select a customer",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            quantityPositive: "Quantity must be greater than 0",
+            pricePositive: "Price must be greater than 0",
+            paidNegative: "Paid amount cannot be negative",
+            paidExceedsTotal: "Paid amount cannot exceed the total amount",
+        },
+    },
+
     feed: {
         tabs: { feeding: "Daily Feeding", types: "Feed Types" },
     },
@@ -534,6 +508,101 @@ export const en = {
             categoryRequired: "Select a category",
             unitRequired: "Select a unit",
             pricePositive: "Price must be greater than 0",
+        },
+    },
+    feeding: {
+        fields: {
+            date: "Date",
+            group: "Group (optional)",
+            quantity: "Quantity",
+            cost: "Cost",
+            notes: "Notes",
+        },
+        actions: { addFeeding: "Add Feeding Record" },
+        stats: {
+            todayCost: "Today's Feed Cost",
+            filteredCost: "Filtered Cost",
+        },
+        list: {
+            description: "All daily feeding records",
+            filterByFeedType: "Select a feed type",
+            emptyTitle: "No feeding records yet",
+            emptyDescription: "Add your first record to get started.",
+        },
+        form: {
+            addTitle: "Add Feeding Record",
+            editTitle: "Edit Record",
+            description: "Select a feed type and enter the quantity",
+            selectFeedType: "Select a feed type",
+        },
+        toast: {
+            created: "Record added successfully",
+            updated: "Record updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            feedTypeRequired: "Please select a feed type",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            quantityPositive: "Quantity must be greater than 0",
+        },
+    },
+    land: {
+        tabs: { fields: "Fields", crops: "Crops" },
+    },
+    field: {
+        fields: {
+            name: "Field Name",
+            area: "Area",
+            areaUnit: "Unit",
+            soilType: "Soil Type",
+            waterSource: "Water Source",
+            status: "Status",
+            notes: "Notes",
+        },
+        unit: { decimal: "Decimal", bigha: "Bigha", acre: "Acre" },
+        soilType: {
+            loamy: "Loamy",
+            clay: "Clay",
+            sandy: "Sandy",
+            silty: "Silty",
+        },
+        waterSource: {
+            river: "River",
+            pond: "Pond",
+            tubewell: "Tubewell",
+            rain: "Rainwater",
+        },
+        status: { active: "Active", inactive: "Inactive" },
+        actions: { addField: "Add Field" },
+        list: {
+            description: "All fields of your farm",
+            searchPlaceholder: "Search by name",
+            emptyTitle: "No fields added yet",
+            emptyDescription: "Add your first field to get started.",
+        },
+        form: {
+            addTitle: "Add New Field",
+            editTitle: "Edit Field",
+            description: "Fill in all required information",
+        },
+        toast: {
+            created: "Field added successfully",
+            updated: "Updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this field?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            nameRequired: "Field name is required",
+            nameDuplicate: "A field with this name already exists",
+            areaPositive: "Area must be greater than 0",
+            areaUnitRequired: "Select a unit",
+            soilTypeRequired: "Select a soil type",
         },
     },
 };
