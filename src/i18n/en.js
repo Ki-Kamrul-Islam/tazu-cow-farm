@@ -1395,4 +1395,91 @@ export const en = {
             "December",
         ],
     },
+    farmOperations: {
+        tabs: { manure: "Manure", water: "Water" },
+    },
+    manure: {
+        fields: {
+            type: "Type",
+            date: "Date",
+            quantity: "Quantity (kg)",
+            notes: "Notes",
+            actions: "Actions",
+        },
+        type: {
+            production: "Production",
+            collection: "Collection",
+            usage: "Usage",
+            sale: "Sale",
+        },
+        validation: {
+            typeRequired: "Type is required",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            quantityPositive: "Quantity must be greater than 0",
+        },
+        stats: {
+            totalQuantity: "Total Quantity",
+            filteredQuantity: "Filtered Quantity",
+        },
+        list: {
+            description: "Track manure production, collection, usage and sales",
+            filterByType: "Filter by type",
+            emptyTitle: "No records",
+            emptyDescription: "No manure records have been added yet",
+        },
+        actions: { addManure: "Add Record" },
+        form: {
+            addTitle: "Add Manure Record",
+            editTitle: "Edit Manure Record",
+            description: "Enter manure record details",
+            selectType: "Select type",
+        },
+        deleteDialog: {
+            title: "Delete Record",
+            message: "Are you sure you want to delete this record?",
+        },
+        toast: { created: "Record added", updated: "Record updated" },
+    },
+    water: {
+        fields: {
+            purpose: "Purpose",
+            date: "Date",
+            quantity: "Quantity (liters)",
+            cost: "Cost",
+            notes: "Notes",
+            actions: "Actions",
+        },
+        purpose: {
+            drinking: "Drinking",
+            cleaning: "Cleaning",
+            irrigation: "Irrigation",
+            other: "Other",
+        },
+        validation: {
+            purposeRequired: "Purpose is required",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            quantityPositive: "Quantity must be greater than 0",
+        },
+        stats: { totalQuantity: "Total Usage", totalCost: "Total Cost" },
+        list: {
+            description: "Track water usage and cost",
+            filterByPurpose: "Filter by purpose",
+            emptyTitle: "No records",
+            emptyDescription: "No water records have been added yet",
+        },
+        actions: { addWater: "Add Record" },
+        form: {
+            addTitle: "Add Water Record",
+            editTitle: "Edit Water Record",
+            description: "Enter water usage details",
+            selectPurpose: "Select purpose",
+        },
+        deleteDialog: {
+            title: "Delete Record",
+            message: "Are you sure you want to delete this record?",
+        },
+        toast: { created: "Record added", updated: "Record updated" },
+    },
 };

@@ -74,6 +74,10 @@ import { AlertsListPage } from "../modules/calendar/pages/AlertsListPage.jsx";
 //
 import { CalendarViewPage } from "../modules/calendar/pages/CalendarViewPage.jsx";
 //
+import { ManureListPage } from "../modules/farm-operations/pages/ManureListPage.jsx";
+import { ManureFormPage } from "../modules/farm-operations/pages/ManureFormPage.jsx";
+import { WaterListPage } from "../modules/farm-operations/pages/WaterListPage.jsx";
+import { WaterFormPage } from "../modules/farm-operations/pages/WaterFormPage.jsx";
 //
 //
 //
@@ -310,6 +314,18 @@ export const router = createBrowserRouter([
                 children: [
                     { index: true, element: <AlertsListPage /> },
                     { path: "view", element: <CalendarViewPage /> },
+                ],
+            },
+
+            {
+                path: "farm-operations",
+                children: [
+                    { index: true, element: <ManureListPage /> },
+                    { path: "add", element: <ManureFormPage /> },
+                    { path: ":id/edit", element: <ManureFormPage /> },
+                    { path: "water", element: <WaterListPage /> },
+                    { path: "water/add", element: <WaterFormPage /> },
+                    { path: "water/:id/edit", element: <WaterFormPage /> },
                 ],
             },
 

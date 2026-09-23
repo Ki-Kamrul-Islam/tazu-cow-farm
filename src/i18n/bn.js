@@ -1414,4 +1414,91 @@ export const bn = {
             "ডিসেম্বর",
         ],
     },
+    farmOperations: {
+        tabs: { manure: "গোবর", water: "পানি" },
+    },
+    manure: {
+        fields: {
+            type: "ধরন",
+            date: "তারিখ",
+            quantity: "পরিমাণ (কেজি)",
+            notes: "মন্তব্য",
+            actions: "কার্যক্রম",
+        },
+        type: {
+            production: "উৎপাদন",
+            collection: "সংগ্রহ",
+            usage: "ব্যবহার",
+            sale: "বিক্রয়",
+        },
+        validation: {
+            typeRequired: "ধরন আবশ্যক",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "তারিখ ভবিষ্যতের হতে পারবে না",
+            quantityPositive: "পরিমাণ শূন্যের বেশি হতে হবে",
+        },
+        stats: {
+            totalQuantity: "মোট পরিমাণ",
+            filteredQuantity: "ফিল্টার করা পরিমাণ",
+        },
+        list: {
+            description: "গোবর উৎপাদন, সংগ্রহ, ব্যবহার ও বিক্রয়ের হিসাব",
+            filterByType: "ধরন অনুযায়ী ফিল্টার",
+            emptyTitle: "কোনো রেকর্ড নেই",
+            emptyDescription: "এখনো কোনো গোবরের হিসাব যোগ করা হয়নি",
+        },
+        actions: { addManure: "রেকর্ড যোগ করুন" },
+        form: {
+            addTitle: "গোবরের রেকর্ড যোগ করুন",
+            editTitle: "গোবরের রেকর্ড সম্পাদনা করুন",
+            description: "গোবর সংক্রান্ত তথ্য দিন",
+            selectType: "ধরন নির্বাচন করুন",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলুন",
+            message: "আপনি কি নিশ্চিতভাবে এই রেকর্ডটি মুছে ফেলতে চান?",
+        },
+        toast: { created: "রেকর্ড যোগ হয়েছে", updated: "রেকর্ড আপডেট হয়েছে" },
+    },
+    water: {
+        fields: {
+            purpose: "উদ্দেশ্য",
+            date: "তারিখ",
+            quantity: "পরিমাণ (লিটার)",
+            cost: "খরচ",
+            notes: "মন্তব্য",
+            actions: "কার্যক্রম",
+        },
+        purpose: {
+            drinking: "পানীয়",
+            cleaning: "পরিষ্কার",
+            irrigation: "সেচ",
+            other: "অন্যান্য",
+        },
+        validation: {
+            purposeRequired: "উদ্দেশ্য আবশ্যক",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "তারিখ ভবিষ্যতের হতে পারবে না",
+            quantityPositive: "পরিমাণ শূন্যের বেশি হতে হবে",
+        },
+        stats: { totalQuantity: "মোট ব্যবহার", totalCost: "মোট খরচ" },
+        list: {
+            description: "পানি ব্যবহার ও খরচের হিসাব",
+            filterByPurpose: "উদ্দেশ্য অনুযায়ী ফিল্টার",
+            emptyTitle: "কোনো রেকর্ড নেই",
+            emptyDescription: "এখনো কোনো পানির হিসাব যোগ করা হয়নি",
+        },
+        actions: { addWater: "রেকর্ড যোগ করুন" },
+        form: {
+            addTitle: "পানির রেকর্ড যোগ করুন",
+            editTitle: "পানির রেকর্ড সম্পাদনা করুন",
+            description: "পানি ব্যবহারের তথ্য দিন",
+            selectPurpose: "উদ্দেশ্য নির্বাচন করুন",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলুন",
+            message: "আপনি কি নিশ্চিতভাবে এই রেকর্ডটি মুছে ফেলতে চান?",
+        },
+        toast: { created: "রেকর্ড যোগ হয়েছে", updated: "রেকর্ড আপডেট হয়েছে" },
+    },
 };
