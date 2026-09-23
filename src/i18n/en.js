@@ -664,4 +664,145 @@ export const en = {
             yieldPositive: "Yield must be greater than 0",
         },
     },
+    inventoryItem: {
+        fields: {
+            name: "Item Name",
+            sku: "SKU",
+            category: "Category",
+            unit: "Unit",
+            quantity: "Quantity",
+            reorderLevel: "Reorder Level",
+            status: "Status",
+            notes: "Notes",
+        },
+
+        category: {
+            feed: "Feed",
+            medicine: "Medicine",
+            equipment: "Equipment",
+            spare_parts: "Spare Parts",
+            supplies: "Supplies",
+            other: "Other",
+        },
+
+        unit: {
+            kg: "kg",
+            liter: "Liter",
+            piece: "Piece",
+            bag: "Bag",
+            bottle: "Bottle",
+            box: "Box",
+            unit: "Unit",
+        },
+
+        status: {
+            active: "Active",
+            inactive: "Inactive",
+        },
+
+        actions: {
+            addItem: "Add Inventory Item",
+        },
+
+        list: {
+            description: "Manage all inventory items of your farm",
+            searchPlaceholder: "Search by item name or SKU",
+            emptyTitle: "No inventory items added yet",
+            emptyDescription: "Add your first inventory item to get started.",
+            noResults:
+                "No inventory items found. Try changing your search or filter.",
+        },
+
+        form: {
+            addTitle: "Add Inventory Item",
+            editTitle: "Edit Inventory Item",
+            description:
+                "Enter the inventory item's basic information and stock details",
+        },
+
+        toast: {
+            created: "Inventory item added successfully",
+            updated: "Inventory item updated successfully",
+        },
+
+        deleteDialog: {
+            title: "Delete this inventory item?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+
+        validation: {
+            nameRequired: "Item name is required",
+            skuRequired: "SKU is required",
+            skuDuplicate: "This SKU already exists",
+            categoryRequired: "Select a category",
+            unitRequired: "Select a unit",
+            quantityNonNegative: "Quantity cannot be negative",
+            reorderLevelNonNegative: "Reorder level cannot be negative",
+        },
+    },
+    inventoryOverview: {
+        title: "Inventory Overview",
+        description:
+            "Monitor inventory stock and important inventory information",
+
+        stats: {
+            totalItems: "Total Items",
+            activeItems: "Active Items",
+            lowStock: "Low Stock",
+            outOfStock: "Out of Stock",
+        },
+
+        categoryTitle: "Items by Category",
+        noCategoryData: "No category data available.",
+
+        lowStockTitle: "Low Stock Items",
+        noLowStockTitle: "Stock levels look good",
+        noLowStockDescription:
+            "No active inventory item is currently below its reorder level.",
+
+        recentTitle: "Recently Added Items",
+        noItemsTitle: "No Inventory Items",
+        noItemsDescription:
+            "Add an inventory item to start managing your stock.",
+
+        actions: {
+            viewItems: "View Items",
+        },
+    },
+    inventorySettings: {
+        title: "Inventory Settings",
+        description: "Manage inventory categories and measurement units",
+
+        categoriesTitle: "Inventory Categories",
+        unitsTitle: "Inventory Units",
+
+        categoryPlaceholder: "Enter category name",
+        unitPlaceholder: "Enter unit name",
+
+        status: {
+            active: "Active",
+            inactive: "Inactive",
+        },
+
+        actions: {
+            add: "Add",
+            edit: "Edit",
+            save: "Save",
+            cancel: "Cancel",
+            activate: "Activate",
+            deactivate: "Deactivate",
+        },
+
+        toast: {
+            categoryAdded: "Category added successfully",
+            categoryUpdated: "Category updated successfully",
+            unitAdded: "Unit added successfully",
+            unitUpdated: "Unit updated successfully",
+        },
+
+        validation: {
+            nameRequired: "Name is required",
+            duplicate: "This name already exists",
+        },
+    },
 };

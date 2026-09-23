@@ -673,4 +673,144 @@ export const bn = {
             yieldPositive: "ফলন ০-এর বেশি হতে হবে",
         },
     },
+    inventoryItem: {
+        fields: {
+            name: "আইটেমের নাম",
+            sku: "SKU",
+            category: "ক্যাটাগরি",
+            unit: "একক",
+            quantity: "পরিমাণ",
+            reorderLevel: "রিঅর্ডার লেভেল",
+            status: "অবস্থা",
+            notes: "নোট",
+        },
+
+        category: {
+            feed: "খাদ্য",
+            medicine: "ওষুধ",
+            equipment: "যন্ত্রপাতি",
+            spare_parts: "স্পেয়ার পার্টস",
+            supplies: "সরঞ্জাম",
+            other: "অন্যান্য",
+        },
+
+        unit: {
+            kg: "কেজি",
+            liter: "লিটার",
+            piece: "টি",
+            bag: "ব্যাগ",
+            bottle: "বোতল",
+            box: "বক্স",
+            unit: "ইউনিট",
+        },
+
+        status: {
+            active: "সক্রিয়",
+            inactive: "নিষ্ক্রিয়",
+        },
+
+        actions: {
+            addItem: "ইনভেন্টরি আইটেম যোগ করুন",
+        },
+
+        list: {
+            description: "ফার্মের সব ইনভেন্টরি আইটেম পরিচালনা করুন",
+            searchPlaceholder: "আইটেমের নাম অথবা SKU দিয়ে খুঁজুন",
+            emptyTitle: "এখনো কোনো ইনভেন্টরি আইটেম নেই",
+            emptyDescription: "প্রথম ইনভেন্টরি আইটেমটি যোগ করে শুরু করুন।",
+            noResults:
+                "কোনো ইনভেন্টরি আইটেম পাওয়া যায়নি। Search অথবা Filter পরিবর্তন করুন।",
+        },
+
+        form: {
+            addTitle: "ইনভেন্টরি আইটেম যোগ করুন",
+            editTitle: "ইনভেন্টরি আইটেম সম্পাদনা",
+            description: "আইটেমের তথ্য এবং বর্তমান স্টকের তথ্য দিন",
+        },
+
+        toast: {
+            created: "ইনভেন্টরি আইটেম সফলভাবে যোগ হয়েছে",
+            updated: "ইনভেন্টরি আইটেম সফলভাবে আপডেট হয়েছে",
+        },
+
+        deleteDialog: {
+            title: "এই ইনভেন্টরি আইটেমটি মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+
+        validation: {
+            nameRequired: "আইটেমের নাম আবশ্যক",
+            skuRequired: "SKU আবশ্যক",
+            skuDuplicate: "এই SKU ইতিমধ্যে ব্যবহৃত হয়েছে",
+            categoryRequired: "ক্যাটাগরি নির্বাচন করুন",
+            unitRequired: "একক নির্বাচন করুন",
+            quantityNonNegative: "পরিমাণ ঋণাত্মক হতে পারবে না",
+            reorderLevelNonNegative: "রিঅর্ডার লেভেল ঋণাত্মক হতে পারবে না",
+        },
+    },
+
+    inventoryOverview: {
+        title: "ইনভেন্টরি ওভারভিউ",
+        description: "ইনভেন্টরির স্টক এবং গুরুত্বপূর্ণ তথ্য এক নজরে দেখুন",
+
+        stats: {
+            totalItems: "মোট আইটেম",
+            activeItems: "সক্রিয় আইটেম",
+            lowStock: "কম স্টক",
+            outOfStock: "স্টক শেষ",
+        },
+
+        categoryTitle: "ক্যাটাগরি অনুযায়ী আইটেম",
+        noCategoryData: "কোনো ক্যাটাগরি ডেটা পাওয়া যায়নি।",
+
+        lowStockTitle: "কম স্টকের আইটেম",
+        noLowStockTitle: "স্টকের অবস্থা ভালো",
+        noLowStockDescription:
+            "বর্তমানে কোনো সক্রিয় আইটেম তার Reorder Level-এর নিচে নেই।",
+
+        recentTitle: "সর্বশেষ যোগ করা আইটেম",
+        noItemsTitle: "কোনো ইনভেন্টরি আইটেম নেই",
+        noItemsDescription:
+            "স্টক পরিচালনা শুরু করতে একটি ইনভেন্টরি আইটেম যোগ করুন।",
+
+        actions: {
+            viewItems: "আইটেম দেখুন",
+        },
+    },
+    inventorySettings: {
+        title: "ইনভেন্টরি সেটিংস",
+        description: "ইনভেন্টরি ক্যাটাগরি এবং পরিমাপের একক পরিচালনা করুন",
+
+        categoriesTitle: "ইনভেন্টরি ক্যাটাগরি",
+        unitsTitle: "ইনভেন্টরি ইউনিট",
+
+        categoryPlaceholder: "ক্যাটাগরির নাম লিখুন",
+        unitPlaceholder: "ইউনিটের নাম লিখুন",
+
+        status: {
+            active: "সক্রিয়",
+            inactive: "নিষ্ক্রিয়",
+        },
+
+        actions: {
+            add: "যোগ করুন",
+            edit: "সম্পাদনা",
+            save: "সংরক্ষণ",
+            cancel: "বাতিল",
+            activate: "সক্রিয় করুন",
+            deactivate: "নিষ্ক্রিয় করুন",
+        },
+
+        toast: {
+            categoryAdded: "ক্যাটাগরি সফলভাবে যোগ হয়েছে",
+            categoryUpdated: "ক্যাটাগরি সফলভাবে আপডেট হয়েছে",
+            unitAdded: "ইউনিট সফলভাবে যোগ হয়েছে",
+            unitUpdated: "ইউনিট সফলভাবে আপডেট হয়েছে",
+        },
+
+        validation: {
+            nameRequired: "নাম আবশ্যক",
+            duplicate: "এই নামটি ইতিমধ্যে রয়েছে",
+        },
+    },
 };

@@ -30,6 +30,13 @@ import { FieldFormPage } from "../modules/land/pages/FieldFormPage.jsx";
 import { CropListPage } from "../modules/land/pages/CropListPage.jsx";
 import { CropFormPage } from "../modules/land/pages/CropFormPage.jsx";
 //
+import { InventoryItemListPage } from "../modules/inventory/pages/InventoryItemListPage.jsx";
+import { InventoryItemFormPage } from "../modules/inventory/pages/InventoryItemFormPage.jsx";
+import { InventoryOverviewPage } from "../modules/inventory/pages/InventoryOverviewPage.jsx";
+//
+import { InventorySettingsPage } from "../modules/inventory/pages/InventorySettingsPage.jsx";
+//
+
 //
 const otherRoutes = navigationConfig
     .filter(
@@ -111,6 +118,28 @@ export const router = createBrowserRouter([
                     { path: "crops", element: <CropListPage /> },
                     { path: "crops/add", element: <CropFormPage /> },
                     { path: "crops/:id/edit", element: <CropFormPage /> },
+                ],
+            },
+
+            {
+                path: "inventory",
+                children: [
+                    {
+                        path: "overview",
+                        element: <InventoryOverviewPage />,
+                    },
+
+                    {
+                        path: "settings",
+                        element: <InventorySettingsPage />,
+                    },
+
+                    { index: true, element: <InventoryItemListPage /> },
+                    { path: "add", element: <InventoryItemFormPage /> },
+                    {
+                        path: ":id/edit",
+                        element: <InventoryItemFormPage />,
+                    },
                 ],
             },
             ...otherRoutes,
