@@ -25,6 +25,9 @@ export const STORAGE_KEYS = {
     CUSTOMERS: "customers",
     EXPENSES: "expenses",
 
+    //
+    OTHER_INCOME: "other_income",
+
     // Team
     EMPLOYEES: "employees",
     SCORE_RECORDS: "score_records",

@@ -1113,4 +1113,109 @@ export const en = {
             costNonNegative: "Cost cannot be negative",
         },
     },
+    finance: {
+        tabs: { expenses: "Expenses", income: "Income" },
+    },
+    expense: {
+        fields: {
+            category: "Category",
+            date: "Date",
+            amount: "Amount",
+            paymentMethod: "Payment Method",
+            notes: "Notes",
+        },
+        category: {
+            feed: "Feed",
+            medicine: "Medicine",
+            salary: "Salary",
+            utility: "Utility",
+            equipment_maintenance: "Equipment Maintenance",
+            fuel: "Fuel",
+            rent: "Rent",
+            other: "Other",
+        },
+        paymentMethod: {
+            cash: "Cash",
+            bank: "Bank",
+            mobile_banking: "Mobile Banking",
+        },
+        actions: { addExpense: "Add Expense" },
+        stats: {
+            todayTotal: "Today's Total Expense",
+            filteredTotal: "Filtered Total",
+        },
+        list: {
+            description: "All farm expense records",
+            filterByCategory: "Select a category",
+            emptyTitle: "No expense records yet",
+            emptyDescription: "Add your first record to get started.",
+        },
+        form: {
+            addTitle: "Add Expense",
+            editTitle: "Edit Expense Record",
+            description: "Select a category and enter the amount",
+            selectCategory: "Select a category",
+        },
+        toast: {
+            created: "Expense added successfully",
+            updated: "Record updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            categoryRequired: "Select a category",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            amountPositive: "Amount must be greater than 0",
+        },
+    },
+    income: {
+        fields: {
+            category: "Category",
+            date: "Date",
+            amount: "Amount",
+            paymentMethod: "Payment Method",
+            notes: "Notes",
+        },
+        category: {
+            cow_sale: "Cow Sale",
+            calf_sale: "Calf Sale",
+            manure_sale: "Manure Sale",
+            grass_sale: "Grass Sale",
+            other: "Other",
+        },
+        actions: { addIncome: "Add Income" },
+        stats: {
+            todayTotal: "Today's Total Income",
+            filteredTotal: "Filtered Total",
+        },
+        list: {
+            description: "All income records other than milk sales",
+            filterByCategory: "Select a category",
+            emptyTitle: "No income records yet",
+            emptyDescription: "Add your first record to get started.",
+        },
+        form: {
+            addTitle: "Add Income",
+            editTitle: "Edit Income Record",
+            description: "Select a category and enter the amount",
+            selectCategory: "Select a category",
+        },
+        toast: {
+            created: "Income added successfully",
+            updated: "Record updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            categoryRequired: "Select a category",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            amountPositive: "Amount must be greater than 0",
+        },
+    },
 };

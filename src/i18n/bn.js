@@ -1132,4 +1132,109 @@ export const bn = {
             costNonNegative: "খরচ ঋণাত্মক হতে পারবে না",
         },
     },
+    finance: {
+        tabs: { expenses: "খরচ", income: "আয়" },
+    },
+    expense: {
+        fields: {
+            category: "ক্যাটাগরি",
+            date: "তারিখ",
+            amount: "টাকার পরিমাণ",
+            paymentMethod: "পরিশোধের মাধ্যম",
+            notes: "নোট",
+        },
+        category: {
+            feed: "খাদ্য",
+            medicine: "ওষুধ",
+            salary: "বেতন",
+            utility: "ইউটিলিটি",
+            equipment_maintenance: "যন্ত্রপাতি রক্ষণাবেক্ষণ",
+            fuel: "জ্বালানি",
+            rent: "ভাড়া",
+            other: "অন্যান্য",
+        },
+        paymentMethod: {
+            cash: "নগদ",
+            bank: "ব্যাংক",
+            mobile_banking: "মোবাইল ব্যাংকিং",
+        },
+        actions: { addExpense: "খরচ যোগ করুন" },
+        stats: {
+            todayTotal: "আজকের মোট খরচ",
+            filteredTotal: "নির্বাচিত ফলাফলের খরচ",
+        },
+        list: {
+            description: "খামারের সব খরচের রেকর্ড",
+            filterByCategory: "ক্যাটাগরি নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো খরচের রেকর্ড নেই",
+            emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "খরচ যোগ করুন",
+            editTitle: "খরচের রেকর্ড সম্পাদনা",
+            description: "ক্যাটাগরি নির্বাচন করে টাকার পরিমাণ লিখুন",
+            selectCategory: "ক্যাটাগরি নির্বাচন করুন",
+        },
+        toast: {
+            created: "খরচ সফলভাবে যোগ হয়েছে",
+            updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            categoryRequired: "ক্যাটাগরি নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            amountPositive: "টাকার পরিমাণ ০-এর বেশি হতে হবে",
+        },
+    },
+    income: {
+        fields: {
+            category: "ক্যাটাগরি",
+            date: "তারিখ",
+            amount: "টাকার পরিমাণ",
+            paymentMethod: "পরিশোধের মাধ্যম",
+            notes: "নোট",
+        },
+        category: {
+            cow_sale: "গরু বিক্রয়",
+            calf_sale: "বাছুর বিক্রয়",
+            manure_sale: "গোবর বিক্রয়",
+            grass_sale: "ঘাস বিক্রয়",
+            other: "অন্যান্য",
+        },
+        actions: { addIncome: "আয় যোগ করুন" },
+        stats: {
+            todayTotal: "আজকের মোট আয়",
+            filteredTotal: "নির্বাচিত ফলাফলের আয়",
+        },
+        list: {
+            description: "মিল্ক বিক্রয় ছাড়া অন্যান্য সব আয়ের রেকর্ড",
+            filterByCategory: "ক্যাটাগরি নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো আয়ের রেকর্ড নেই",
+            emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "আয় যোগ করুন",
+            editTitle: "আয়ের রেকর্ড সম্পাদনা",
+            description: "ক্যাটাগরি নির্বাচন করে টাকার পরিমাণ লিখুন",
+            selectCategory: "ক্যাটাগরি নির্বাচন করুন",
+        },
+        toast: {
+            created: "আয় সফলভাবে যোগ হয়েছে",
+            updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            categoryRequired: "ক্যাটাগরি নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            amountPositive: "টাকার পরিমাণ ০-এর বেশি হতে হবে",
+        },
+    },
 };

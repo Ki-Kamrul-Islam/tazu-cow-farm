@@ -54,6 +54,13 @@ import { EquipmentFormPage } from "../modules/equipment/pages/EquipmentFormPage.
 import { MaintenanceListPage } from "../modules/equipment/pages/MaintenanceListPage.jsx";
 import { MaintenanceFormPage } from "../modules/equipment/pages/MaintenanceFormPage.jsx";
 //
+import { ExpenseListPage } from "../modules/finance/pages/ExpenseListPage.jsx";
+import { ExpenseFormPage } from "../modules/finance/pages/ExpenseFormPage.jsx";
+//
+import { IncomeListPage } from "../modules/finance/pages/IncomeListPage.jsx";
+import { IncomeFormPage } from "../modules/finance/pages/IncomeFormPage.jsx";
+//
+//
 //
 const implementedRouteKeys = new Set([
     "dashboard",
@@ -247,6 +254,30 @@ export const router = createBrowserRouter([
                             {
                                 path: "maintenance/:id/edit",
                                 element: <MaintenanceFormPage />,
+                            },
+                        ],
+                    },
+                ],
+            },
+
+            {
+                path: "finance",
+                children: [
+                    { index: true, element: <ExpenseListPage /> },
+                    { path: "add", element: <ExpenseFormPage /> },
+                    { path: ":id/edit", element: <ExpenseFormPage /> },
+
+                    {
+                        path: "finance",
+                        children: [
+                            { index: true, element: <ExpenseListPage /> },
+                            { path: "add", element: <ExpenseFormPage /> },
+                            { path: ":id/edit", element: <ExpenseFormPage /> },
+                            { path: "income", element: <IncomeListPage /> },
+                            { path: "income/add", element: <IncomeFormPage /> },
+                            {
+                                path: "income/:id/edit",
+                                element: <IncomeFormPage />,
                             },
                         ],
                     },

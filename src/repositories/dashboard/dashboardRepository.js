@@ -8,6 +8,7 @@ export const dashboardRepository = {
     getMilkRecords: () => storage.get(STORAGE_KEYS.MILK_RECORDS, []),
     getSales: () => storage.get(STORAGE_KEYS.SALES, []),
     getExpenses: () => storage.get(STORAGE_KEYS.EXPENSES, []),
+    getOtherIncome: () => storage.get(STORAGE_KEYS.OTHER_INCOME, []),
     getInventoryItems: () => storage.get(STORAGE_KEYS.INVENTORY_ITEMS, []),
     getTasks: () => storage.get(STORAGE_KEYS.TASKS, []),
 };

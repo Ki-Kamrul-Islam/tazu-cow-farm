@@ -27,10 +27,16 @@ function calculateMilkThisMonth(milkRecords) {
         .reduce((sum, r) => sum + Number(r.quantity || 0), 0);
 }
 
-function calculateTodayRevenue(sales) {
-    return sales
+function calculateTodayRevenue(sales, otherIncome) {
+    const salesRevenue = sales
         .filter((s) => isToday(s.date))
         .reduce((sum, s) => sum + Number(s.amount || 0), 0);
+
+    const incomeRevenue = otherIncome
+        .filter((i) => isToday(i.date))
+        .reduce((sum, i) => sum + Number(i.amount || 0), 0);
+
+    return salesRevenue + incomeRevenue;
 }
 
 function calculateTodayExpense(expenses) {
@@ -82,11 +88,12 @@ export const dashboardService = {
         const healthRecords = dashboardRepository.getHealthRecords();
         const milkRecords = dashboardRepository.getMilkRecords();
         const sales = dashboardRepository.getSales();
+        const otherIncome = dashboardRepository.getOtherIncome();
         const expenses = dashboardRepository.getExpenses();
         const inventoryItems = dashboardRepository.getInventoryItems();
         const tasks = dashboardRepository.getTasks();
 
-        const todayRevenue = calculateTodayRevenue(sales);
+        const todayRevenue = calculateTodayRevenue(sales, otherIncome);
         const todayExpense = calculateTodayExpense(expenses);
 
         return {
