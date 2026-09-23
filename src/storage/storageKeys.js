@@ -33,4 +33,14 @@ export const STORAGE_KEYS = {
     //
     INVENTORY_CATEGORIES: "cow_farm_inventory_categories",
     INVENTORY_UNITS: "cow_farm_inventory_units",
+
+    //
+    SUPPLIERS: "cow_farm_suppliers",
+    //
+    PURCHASE_ORDERS: "cow_farm_purchase_orders",
+
+    //
+    GOODS_RECEIVED: "cow_farm_goods_received",
+
+    STOCK_MOVEMENTS: "cow_farm_stock_movements",
 };

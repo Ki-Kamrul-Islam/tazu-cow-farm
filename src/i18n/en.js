@@ -805,4 +805,208 @@ export const en = {
             duplicate: "This name already exists",
         },
     },
+    supplier: {
+        title: "Suppliers",
+        description: "Manage suppliers for your farm inventory",
+
+        searchPlaceholder: "Search suppliers...",
+
+        fields: {
+            name: "Supplier Name",
+            contactPerson: "Contact Person",
+            phone: "Phone",
+            email: "Email",
+            address: "Address",
+            notes: "Notes",
+            status: "Status",
+            actions: "Actions",
+        },
+
+        status: {
+            active: "Active",
+            inactive: "Inactive",
+        },
+
+        filters: {
+            all: "All Suppliers",
+        },
+
+        actions: {
+            add: "Add Supplier",
+            edit: "Edit",
+            delete: "Delete",
+            activate: "Activate",
+            deactivate: "Deactivate",
+            save: "Save Supplier",
+            update: "Update Supplier",
+            cancel: "Cancel",
+        },
+
+        confirmDelete: "Are you sure you want to delete this supplier?",
+
+        empty: {
+            title: "No Suppliers Found",
+            description:
+                "Add your first supplier to start managing supplier information.",
+        },
+
+        form: {
+            addTitle: "Add Supplier",
+            editTitle: "Edit Supplier",
+            description: "Enter supplier contact and business information.",
+        },
+
+        validation: {
+            nameRequired: "Supplier name is required.",
+            phoneRequired: "Supplier phone number is required.",
+            duplicateName: "A supplier with this name already exists.",
+            notFound: "Supplier was not found.",
+        },
+
+        toast: {
+            created: "Supplier created successfully.",
+            updated: "Supplier updated successfully.",
+        },
+    },
+    purchaseOrder: {
+        title: "Purchase Orders",
+
+        description: "Create and manage inventory purchase orders.",
+
+        searchPlaceholder: "Search purchase orders...",
+
+        selectSupplier: "Select supplier",
+
+        selectItem: "Select inventory item",
+
+        sections: {
+            basicInfo: "Purchase Order Information",
+            items: "Purchase Order Items",
+        },
+
+        fields: {
+            poNumber: "PO Number",
+            supplier: "Supplier",
+            orderDate: "Order Date",
+            expectedDate: "Expected Date",
+            item: "Inventory Item",
+            quantity: "Quantity",
+            unitCost: "Unit Cost",
+            total: "Total",
+            subtotal: "Subtotal",
+            status: "Status",
+            notes: "Notes",
+            actions: "Actions",
+        },
+
+        status: {
+            draft: "Draft",
+            ordered: "Ordered",
+            partially_received: "Partially Received",
+            received: "Received",
+            cancelled: "Cancelled",
+        },
+
+        filters: {
+            all: "All Purchase Orders",
+        },
+
+        actions: {
+            create: "Create Purchase Order",
+            addItem: "Add Item",
+            remove: "Remove",
+            edit: "Edit",
+            delete: "Delete",
+            save: "Save Purchase Order",
+            cancel: "Cancel",
+            markOrdered: "Mark as Ordered",
+            receive: "Receive",
+        },
+
+        noItems: "No items have been added to this purchase order.",
+
+        confirmDelete: "Are you sure you want to delete this purchase order?",
+
+        empty: {
+            title: "No Purchase Orders",
+            description:
+                "Create your first purchase order to start purchasing inventory.",
+        },
+
+        form: {
+            title: "Create Purchase Order",
+            description:
+                "Select a supplier and add the inventory items you want to purchase.",
+        },
+
+        validation: {
+            supplierRequired: "Supplier is required.",
+
+            orderDateRequired: "Order date is required.",
+
+            itemsRequired: "At least one inventory item is required.",
+
+            notFound: "Purchase order was not found.",
+
+            onlyDraftCanEdit: "Only draft purchase orders can be edited.",
+        },
+
+        toast: {
+            created: "Purchase order created successfully.",
+
+            updated: "Purchase order updated successfully.",
+        },
+    },
+    goodsReceived: {
+        title: "Receive Goods",
+
+        description: "Record inventory received from a purchase order.",
+
+        purchaseOrderNotFound: "Purchase order not found.",
+
+        sections: {
+            items: "Items to Receive",
+        },
+
+        fields: {
+            poNumber: "PO Number",
+            orderDate: "Order Date",
+            expectedDate: "Expected Date",
+            item: "Inventory Item",
+            ordered: "Ordered",
+            alreadyReceived: "Already Received",
+            remaining: "Remaining",
+            receiveNow: "Receive Now",
+            unitCost: "Unit Cost",
+            receivedDate: "Received Date",
+            notes: "Notes",
+            total: "Total",
+        },
+
+        actions: {
+            receive: "Receive Goods",
+            cancel: "Cancel",
+        },
+
+        validation: {
+            purchaseOrderNotFound: "Purchase order was not found.",
+
+            orderCancelled: "Cancelled purchase orders cannot receive goods.",
+
+            orderAlreadyReceived:
+                "This purchase order has already been fully received.",
+
+            invalidQuantity: "Received quantity cannot be negative.",
+
+            exceedsRemaining:
+                "Received quantity cannot exceed the remaining quantity.",
+
+            noQuantity: "Enter a received quantity for at least one item.",
+        },
+
+        toast: {
+            created:
+                "Goods received successfully and inventory stock was updated.",
+        },
+    },
 };

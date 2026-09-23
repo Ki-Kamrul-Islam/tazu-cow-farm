@@ -1,4 +1,4 @@
-import { inventoryItemRepository } from "../../repositories/inventory/inventoryItemRepository.js";
+import { inventoryItemRepository } from "../../modules/inventory/repositories/inventoryItemRepository.js";
 
 function generateId() {
     return crypto.randomUUID();

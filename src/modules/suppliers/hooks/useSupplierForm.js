@@ -1,63 +1,69 @@
 import { useEffect, useState } from "react";
+
 import { useNavigate } from "react-router-dom";
-import { inventoryItemService } from "../../../services/inventory/inventoryItemService.js";
+
+import { supplierService } from "../../../services/supplier/supplierService.js";
+
 import { useToast } from "../../../contexts/ToastContext.jsx";
+
 import { useLanguage } from "../../../contexts/LanguageContext.jsx";
 
 const EMPTY_FORM = {
     name: "",
-    sku: "",
-    category: "feed",
-    unit: "kg",
-    quantity: "",
-    reorderLevel: "",
-    status: "active",
+    phone: "",
+    email: "",
+    address: "",
+    contactPerson: "",
     notes: "",
 };
 
-export function useInventoryItemForm(itemId) {
+export function useSupplierForm(supplierId) {
     const navigate = useNavigate();
+
     const { showToast } = useToast();
+
     const { t } = useLanguage();
 
     const [form, setForm] = useState(EMPTY_FORM);
+
     const [errors, setErrors] = useState({});
-    const [loading, setLoading] = useState(Boolean(itemId));
+
+    const [loading, setLoading] = useState(Boolean(supplierId));
+
     const [saving, setSaving] = useState(false);
 
     useEffect(() => {
-        if (!itemId) {
+        if (!supplierId) {
             setLoading(false);
             return;
         }
 
-        const item = inventoryItemService.getById(itemId);
+        const supplier = supplierService.getById(supplierId);
 
-        if (item) {
+        if (supplier) {
             setForm({
-                name: item.name ?? "",
-                sku: item.sku ?? "",
-                category: item.category ?? "feed",
-                unit: item.unit ?? "kg",
-                quantity: item.quantity ?? "",
-                reorderLevel: item.reorderLevel ?? "",
-                status: item.status ?? "active",
-                notes: item.notes ?? "",
+                name: supplier.name ?? "",
+                phone: supplier.phone ?? "",
+                email: supplier.email ?? "",
+                address: supplier.address ?? "",
+                contactPerson: supplier.contactPerson ?? "",
+                notes: supplier.notes ?? "",
             });
         }
 
         setLoading(false);
-    }, [itemId]);
+    }, [supplierId]);
 
     const updateField = (field, value) => {
-        setForm((prev) => ({
-            ...prev,
+        setForm((previous) => ({
+            ...previous,
             [field]: value,
         }));
 
-        setErrors((prev) => ({
-            ...prev,
+        setErrors((previous) => ({
+            ...previous,
             [field]: undefined,
+            form: undefined,
         }));
     };
 
@@ -65,9 +71,9 @@ export function useInventoryItemForm(itemId) {
         setSaving(true);
 
         const result =
-            itemId ?
-                inventoryItemService.update(itemId, form)
-            :   inventoryItemService.create(form);
+            supplierId ?
+                supplierService.update(supplierId, form)
+            :   supplierService.create(form);
 
         setSaving(false);
 
@@ -77,22 +83,20 @@ export function useInventoryItemForm(itemId) {
         }
 
         showToast(
-            t(
-                itemId ?
-                    "inventoryItem.toast.updated"
-                :   "inventoryItem.toast.created",
-            ),
+            t(supplierId ? "supplier.toast.updated" : "supplier.toast.created"),
             "success",
         );
 
-        navigate("/inventory");
+        navigate("/suppliers");
     };
 
     return {
         form,
         errors,
+
         loading,
         saving,
+
         updateField,
         submit,
     };

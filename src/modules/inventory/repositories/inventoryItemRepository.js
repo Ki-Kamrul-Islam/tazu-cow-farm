@@ -1,9 +1,19 @@
-import { storage } from "../../storage/storage.js";
-import { STORAGE_KEYS } from "../../storage/storageKeys.js";
+import { storage } from "../../../storage/storage.js";
+import { STORAGE_KEYS } from "../../../storage/storageKeys.js";
 
 export const inventoryItemRepository = {
     getAll() {
-        return storage.get(STORAGE_KEYS.INVENTORY_ITEMS, []);
+        const items = storage.get(STORAGE_KEYS.INVENTORY_ITEMS, []);
+
+        // Backward compatibility: older records may use `currentStock`.
+        // The canonical inventory field is now `quantity`.
+        return items.map((item) => ({
+            ...item,
+            quantity:
+                item.quantity !== undefined
+                    ? Number(item.quantity) || 0
+                    : Number(item.currentStock) || 0,
+        }));
     },
 
     getById(id) {
@@ -16,6 +26,11 @@ export const inventoryItemRepository = {
         storage.set(STORAGE_KEYS.INVENTORY_ITEMS, [...items, item]);
 
         return item;
+    },
+
+    saveAll(items) {
+        storage.set(STORAGE_KEYS.INVENTORY_ITEMS, items);
+        return items;
     },
 
     update(id, updates) {

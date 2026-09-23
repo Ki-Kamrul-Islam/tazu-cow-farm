@@ -36,16 +36,30 @@ import { InventoryOverviewPage } from "../modules/inventory/pages/InventoryOverv
 //
 import { InventorySettingsPage } from "../modules/inventory/pages/InventorySettingsPage.jsx";
 //
-
+import { SupplierListPage } from "../modules/suppliers/pages/SupplierListPage.jsx";
+import { SupplierFormPage } from "../modules/suppliers/pages/SupplierFormPage.jsx";
 //
+import { PurchaseOrderListPage } from "../modules/purchaseOrders/pages/PurchaseOrderListPage.jsx";
+import { PurchaseOrderFormPage } from "../modules/purchaseOrders/pages/PurchaseOrderFormPage.jsx";
+//
+import { GoodsReceivedPage } from "../modules/goodsReceived/pages/GoodsReceivedPage.jsx";
+//
+import StockAdjustmentPage from "../modules/inventory/pages/StockAdjustmentPage";
+import StockHistoryPage from "../modules/inventory/pages/StockHistoryPage";
+import CurrentStockLedgerPage from "../modules/inventory/pages/CurrentStockLedgerPage";
+//
+//
+const implementedRouteKeys = new Set([
+    "dashboard",
+    "herd",
+    "production",
+    "feed",
+    "land",
+    "inventory",
+]);
+
 const otherRoutes = navigationConfig
-    .filter(
-        (item) =>
-            item.key !== "dashboard" &&
-            item.key !== "herd" &&
-            item.key !== "production" &&
-            item.key !== "feed",
-    )
+    .filter((item) => !implementedRouteKeys.has(item.key))
     .map((item) => ({
         path: item.path.replace("/", ""),
         element: <ComingSoonPage titleKey={item.labelKey} />,
@@ -141,6 +155,64 @@ export const router = createBrowserRouter([
                         element: <InventoryItemFormPage />,
                     },
                 ],
+            },
+
+            {
+                path: "suppliers",
+                children: [
+                    {
+                        index: true,
+                        element: <SupplierListPage />,
+                    },
+                    {
+                        path: "add",
+                        element: <SupplierFormPage />,
+                    },
+                    {
+                        path: ":id/edit",
+                        element: <SupplierFormPage />,
+                    },
+                ],
+            },
+
+            {
+                path: "purchase-orders",
+                children: [
+                    {
+                        index: true,
+                        element: <PurchaseOrderListPage />,
+                    },
+
+                    {
+                        path: "add",
+                        element: <PurchaseOrderFormPage />,
+                    },
+
+                    {
+                        path: ":id/edit",
+                        element: <PurchaseOrderFormPage />,
+                    },
+
+                    {
+                        path: ":id/receive",
+                        element: <GoodsReceivedPage />,
+                    },
+                ],
+            },
+
+            {
+                path: "inventory/stock-adjustment",
+                element: <StockAdjustmentPage />,
+            },
+
+            {
+                path: "inventory/stock-history",
+                element: <StockHistoryPage />,
+            },
+
+            {
+                path: "inventory/current-stock",
+                element: <CurrentStockLedgerPage />,
             },
             ...otherRoutes,
         ],
