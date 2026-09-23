@@ -614,4 +614,63 @@ export const bn = {
             soilTypeRequired: "মাটির ধরন নির্বাচন করুন",
         },
     },
+    crop: {
+        fields: {
+            cropType: "ফসলের ধরন",
+            plantingDate: "রোপণের তারিখ",
+            harvestDate: "কাটার তারিখ",
+            yieldQuantity: "ফলন",
+            yieldUnit: "একক",
+            cost: "খরচ",
+            status: "অবস্থা",
+            notes: "নোট",
+        },
+        type: {
+            napier_grass: "নেপিয়ার ঘাস",
+            maize: "ভুট্টা",
+            sorghum: "জোয়ার",
+            rice_straw: "ধানের খড়",
+            alfalfa: "আলফালফা",
+            other: "অন্যান্য",
+        },
+        yieldUnit: { kg: "কেজি", ton: "টন", bundle: "আঁটি" },
+        status: { growing: "বর্ধনশীল", harvested: "কাটা হয়েছে" },
+        actions: { addCrop: "ফসল যোগ করুন" },
+        stats: {
+            totalCost: "মোট ফসলের খরচ",
+            growingCount: "বর্ধনশীল ফসল",
+        },
+        list: {
+            description: "সব ফসল রোপণ ও কাটার রেকর্ড",
+            filterByField: "জমি নির্বাচন করুন",
+            filterByCropType: "ফসলের ধরন নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো ফসলের রেকর্ড নেই",
+            emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "ফসল যোগ করুন",
+            editTitle: "ফসলের রেকর্ড সম্পাদনা",
+            description: "জমি ও ফসলের ধরন নির্বাচন করে তথ্য দিন",
+            selectField: "জমি নির্বাচন করুন",
+            selectCropType: "ফসলের ধরন নির্বাচন করুন",
+        },
+        toast: {
+            created: "ফসলের রেকর্ড সফলভাবে যোগ হয়েছে",
+            updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            fieldRequired: "জমি নির্বাচন করুন",
+            cropTypeRequired: "ফসলের ধরন নির্বাচন করুন",
+            plantingDateRequired: "রোপণের তারিখ আবশ্যক",
+            plantingDateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            harvestBeforePlanting:
+                "কাটার তারিখ রোপণের তারিখের আগে হতে পারবে না",
+            costNonNegative: "খরচ ঋণাত্মক হতে পারবে না",
+            yieldPositive: "ফলন ০-এর বেশি হতে হবে",
+        },
+    },
 };

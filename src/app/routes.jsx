@@ -27,6 +27,8 @@ import { FeedListPage } from "../modules/feed/pages/FeedListPage.jsx";
 import { FeedFormPage } from "../modules/feed/pages/FeedFormPage.jsx";
 import { FieldListPage } from "../modules/land/pages/FieldListPage.jsx";
 import { FieldFormPage } from "../modules/land/pages/FieldFormPage.jsx";
+import { CropListPage } from "../modules/land/pages/CropListPage.jsx";
+import { CropFormPage } from "../modules/land/pages/CropFormPage.jsx";
 //
 //
 const otherRoutes = navigationConfig
@@ -106,10 +108,9 @@ export const router = createBrowserRouter([
                     { index: true, element: <FieldListPage /> },
                     { path: "add", element: <FieldFormPage /> },
                     { path: ":id/edit", element: <FieldFormPage /> },
-                    {
-                        path: "crops",
-                        element: <ComingSoonPage titleKey="land.tabs.crops" />,
-                    },
+                    { path: "crops", element: <CropListPage /> },
+                    { path: "crops/add", element: <CropFormPage /> },
+                    { path: "crops/:id/edit", element: <CropFormPage /> },
                 ],
             },
             ...otherRoutes,

@@ -605,4 +605,63 @@ export const en = {
             soilTypeRequired: "Select a soil type",
         },
     },
+    crop: {
+        fields: {
+            cropType: "Crop Type",
+            plantingDate: "Planting Date",
+            harvestDate: "Harvest Date",
+            yieldQuantity: "Yield",
+            yieldUnit: "Unit",
+            cost: "Cost",
+            status: "Status",
+            notes: "Notes",
+        },
+        type: {
+            napier_grass: "Napier Grass",
+            maize: "Maize",
+            sorghum: "Sorghum",
+            rice_straw: "Rice Straw",
+            alfalfa: "Alfalfa",
+            other: "Other",
+        },
+        yieldUnit: { kg: "kg", ton: "ton", bundle: "bundle" },
+        status: { growing: "Growing", harvested: "Harvested" },
+        actions: { addCrop: "Add Crop" },
+        stats: {
+            totalCost: "Total Crop Cost",
+            growingCount: "Growing Crops",
+        },
+        list: {
+            description: "All crop planting and harvest records",
+            filterByField: "Select a field",
+            filterByCropType: "Select a crop type",
+            emptyTitle: "No crop records yet",
+            emptyDescription: "Add your first record to get started.",
+        },
+        form: {
+            addTitle: "Add Crop",
+            editTitle: "Edit Crop Record",
+            description: "Select field and crop type, then enter details",
+            selectField: "Select a field",
+            selectCropType: "Select a crop type",
+        },
+        toast: {
+            created: "Crop record added successfully",
+            updated: "Record updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            fieldRequired: "Please select a field",
+            cropTypeRequired: "Please select a crop type",
+            plantingDateRequired: "Planting date is required",
+            plantingDateFuture: "Date cannot be in the future",
+            harvestBeforePlanting:
+                "Harvest date cannot be before planting date",
+            costNonNegative: "Cost cannot be negative",
+            yieldPositive: "Yield must be greater than 0",
+        },
+    },
 };
