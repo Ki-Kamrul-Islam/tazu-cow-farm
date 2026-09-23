@@ -30,6 +30,10 @@ export const STORAGE_KEYS = {
     SCORE_RECORDS: "score_records",
     TASKS: "tasks",
 
+    // Equipment
+    EQUIPMENT: "equipment",
+    MAINTENANCE_RECORDS: "maintenance_records",
+
     //
     INVENTORY_CATEGORIES: "cow_farm_inventory_categories",
     INVENTORY_UNITS: "cow_farm_inventory_units",

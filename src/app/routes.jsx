@@ -48,6 +48,12 @@ import StockAdjustmentPage from "../modules/inventory/pages/StockAdjustmentPage"
 import StockHistoryPage from "../modules/inventory/pages/StockHistoryPage";
 import CurrentStockLedgerPage from "../modules/inventory/pages/CurrentStockLedgerPage";
 //
+import { EquipmentListPage } from "../modules/equipment/pages/EquipmentListPage.jsx";
+import { EquipmentFormPage } from "../modules/equipment/pages/EquipmentFormPage.jsx";
+//
+import { MaintenanceListPage } from "../modules/equipment/pages/MaintenanceListPage.jsx";
+import { MaintenanceFormPage } from "../modules/equipment/pages/MaintenanceFormPage.jsx";
+//
 //
 const implementedRouteKeys = new Set([
     "dashboard",
@@ -214,6 +220,39 @@ export const router = createBrowserRouter([
                 path: "inventory/current-stock",
                 element: <CurrentStockLedgerPage />,
             },
+
+            {
+                path: "equipment",
+                children: [
+                    { index: true, element: <EquipmentListPage /> },
+                    { path: "add", element: <EquipmentFormPage /> },
+                    { path: ":id/edit", element: <EquipmentFormPage /> },
+                    {
+                        path: "equipment",
+                        children: [
+                            { index: true, element: <EquipmentListPage /> },
+                            { path: "add", element: <EquipmentFormPage /> },
+                            {
+                                path: ":id/edit",
+                                element: <EquipmentFormPage />,
+                            },
+                            {
+                                path: "maintenance",
+                                element: <MaintenanceListPage />,
+                            },
+                            {
+                                path: "maintenance/add",
+                                element: <MaintenanceFormPage />,
+                            },
+                            {
+                                path: "maintenance/:id/edit",
+                                element: <MaintenanceFormPage />,
+                            },
+                        ],
+                    },
+                ],
+            },
+
             ...otherRoutes,
         ],
     },

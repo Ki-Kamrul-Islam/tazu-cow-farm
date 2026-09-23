@@ -1009,4 +1009,108 @@ export const en = {
                 "Goods received successfully and inventory stock was updated.",
         },
     },
+
+    equipment: {
+        tabs: { list: "Equipment", maintenance: "Maintenance" },
+    },
+    equipmentItem: {
+        fields: {
+            name: "Equipment Name",
+            type: "Type",
+            purchaseDate: "Purchase Date",
+            purchaseCost: "Purchase Cost",
+            status: "Status",
+            notes: "Notes",
+        },
+        type: {
+            tractor: "Tractor",
+            milking_machine: "Milking Machine",
+            water_pump: "Water Pump",
+            vehicle: "Vehicle",
+            generator: "Generator",
+            refrigerator: "Refrigerator",
+            other: "Other",
+        },
+        status: {
+            active: "Active",
+            under_maintenance: "Under Maintenance",
+            retired: "Retired",
+        },
+        actions: { addEquipment: "Add Equipment" },
+        list: {
+            description: "All equipment of your farm",
+            searchPlaceholder: "Search by name",
+            emptyTitle: "No equipment added yet",
+            emptyDescription: "Add your first equipment to get started.",
+        },
+        form: {
+            addTitle: "Add New Equipment",
+            editTitle: "Edit Equipment",
+            description: "Fill in all required information",
+        },
+        toast: {
+            created: "Equipment added successfully",
+            updated: "Updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this equipment?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            nameRequired: "Equipment name is required",
+            nameDuplicate: "Equipment with this name already exists",
+            typeRequired: "Select a type",
+            purchaseDateRequired: "Purchase date is required",
+            purchaseDateFuture: "Date cannot be in the future",
+            costNonNegative: "Cost cannot be negative",
+        },
+    },
+    maintenance: {
+        fields: {
+            type: "Work Type",
+            date: "Date",
+            cost: "Cost",
+            notes: "Notes",
+        },
+        type: {
+            repair: "Repair",
+            service: "Service",
+            fuel: "Fuel",
+            other: "Other",
+        },
+        actions: { addMaintenance: "Add Maintenance Record" },
+        stats: {
+            totalCost: "Total Maintenance Cost",
+            filteredCost: "Filtered Cost",
+        },
+        list: {
+            description: "All equipment repair and service records",
+            filterByEquipment: "Select equipment",
+            filterByType: "Select work type",
+            emptyTitle: "No maintenance records yet",
+            emptyDescription: "Add your first record to get started.",
+        },
+        form: {
+            addTitle: "Add Maintenance Record",
+            editTitle: "Edit Record",
+            description: "Select equipment and work type, then enter details",
+            selectEquipment: "Select equipment",
+            selectType: "Select work type",
+        },
+        toast: {
+            created: "Record added successfully",
+            updated: "Record updated successfully",
+        },
+        deleteDialog: {
+            title: "Delete this record?",
+            message: "This action cannot be undone. Are you sure?",
+        },
+        validation: {
+            equipmentRequired: "Please select equipment",
+            typeRequired: "Please select a work type",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+            costNonNegative: "Cost cannot be negative",
+        },
+    },
 };

@@ -1028,4 +1028,108 @@ export const bn = {
                 "পণ্য সফলভাবে গ্রহণ করা হয়েছে এবং ইনভেন্টরি স্টক আপডেট হয়েছে।",
         },
     },
+
+    equipment: {
+        tabs: { list: "যন্ত্রপাতি", maintenance: "রক্ষণাবেক্ষণ" },
+    },
+    equipmentItem: {
+        fields: {
+            name: "যন্ত্রপাতির নাম",
+            type: "ধরন",
+            purchaseDate: "ক্রয়ের তারিখ",
+            purchaseCost: "ক্রয়মূল্য",
+            status: "অবস্থা",
+            notes: "নোট",
+        },
+        type: {
+            tractor: "ট্রাক্টর",
+            milking_machine: "মিল্কিং মেশিন",
+            water_pump: "পানির পাম্প",
+            vehicle: "যানবাহন",
+            generator: "জেনারেটর",
+            refrigerator: "রেফ্রিজারেটর",
+            other: "অন্যান্য",
+        },
+        status: {
+            active: "সচল",
+            under_maintenance: "মেরামতাধীন",
+            retired: "অকার্যকর",
+        },
+        actions: { addEquipment: "যন্ত্রপাতি যোগ করুন" },
+        list: {
+            description: "আপনার খামারের সব যন্ত্রপাতির তালিকা",
+            searchPlaceholder: "নাম দিয়ে খুঁজুন",
+            emptyTitle: "এখনো কোনো যন্ত্রপাতি যোগ করা হয়নি",
+            emptyDescription: "প্রথম যন্ত্রপাতিটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "নতুন যন্ত্রপাতি যোগ করুন",
+            editTitle: "যন্ত্রপাতির তথ্য সম্পাদনা",
+            description: "সব বাধ্যতামূলক তথ্য পূরণ করুন",
+        },
+        toast: {
+            created: "যন্ত্রপাতি সফলভাবে যোগ হয়েছে",
+            updated: "তথ্য সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "যন্ত্রপাতি মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            nameRequired: "যন্ত্রপাতির নাম আবশ্যক",
+            nameDuplicate: "এই নামে ইতিমধ্যে একটি যন্ত্রপাতি আছে",
+            typeRequired: "ধরন নির্বাচন করুন",
+            purchaseDateRequired: "ক্রয়ের তারিখ আবশ্যক",
+            purchaseDateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            costNonNegative: "ক্রয়মূল্য ঋণাত্মক হতে পারবে না",
+        },
+    },
+    maintenance: {
+        fields: {
+            type: "কাজের ধরন",
+            date: "তারিখ",
+            cost: "খরচ",
+            notes: "নোট",
+        },
+        type: {
+            repair: "মেরামত",
+            service: "সার্ভিসিং",
+            fuel: "জ্বালানি",
+            other: "অন্যান্য",
+        },
+        actions: { addMaintenance: "রক্ষণাবেক্ষণ রেকর্ড যোগ করুন" },
+        stats: {
+            totalCost: "মোট রক্ষণাবেক্ষণ খরচ",
+            filteredCost: "নির্বাচিত ফলাফলের খরচ",
+        },
+        list: {
+            description: "সব যন্ত্রপাতির মেরামত ও সার্ভিসিং রেকর্ড",
+            filterByEquipment: "যন্ত্রপাতি নির্বাচন করুন",
+            filterByType: "কাজের ধরন নির্বাচন করুন",
+            emptyTitle: "এখনো কোনো রক্ষণাবেক্ষণ রেকর্ড নেই",
+            emptyDescription: "প্রথম রেকর্ডটি যোগ করে শুরু করুন।",
+        },
+        form: {
+            addTitle: "রক্ষণাবেক্ষণ রেকর্ড যোগ করুন",
+            editTitle: "রেকর্ড সম্পাদনা",
+            description: "যন্ত্রপাতি ও কাজের ধরন নির্বাচন করে তথ্য দিন",
+            selectEquipment: "যন্ত্রপাতি নির্বাচন করুন",
+            selectType: "কাজের ধরন নির্বাচন করুন",
+        },
+        toast: {
+            created: "রেকর্ড সফলভাবে যোগ হয়েছে",
+            updated: "রেকর্ড সফলভাবে আপডেট হয়েছে",
+        },
+        deleteDialog: {
+            title: "রেকর্ড মুছে ফেলবেন?",
+            message: "এই কাজটি ফিরিয়ে নেওয়া যাবে না। আপনি কি নিশ্চিত?",
+        },
+        validation: {
+            equipmentRequired: "যন্ত্রপাতি নির্বাচন করুন",
+            typeRequired: "কাজের ধরন নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+            costNonNegative: "খরচ ঋণাত্মক হতে পারবে না",
+        },
+    },
 };
