@@ -70,6 +70,12 @@ import { FinancialReportPage } from "../modules/reports/pages/FinancialReportPag
 //
 import { FarmReportPage } from "../modules/reports/pages/FarmReportPage.jsx";
 //
+import { AlertsListPage } from "../modules/calendar/pages/AlertsListPage.jsx";
+//
+import { CalendarViewPage } from "../modules/calendar/pages/CalendarViewPage.jsx";
+//
+//
+//
 //
 //
 const implementedRouteKeys = new Set([
@@ -79,6 +85,11 @@ const implementedRouteKeys = new Set([
     "feed",
     "land",
     "inventory",
+    "equipment",
+    "finance",
+    "team",
+    "reports",
+    "calendar",
 ]);
 
 const otherRoutes = navigationConfig
@@ -245,27 +256,16 @@ export const router = createBrowserRouter([
                     { path: "add", element: <EquipmentFormPage /> },
                     { path: ":id/edit", element: <EquipmentFormPage /> },
                     {
-                        path: "equipment",
-                        children: [
-                            { index: true, element: <EquipmentListPage /> },
-                            { path: "add", element: <EquipmentFormPage /> },
-                            {
-                                path: ":id/edit",
-                                element: <EquipmentFormPage />,
-                            },
-                            {
-                                path: "maintenance",
-                                element: <MaintenanceListPage />,
-                            },
-                            {
-                                path: "maintenance/add",
-                                element: <MaintenanceFormPage />,
-                            },
-                            {
-                                path: "maintenance/:id/edit",
-                                element: <MaintenanceFormPage />,
-                            },
-                        ],
+                        path: "maintenance",
+                        element: <MaintenanceListPage />,
+                    },
+                    {
+                        path: "maintenance/add",
+                        element: <MaintenanceFormPage />,
+                    },
+                    {
+                        path: "maintenance/:id/edit",
+                        element: <MaintenanceFormPage />,
                     },
                 ],
             },
@@ -276,20 +276,11 @@ export const router = createBrowserRouter([
                     { index: true, element: <ExpenseListPage /> },
                     { path: "add", element: <ExpenseFormPage /> },
                     { path: ":id/edit", element: <ExpenseFormPage /> },
-
+                    { path: "income", element: <IncomeListPage /> },
+                    { path: "income/add", element: <IncomeFormPage /> },
                     {
-                        path: "finance",
-                        children: [
-                            { index: true, element: <ExpenseListPage /> },
-                            { path: "add", element: <ExpenseFormPage /> },
-                            { path: ":id/edit", element: <ExpenseFormPage /> },
-                            { path: "income", element: <IncomeListPage /> },
-                            { path: "income/add", element: <IncomeFormPage /> },
-                            {
-                                path: "income/:id/edit",
-                                element: <IncomeFormPage />,
-                            },
-                        ],
+                        path: "income/:id/edit",
+                        element: <IncomeFormPage />,
                     },
                 ],
             },
@@ -311,6 +302,14 @@ export const router = createBrowserRouter([
                 children: [
                     { index: true, element: <FinancialReportPage /> },
                     { path: "farm", element: <FarmReportPage /> },
+                ],
+            },
+
+            {
+                path: "calendar",
+                children: [
+                    { index: true, element: <AlertsListPage /> },
+                    { path: "view", element: <CalendarViewPage /> },
                 ],
             },
 
