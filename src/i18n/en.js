@@ -89,6 +89,8 @@ export const en = {
             health: "Health",
             weight: "Weight",
             scoring: "Scoring",
+            groups: "Groups",
+            transfers: "Transfers",
         },
         units: {
             years: "yr",
@@ -109,6 +111,7 @@ export const en = {
             active: "Active",
             sold: "Sold",
             deceased: "Deceased",
+            archived: "Archived",
         },
         actions: {
             addAnimal: "Add Animal",
@@ -128,6 +131,7 @@ export const en = {
             addTitle: "Add New Animal",
             editTitle: "Edit Animal",
             description: "Fill in all required fields",
+            noGroup: "No group",
         },
         toast: {
             created: "Animal added successfully",
@@ -1481,5 +1485,98 @@ export const en = {
             message: "Are you sure you want to delete this record?",
         },
         toast: { created: "Record added", updated: "Record updated" },
+    },
+    system: {
+        tabs: { settings: "Settings", data: "Data Management" },
+    },
+    settings: {
+        description: "Update your farm's basic information",
+        fields: {
+            farmName: "Farm Name",
+            currency: "Currency",
+            dateFormat: "Date Format",
+        },
+        validation: { farmNameRequired: "Farm name is required" },
+        toast: { saved: "Settings saved" },
+    },
+    backup: {
+        description: "Back up or restore all of your farm's data",
+        export: {
+            title: "Download Backup",
+            description: "Downloads all farm data as a JSON file",
+            button: "Download",
+        },
+        import: {
+            title: "Restore Backup",
+            description: "Restore data from a previously downloaded JSON file",
+            button: "Choose File",
+        },
+        validation: {
+            invalidFile: "This file is not a valid backup format",
+            readError: "There was a problem reading the file",
+        },
+        toast: { restored: "Data restored, reloading page..." },
+    },
+    group: {
+        fields: {
+            name: "Group Name",
+            description: "Description",
+            animalCount: "Animal Count",
+        },
+        validation: {
+            nameRequired: "Group name is required",
+            nameDuplicate: "A group with this name already exists",
+        },
+        list: {
+            description:
+                "Create and manage animal groups (e.g. Milking, Dry, Calf Pen)",
+            emptyTitle: "No groups",
+            emptyDescription: "Create your first group",
+        },
+        actions: { addGroup: "Add Group" },
+        form: {
+            addTitle: "Add Group",
+            editTitle: "Edit Group",
+            description: "Enter group details",
+        },
+        deleteDialog: {
+            title: "Delete Group",
+            message:
+                "Deleting this group won't clear it from animals already assigned. Continue?",
+        },
+        toast: { created: "Group created", updated: "Group updated" },
+    },
+    transfer: {
+        fields: {
+            animal: "Animal",
+            fromGroup: "From Group",
+            toGroup: "To Group",
+            date: "Date",
+            reason: "Reason",
+        },
+        validation: {
+            animalRequired: "Select an animal",
+            toGroupRequired: "Select the destination group",
+            dateRequired: "Date is required",
+            dateFuture: "Date cannot be in the future",
+        },
+        list: {
+            description: "History of animals moved between groups",
+            emptyTitle: "No transfers",
+            emptyDescription: "No animals have been transferred yet",
+        },
+        actions: { addTransfer: "Add Transfer" },
+        form: {
+            addTitle: "Transfer Animal",
+            description: "Select which animal is moving to which group",
+            selectAnimal: "Select animal",
+            selectGroup: "Select group",
+        },
+        deleteDialog: {
+            title: "Delete Transfer",
+            message:
+                "Delete this transfer record? (the animal's current group won't change)",
+        },
+        toast: { created: "Transfer saved" },
     },
 };

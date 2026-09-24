@@ -44,4 +44,32 @@ export const storage = {
             return false;
         }
     },
+    // Non-mutating — সব data পড়ে একটা plain object হিসেবে ফেরত দেয় (backup export-এর জন্য)
+    exportAll() {
+        const result = {};
+        Object.keys(localStorage)
+            .filter((k) => k.startsWith(PREFIX))
+            .forEach((k) => {
+                try {
+                    result[k.slice(PREFIX.length)] = JSON.parse(
+                        localStorage.getItem(k),
+                    );
+                } catch {
+                    // corrupt entry হলে skip করা হবে
+                }
+            });
+        return result;
+    },
+
+    // Mutating — একটা object থেকে সব key আবার LocalStorage-এ বসিয়ে দেয় (restore-এর জন্য)
+    importAll(data) {
+        try {
+            Object.entries(data).forEach(([key, value]) => {
+                localStorage.setItem(PREFIX + key, JSON.stringify(value));
+            });
+            return true;
+        } catch {
+            return false;
+        }
+    },
 };

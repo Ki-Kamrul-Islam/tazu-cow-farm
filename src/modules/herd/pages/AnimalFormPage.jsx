@@ -13,6 +13,12 @@ import {
     ANIMAL_GENDERS,
     ANIMAL_STATUSES,
 } from "../../../constants/animal.js";
+//
+import { useAnimalGroups } from "../hooks/useAnimalGroups.js";
+//
+//
+//
+//
 
 export function AnimalFormPage() {
     const { id } = useParams();
@@ -20,6 +26,7 @@ export function AnimalFormPage() {
     const { t } = useLanguage();
     const { form, errors, loading, saving, updateField, submit } =
         useAnimalForm(id);
+    const { groups } = useAnimalGroups();
 
     if (loading) {
         return <LoadingState />;
@@ -113,14 +120,21 @@ export function AnimalFormPage() {
                             }
                             error={errors.weight && t(errors.weight)}
                         />
-                        <Input
+
+                        <Select
                             id="group"
                             label={t("herd.fields.group")}
                             value={form.group}
                             onChange={(e) =>
                                 updateField("group", e.target.value)
                             }
+                            placeholder={t("herd.form.noGroup")}
+                            options={groups.map((g) => ({
+                                value: g.name,
+                                label: g.name,
+                            }))}
                         />
+
                         <Select
                             id="status"
                             label={t("herd.fields.status")}

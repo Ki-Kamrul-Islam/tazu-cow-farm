@@ -9,6 +9,8 @@ const HERD_TABS = [
     { key: "health", path: "/herd/health" },
     { key: "weight", path: "/herd/weight" },
     { key: "scoring", path: "/herd/scoring" },
+    { key: "groups", path: "/herd/groups" },
+    { key: "transfers", path: "/herd/transfers" },
 ];
 
 //

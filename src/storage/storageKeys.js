@@ -4,6 +4,8 @@ export const STORAGE_KEYS = {
 
     // Herd
     ANIMALS: "animals",
+    ANIMAL_GROUPS: "animal_groups",
+    ANIMAL_TRANSFERS: "animal_transfers",
     BREEDING_RECORDS: "breeding_records",
     HEALTH_RECORDS: "health_records",
     WEIGHT_RECORDS: "weight_records",
@@ -36,6 +38,9 @@ export const STORAGE_KEYS = {
     // Equipment
     EQUIPMENT: "equipment",
     MAINTENANCE_RECORDS: "maintenance_records",
+
+    // System
+    FARM_SETTINGS: "farm_settings",
 
     // Farm Operations
     MANURE_RECORDS: "manure_records",

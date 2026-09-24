@@ -79,7 +79,13 @@ import { ManureFormPage } from "../modules/farm-operations/pages/ManureFormPage.
 import { WaterListPage } from "../modules/farm-operations/pages/WaterListPage.jsx";
 import { WaterFormPage } from "../modules/farm-operations/pages/WaterFormPage.jsx";
 //
+import { FarmSettingsPage } from "../modules/system/pages/FarmSettingsPage.jsx";
+import { DataManagementPage } from "../modules/system/pages/DataManagementPage.jsx";
 //
+import { AnimalGroupListPage } from "../modules/herd/pages/AnimalGroupListPage.jsx";
+import { AnimalGroupFormPage } from "../modules/herd/pages/AnimalGroupFormPage.jsx";
+import { AnimalTransferListPage } from "../modules/herd/pages/AnimalTransferListPage.jsx";
+import { AnimalTransferFormPage } from "../modules/herd/pages/AnimalTransferFormPage.jsx";
 //
 //
 const implementedRouteKeys = new Set([
@@ -129,7 +135,19 @@ export const router = createBrowserRouter([
                     { path: "weight/:id/edit", element: <WeightFormPage /> },
                     { path: "scoring", element: <ScoreListPage /> },
                     { path: "scoring/add", element: <ScoreFormPage /> },
+
                     { path: "scoring/:id/edit", element: <ScoreFormPage /> },
+                    { path: "groups", element: <AnimalGroupListPage /> },
+                    { path: "groups/add", element: <AnimalGroupFormPage /> },
+                    {
+                        path: "groups/:id/edit",
+                        element: <AnimalGroupFormPage />,
+                    },
+                    { path: "transfers", element: <AnimalTransferListPage /> },
+                    {
+                        path: "transfers/add",
+                        element: <AnimalTransferFormPage />,
+                    },
                 ],
             },
             {
@@ -326,6 +344,14 @@ export const router = createBrowserRouter([
                     { path: "water", element: <WaterListPage /> },
                     { path: "water/add", element: <WaterFormPage /> },
                     { path: "water/:id/edit", element: <WaterFormPage /> },
+                ],
+            },
+
+            {
+                path: "system",
+                children: [
+                    { index: true, element: <FarmSettingsPage /> },
+                    { path: "data", element: <DataManagementPage /> },
                 ],
             },
 

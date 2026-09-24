@@ -89,6 +89,8 @@ export const bn = {
             health: "স্বাস্থ্য",
             weight: "ওজন",
             scoring: "স্কোরিং",
+            groups: "গ্রুপ",
+            transfers: "স্থানান্তর",
         },
         units: {
             years: "বছর",
@@ -109,6 +111,7 @@ export const bn = {
             active: "সক্রিয়",
             sold: "বিক্রিত",
             deceased: "মৃত",
+            archived: "আর্কাইভড",
         },
         actions: {
             addAnimal: "গরু যোগ করুন",
@@ -129,6 +132,7 @@ export const bn = {
             addTitle: "নতুন গরু যোগ করুন",
             editTitle: "গরুর তথ্য সম্পাদনা",
             description: "সব বাধ্যতামূলক তথ্য পূরণ করুন",
+            noGroup: "কোনো গ্রুপ নেই",
         },
         toast: {
             created: "গরু সফলভাবে যোগ হয়েছে",
@@ -1500,5 +1504,98 @@ export const bn = {
             message: "আপনি কি নিশ্চিতভাবে এই রেকর্ডটি মুছে ফেলতে চান?",
         },
         toast: { created: "রেকর্ড যোগ হয়েছে", updated: "রেকর্ড আপডেট হয়েছে" },
+    },
+    system: {
+        tabs: { settings: "সেটিংস", data: "ডেটা ম্যানেজমেন্ট" },
+    },
+    settings: {
+        description: "খামারের মৌলিক তথ্য পরিবর্তন করুন",
+        fields: {
+            farmName: "খামারের নাম",
+            currency: "মুদ্রা",
+            dateFormat: "তারিখের ফরম্যাট",
+        },
+        validation: { farmNameRequired: "খামারের নাম আবশ্যক" },
+        toast: { saved: "সেটিংস সংরক্ষিত হয়েছে" },
+    },
+    backup: {
+        description: "আপনার সব data ব্যাকআপ নিন বা পুনরুদ্ধার করুন",
+        export: {
+            title: "ব্যাকআপ ডাউনলোড করুন",
+            description: "খামারের সব তথ্য একটা JSON ফাইলে ডাউনলোড হবে",
+            button: "ডাউনলোড করুন",
+        },
+        import: {
+            title: "ব্যাকআপ পুনরুদ্ধার করুন",
+            description: "আগের ডাউনলোড করা JSON ফাইল থেকে data ফিরিয়ে আনুন",
+            button: "ফাইল নির্বাচন করুন",
+        },
+        validation: {
+            invalidFile: "ফাইলটি সঠিক backup ফরম্যাটে নেই",
+            readError: "ফাইল পড়তে সমস্যা হয়েছে",
+        },
+        toast: { restored: "Data পুনরুদ্ধার হয়েছে, page reload হচ্ছে..." },
+    },
+    group: {
+        fields: {
+            name: "গ্রুপের নাম",
+            description: "বিবরণ",
+            animalCount: "গরুর সংখ্যা",
+        },
+        validation: {
+            nameRequired: "গ্রুপের নাম আবশ্যক",
+            nameDuplicate: "এই নামে গ্রুপ আগে থেকেই আছে",
+        },
+        list: {
+            description:
+                "গরুর গ্রুপ (যেমন: দুধেল, শুকনা, বাছুর ঘর) তৈরি ও পরিচালনা করুন",
+            emptyTitle: "কোনো গ্রুপ নেই",
+            emptyDescription: "প্রথম গ্রুপটি তৈরি করুন",
+        },
+        actions: { addGroup: "গ্রুপ যোগ করুন" },
+        form: {
+            addTitle: "নতুন গ্রুপ যোগ করুন",
+            editTitle: "গ্রুপ সম্পাদনা করুন",
+            description: "গ্রুপের তথ্য দিন",
+        },
+        deleteDialog: {
+            title: "গ্রুপ মুছে ফেলুন",
+            message:
+                "এই গ্রুপ মুছে ফেললে এতে থাকা গরুগুলোর group ফাঁকা হবে না, শুধু গ্রুপটি মুছে যাবে। নিশ্চিত?",
+        },
+        toast: { created: "গ্রুপ তৈরি হয়েছে", updated: "গ্রুপ আপডেট হয়েছে" },
+    },
+    transfer: {
+        fields: {
+            animal: "গরু",
+            fromGroup: "পূর্বের গ্রুপ",
+            toGroup: "নতুন গ্রুপ",
+            date: "তারিখ",
+            reason: "কারণ",
+        },
+        validation: {
+            animalRequired: "গরু নির্বাচন করুন",
+            toGroupRequired: "নতুন গ্রুপ নির্বাচন করুন",
+            dateRequired: "তারিখ আবশ্যক",
+            dateFuture: "ভবিষ্যতের তারিখ দেওয়া যাবে না",
+        },
+        list: {
+            description: "গরু এক গ্রুপ থেকে আরেক গ্রুপে স্থানান্তরের ইতিহাস",
+            emptyTitle: "কোনো স্থানান্তর নেই",
+            emptyDescription: "এখনো কোনো গরু স্থানান্তর করা হয়নি",
+        },
+        actions: { addTransfer: "স্থানান্তর যোগ করুন" },
+        form: {
+            addTitle: "গরু স্থানান্তর করুন",
+            description: "কোন গরু কোন গ্রুপে যাচ্ছে তা নির্বাচন করুন",
+            selectAnimal: "গরু নির্বাচন করুন",
+            selectGroup: "গ্রুপ নির্বাচন করুন",
+        },
+        deleteDialog: {
+            title: "স্থানান্তর মুছে ফেলুন",
+            message:
+                "এই স্থানান্তরের রেকর্ডটি মুছে ফেলবেন? (গরুর বর্তমান group পরিবর্তন হবে না)",
+        },
+        toast: { created: "স্থানান্তর সংরক্ষিত হয়েছে" },
     },
 };
